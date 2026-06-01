@@ -1,7 +1,12 @@
-import {useEffect} from "react"
+import {useEffect, useState} from "react"
 import Header from "./components/Header/Header";
+import TournamentSelector from "./components/TournamentSelector/TournamentSelector";
+import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
 
 function App() {
+  const [selectedTournament, setSelectedTournament] = useState('');
+  const [sortOption, setSortOption] = useState('Ranking');
+
   // Fetch player odds from API when page first loads
   useEffect(() => {
     // Get API key from the environment variables file
@@ -20,6 +25,16 @@ function App() {
   return (
     <div className="app">
       <Header/>
+      <main className="main">
+        <TournamentSelector
+        selectedTournament={selectedTournament}
+        onTournamentChange={setSelectedTournament}
+        />
+        <PlayerSorter
+          sortOption={sortOption}
+          onSortChange={setSortOption}
+        />
+      </main>
     </div>
   )
 }
