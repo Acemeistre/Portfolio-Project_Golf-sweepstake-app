@@ -1,4 +1,4 @@
-import './header.css';
+import './Header.css';
 import banner from '../../assets/Banner_desktop_v2.1.jpg';
 
 function Header() {
