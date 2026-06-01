@@ -1,0 +1,31 @@
+.header {
+    top: 0;
+    margin-left: 2rem;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header__banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.header__image {
+    max-width: 1200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.header__welcome h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}

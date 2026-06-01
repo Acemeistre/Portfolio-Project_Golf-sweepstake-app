@@ -1,4 +1,5 @@
 import {useEffect} from "react"
+import Header from "./components/Header/Header";
 
 function App() {
   // Fetch player odds from API when page first loads
@@ -17,8 +18,8 @@ function App() {
   }, [])
   
   return (
-    <div>
-      <h1>Golf Sweepstake</h1>
+    <div className="app">
+      <Header/>
     </div>
   )
 }
