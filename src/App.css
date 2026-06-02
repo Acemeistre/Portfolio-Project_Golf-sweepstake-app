@@ -13,3 +13,29 @@
 .main {
   display: flex;
 }
+
+.continue-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.continue-btn {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.continue-btn--active {
+  opacity: 0.8;
+}
+
+.continue-btn--disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
