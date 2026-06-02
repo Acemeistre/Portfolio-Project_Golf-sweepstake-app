@@ -56,5 +56,9 @@
 }
 
 .tournament-selector__card-name--selected {
-    color: #007bff;
+    color: yellow;
+}
+
+.tournament-selector__card-date--selected {
+    color:#fff
 }

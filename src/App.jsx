@@ -2,10 +2,15 @@ import {useEffect, useState} from "react"
 import Header from "./components/Header/Header";
 import TournamentSelector from "./components/TournamentSelector/TournamentSelector";
 import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
+import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 
 function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
   const [sortOption, setSortOption] = useState('Ranking');
+  const [participants, setParticipants] = useState([
+    { id: 1, name: '', colour: '#008BFD', isConfirmed: false },
+    { id: 2, name: '', colour: '#F7FF00', isConfirmed: false }
+  ]);
 
   // Fetch player odds from API when page first loads
   useEffect(() => {
@@ -33,6 +38,10 @@ function App() {
         <PlayerSorter
           sortOption={sortOption}
           onSortChange={setSortOption}
+        />
+        <ParticipantEntry
+          participants={participants}
+          onParticipantsChange={setParticipants}
         />
       </main>
     </div>
