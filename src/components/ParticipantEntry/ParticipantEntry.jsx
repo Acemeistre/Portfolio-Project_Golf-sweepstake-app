@@ -29,7 +29,26 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
     
     const removeParticipant = (id) => {
         if (participants.length <= 2) return
-        onParticipantsChange(participants.filter(p => p.id !== id))
+    
+    //Check if there's alread an empty unconfirmed row.    
+    const updated = participants.filter(p => p.id !== id)
+
+    // If no empty rows exist and we're under 8, add one back
+    const hasEmptyRow = updated.some(p => !p.isConfirmed && p.name.trim() === '')
+
+    if (!hasEmptyRow && updated.length < 8) {
+        const takenColours = updated.map(p => p.colour)
+        const availableColour = COLOURS.find(c => !takenColours.includes(c))
+        const newParticipant = {
+            id: Date.now(),
+            name: '',
+            colour: availableColour,
+            isConfirmed: false
+        }
+        onParticipantsChange([...updated, newParticipant])
+    } else {
+        onParticipantsChange(updated)
+    }
     }
     
     const updateName = (id, name) => {
