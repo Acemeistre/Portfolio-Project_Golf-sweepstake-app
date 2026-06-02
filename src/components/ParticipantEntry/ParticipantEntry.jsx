@@ -1,5 +1,6 @@
 import {useState} from "react";
 import "./ParticipantEntry.css";
+import ColourPicker from "../ColourPicker/ColourPicker";
 import { Check, Pencil, X } from 'lucide-react';
 
 const COLOURS = [
@@ -95,10 +96,18 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                 {participants.map(participant => (
                     <div key={participant.id} 
                     className={`participant-entry__row ${participant.isConfirmed ? 'participant-entry__row--confirmed' : ''}`}>
-                        <div 
-                            className="participant-entry__colour-swatch" 
-                            style={{backgroundColor: participant.colour}} 
-                            />
+                       <ColourPicker 
+                            currentColour={participant.colour}
+                            takenColours={participants
+                                .filter(p => p.id !== participant.id)
+                                .map(p => p.colour)}
+                            onColourChange={(newColour) => 
+                                { onParticipantsChange(participants.map(p => 
+                                    p.id === participant.id ? {...p, colour: newColour} : p
+                                ))                
+                            }}
+                            disabled={participant.isConfirmed}
+                                />
                             <input
                                 className="participant-entry__input"
                                 type="text"

@@ -1,0 +1,63 @@
+
+.colour-picker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.colour-picker__swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: .5rem;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.colour-picker__swatch--disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.colour-picker__arrow {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.colour-picker__dropdown {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+  padding: .5rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.15);
+  z-index: 200;
+}
+
+.colour-picker__option {
+  width: 1.5rem;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.colour-picker__option:hover {
+  transform: scale(1.15);
+}
+
+.colour-picker__option--taken {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.colour-picker__option--taken:hover {
+  transform: none;
+}

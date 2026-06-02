@@ -2,6 +2,7 @@ import {useEffect, useState} from "react"
 import Header from "./components/Header/Header";
 import TournamentSelector from "./components/TournamentSelector/TournamentSelector";
 import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
+
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 
 function App() {
