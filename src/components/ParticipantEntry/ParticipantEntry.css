@@ -52,6 +52,19 @@
     flex-shrink: 0;
 }
 
+.participant-entry__row--confirmed {
+    background-color: #37CE0033;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.participant-entry__input:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: #333;
+    cursor: default;
+}
+
 .participant-entry__btn--confirm {
     background-color: #37CE00;
 }
