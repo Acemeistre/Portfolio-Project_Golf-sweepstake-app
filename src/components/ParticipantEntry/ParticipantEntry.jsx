@@ -59,8 +59,21 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
     const confirmParticipant = (id) => {
         const participant = participants.find(p => p.id === id)
         if (!participant.name.trim()) return
+
+        //Check for duplicate names
+        const isDuplicate = participants.some(p => 
+            p.id !== id &&
+            p.isConfirmed &&
+            p.name.trim()=== participant.name.trim()
+        )
+        if (isDuplicate) {
+            alert('This name is already taken - please choose a different name.')
+            return
+        }
+
         const updated = participants.map(p => p.id === id ? {...p, isConfirmed: true } : p  
         )
+
         // Add new row if under 8 and all current rows are confirmed
         const confirmedCount = updated.filter(p => p.isConfirmed).length
 
@@ -80,6 +93,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
     }
 
     const editParticipant = (id) => {
+
         // Remove any trailing unconfirmed empty rows first
         const filtered = participants.filter(p => p.id === id || p.isConfirmed || p.name.trim() !== ''
         )
@@ -96,7 +110,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                 {participants.map(participant => (
                     <div key={participant.id} 
                     className={`participant-entry__row ${participant.isConfirmed ? 'participant-entry__row--confirmed' : ''}`}>
-                       <ColourPicker 
+                       <ColourPicker className="participant-entry__colour-swatch"
                             currentColour={participant.colour}
                             takenColours={participants
                                 .filter(p => p.id !== participant.id)

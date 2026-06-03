@@ -6,8 +6,9 @@
 }
 
 .participant-entry__label {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .participant-entry__list {
@@ -20,13 +21,15 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: .5rem;
+
 }
 
 .participant-entry__colour-swatch {
     width: 2rem;
     height: 2rem;
     border-radius: .5rem;
-    border: 2px solid #ccc;
+    border: 2px solid #C8A84B;
     cursor: pointer;
     flex-shrink: 0;
 }
@@ -53,7 +56,8 @@
 }
 
 .participant-entry__row--confirmed {
-    background-color: #37CE0033;
+    background-color: #87ca6e;
+    border: 2px solid #C8A84B;
     border-radius: .5rem;
     padding: .5rem;
 }
@@ -66,15 +70,23 @@
 }
 
 .participant-entry__btn--confirm {
-    background-color: #37CE00;
+    background-color: #006747;
+    opacity: 0.85;
 }
 
 .participant-entry__btn--edit {
-    background-color: #F7FF00;
+    background-color: yellow;
 }
 
 .participant-entry__btn--remove {
-    background-color: #FF4500;
+    background-color: #d30a0a;
+    opacity: 0.85;
+}
+
+.participant-entry__btn--confirm:hover,
+.participant-entry__btn--edit:hover,
+.participant-entry__btn--remove:hover {
+    opacity: 0.6;
 }
 
 .participant-entry__add-btn {

@@ -7,7 +7,7 @@ import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 
 function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
-  const [sortOption, setSortOption] = useState('Ranking');
+  const [sortOption, setSortOption] = useState('');
   const [participants, setParticipants] = useState([
     { id: 1, name: '', colour: '#008BFD', isConfirmed: false },
     { id: 2, name: '', colour: '#F7FF00', isConfirmed: false }
@@ -31,7 +31,7 @@ function App() {
   
   //Check if minimum requirements are met.
   const confirmedParticipants = participants.filter(p => p.isConfirmed)
-  const isReadyToContinue = selectedTournament !== '' && confirmedParticipants.length >= 2
+  const isReadyToContinue = selectedTournament !== '' && confirmedParticipants.length >= 2 && sortOption!== ''
 
   // Check for unconfirmed rows with text
   const hasUnconfirmedText = participants.some(p => !p.isConfirmed && p.name.trim() !== '')
@@ -52,6 +52,7 @@ function App() {
       <main className="main">
         {currentStage === 'selection' && (
         <>
+        <div className="stage1-layout">
         <TournamentSelector
         selectedTournament={selectedTournament}
         onTournamentChange={setSelectedTournament}
@@ -64,9 +65,10 @@ function App() {
           participants={participants}
           onParticipantsChange={setParticipants}
         />
+        </div>
         <div className="continue-btn-wrapper">
           <button 
-            className={`continue-btn ${!isReadyToContinue ? 'continue-btn--active' : 'continue-btn--disabled'}`}
+            className={`continue-btn ${isReadyToContinue ? 'continue-btn--active' : 'continue-btn--disabled'}`}
             onClick={isReadyToContinue ? handleContinue : null}
             disabled={!isReadyToContinue}
           >

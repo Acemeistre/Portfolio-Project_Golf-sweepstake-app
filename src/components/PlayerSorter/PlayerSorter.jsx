@@ -3,18 +3,21 @@ import './PlayerSorter.css';
 function PlayerSorter({ sortOption, onSortChange }) {
     return (
         <div className="player-sorter">
-            <label className="player-sorter__label">
+            <label className="player-sorter__title">
                 Sort Players:
             </label>
-            <input 
-                className="player-sorter__select"
-                type="radio"
-                name="sortOption"
-                value="Ranking"
-                checked={sortOption === "Ranking"}
-                onChange={(e) => onSortChange(e.target.value)}
-            />
-            <label className="player-sorter__label">
+            <div className='player-sorter__options'>
+                <div className="player-sorter__option">
+                <input 
+                    className="player-sorter__select"
+                    type="radio"
+                    name="sortOption"
+                    value="Ranking"
+                    checked={sortOption === "Ranking"}
+                    onChange={(e) => onSortChange(e.target.value)}
+                    id="sort-ranking"
+                />
+            <label htmlFor="sort-ranking">
                 Ranking
             </label>
             <input 
@@ -24,10 +27,13 @@ function PlayerSorter({ sortOption, onSortChange }) {
                 value="Odds"
                 checked={sortOption === "Odds"}
                 onChange={(e) => onSortChange(e.target.value)}
+                id="sort-odds"
             />
-            <label className="player-sorter__label">
+            <label htmlFor="sort-odds">
                 Odds
             </label>
+            </div>
+            </div>
         </div>
     );
 }

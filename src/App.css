@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.stage1-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rem;
+  width: 100%;
+}
+
 .app {
   min-height: 100vh;
   position: relative;
@@ -41,6 +50,7 @@
 
 .continue-btn {
   padding: 1rem 3rem;
+  margin-top: 3rem;
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -50,7 +60,18 @@
 }
 
 .continue-btn--active {
-  opacity: 0.8;
+  background-color: #006747;
+  color: white;
+  cursor: pointer;
+}
+
+.continue-btn--active:hover {
+  opacity: 0.85;
+  transition: all 0.2ms;
+}
+
+.continue-btn--active:active {
+  transform: scale(0.95);
 }
 
 .continue-btn--disabled {
