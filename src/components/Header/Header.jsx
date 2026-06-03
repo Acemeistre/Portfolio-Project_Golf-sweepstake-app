@@ -1,5 +1,5 @@
 import './Header.css';
-import banner from '../../assets/Banner_desktop_v2.1.jpg';
+import banner from '../../assets/Banner_desktop_v2.3.jpg';
 
 function Header() {
     return (
@@ -11,7 +11,7 @@ function Header() {
                 />
             </div>
             <div className="header__welcome">
-                <h1>Welcome to the Major Sweepstake.
+                <h1>Welcome to the Major Sweepstake.<br></br>
                     Please choose from the options below...
                 </h1>
             </div>

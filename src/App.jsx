@@ -1,8 +1,8 @@
-import {useEffect, useState} from "react"
+import {useEffect, useState} from "react";
+import './App.css';
 import Header from "./components/Header/Header";
 import TournamentSelector from "./components/TournamentSelector/TournamentSelector";
 import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
-
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 
 function App() {
@@ -47,6 +47,7 @@ function App() {
 
   return (
     <div className="app">
+      <div className="app__background" />
       <Header/>
       <main className="main">
         {currentStage === 'selection' && (

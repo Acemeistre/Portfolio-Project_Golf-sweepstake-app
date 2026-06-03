@@ -5,13 +5,32 @@
 }
 
 .app {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.app__background {
+  position: absolute;
+  top: 380px;
+  left: 0;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  background-image: url('/src/assets/Trophy_background.jpg');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: repeat-y;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .main {
-  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .continue-btn-wrapper {
