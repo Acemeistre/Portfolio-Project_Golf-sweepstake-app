@@ -27,7 +27,11 @@ function ColourPicker({ currentColour, takenColours, onColourChange, disabled })
         className={`colour-picker__swatch ${disabled ? 'colour-picker__swatch--disabled' : ''}`}
         style={{ backgroundColor: currentColour }}
         onClick={() => !disabled && setIsOpen(!isOpen)}
-      >
+        role="button"
+        aria-label="Choose your colour"
+        aria-expanded={isOpen}
+        >
+
         {!disabled && <span className="colour-picker__arrow">▼</span>}
       </div>
       {isOpen && (
@@ -38,6 +42,9 @@ function ColourPicker({ currentColour, takenColours, onColourChange, disabled })
               className={`colour-picker__option ${takenColours.includes(colour) ? 'colour-picker__option--taken' : ''}`}
               style={{ backgroundColor: colour }}
               onClick={() => handleColourSelect(colour)}
+              role="button"
+              aria-label={`Select colour ${colour}`}
+              aria-disabled={takenColours.includes(colour)}
             />
           ))}
         </div>

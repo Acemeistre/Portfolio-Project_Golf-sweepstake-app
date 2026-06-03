@@ -50,7 +50,11 @@ function TournamentSelector({ selectedTournament, onTournamentChange }) {
                         borderColor: tournament.colour,
                         backgroundColor: selectedTournament === tournament.id ? tournament.colour : 'transparent'
                     }}
-                    onClick={() => onTournamentChange(tournament.id)}>
+                    onClick={() => onTournamentChange(tournament.id)}
+                    role="button"
+                    aria-label={`Select ${tournament.name}, ${tournament.date}`}
+                    aria-pressed={selectedTournament === tournament.id}
+                    >
 
                     <span className={`tournament-selector__card-name ${selectedTournament === tournament.id ? 'tournament-selector__card-name--selected' : ''}`}>
                         {tournament.name}
