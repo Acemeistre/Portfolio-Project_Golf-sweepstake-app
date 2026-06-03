@@ -104,13 +104,14 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
     return (
         <div className="participant-entry">
             <label className="participant-entry__label">
-                Enter Participants:
+                Entries:
             </label>
             <div className="participant-entry__list">
                 {participants.map(participant => (
                     <div key={participant.id} 
                     className={`participant-entry__row ${participant.isConfirmed ? 'participant-entry__row--confirmed' : ''}`}>
                        <ColourPicker className="participant-entry__colour-swatch"
+                            placeholder="pick your theme colour that tracks your player's progress throughout the app's experience"
                             currentColour={participant.colour}
                             takenColours={participants
                                 .filter(p => p.id !== participant.id)
@@ -129,6 +130,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                                 value={participant.name}
                                 onChange={(e) => updateName(participant.id, e.target.value)}
                                 disabled={participant.isConfirmed}
+                                maxLength={22}
                             />
                             {!participant.isConfirmed && (
                             <button className="participant-entry__btn participant-entry__btn--confirm"

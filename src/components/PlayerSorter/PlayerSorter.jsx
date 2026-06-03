@@ -4,7 +4,7 @@ function PlayerSorter({ sortOption, onSortChange }) {
     return (
         <div className="player-sorter">
             <label className="player-sorter__title">
-                Sort Players:
+                Sorted by:
             </label>
             <div className='player-sorter__options'>
                 <div className="player-sorter__option">

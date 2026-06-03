@@ -5,7 +5,7 @@
 }
 
 .tournament-selector__label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 0.03em;
 }
@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.25rem;
+    padding: 1rem 3rem;
     font-size: 1rem;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -38,7 +38,7 @@
 }
 
 .tournament-selector__card-name {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     color: #333;
@@ -46,7 +46,15 @@
 }
 
 .tournament-selector__card-date {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #666;
+    text-align: center;
+    
+}
+
+.tournament-selector__card-location {
+    font-size: 0.9rem;
     color: #666;
     text-align: center;
     margin-top: 0.5rem;
@@ -63,4 +71,11 @@
 
 .tournament-selector__card-date--selected {
     color:#fff
+}
+
+@media (max-width: 1100px) {
+  .tournament-selector__cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
