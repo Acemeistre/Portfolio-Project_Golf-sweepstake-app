@@ -22,10 +22,10 @@ function App() {
     fetch("https://api.the-odds-api.com/v4/sports/golf_us_open_winner/odds/?apiKey=f4d61d699f0e49a43c473f19cee73ef9&regions=uk&markets=outrights")
     // Open the response envelope
     .then(response => response.json())
-    // Navigate to player outcomes and log them
+    // Navigate to player outcomes and store them
     .then(data => {
       const outcomes = data[0].bookmakers[0].markets[0].outcomes
-      console.log(outcomes)
+      setPlayers(outcomes)
     })
   }, [])
   
@@ -42,6 +42,12 @@ function App() {
       const confirm = window.confirm("You have an unconfirmed participant. Continue without them?")
     if (!confirm) return
   }
+
+  //Sort players based on selected sort option
+  const sortedPlayers = [...players].sort((a,b) =>
+    sortOption === 'Odds' ? a.price - b.price : a.price - b.price
+)
+  setPlayers(sortedPlayers)
   setCurrentStage('draw')
   }
 
