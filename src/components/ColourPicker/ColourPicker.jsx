@@ -30,6 +30,7 @@ function ColourPicker({ currentColour, takenColours, onColourChange, disabled })
         role="button"
         aria-label="Choose your colour"
         aria-expanded={isOpen}
+        title="Choose your colour"
         >
 
         {!disabled && <span className="colour-picker__arrow">▼</span>}

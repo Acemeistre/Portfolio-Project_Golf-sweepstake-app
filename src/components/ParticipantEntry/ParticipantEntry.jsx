@@ -136,6 +136,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                             <button className="participant-entry__btn participant-entry__btn--confirm"
                                 onClick={() => confirmParticipant(participant.id)}
                                 aria-label="Confirm participant"
+                                title="Confirm participant"
                             >
                                 <Check size={16} />
                             </button>
@@ -144,6 +145,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                                 className="participant-entry__btn participant-entry__btn--edit"
                                 onClick={() => editParticipant(participant.id)}
                                 aria-label="Edit participant"
+                                title="Edit participant"
                             >
                                 <Pencil size={16} />
                             </button>
@@ -151,6 +153,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                                 className="participant-entry__btn participant-entry__btn--remove"
                                 onClick={() => removeParticipant(participant.id)}
                                 aria-label="Remove participant"
+                                title="Remove Participant"
                             >
                                 <X size={16} />
                             </button>    

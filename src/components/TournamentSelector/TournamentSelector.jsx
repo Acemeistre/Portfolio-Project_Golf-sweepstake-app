@@ -54,6 +54,7 @@ function TournamentSelector({ selectedTournament, onTournamentChange }) {
                     role="button"
                     aria-label={`Select ${tournament.name}, ${tournament.date}`}
                     aria-pressed={selectedTournament === tournament.id}
+                    title={`Select ${tournament.name}, ${tournament.date}`}
                     >
 
                     <span className={`tournament-selector__card-name ${selectedTournament === tournament.id ? 'tournament-selector__card-name--selected' : ''}`}>
