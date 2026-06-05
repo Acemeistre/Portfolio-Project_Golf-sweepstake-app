@@ -12,7 +12,8 @@ function App() {
     { id: 1, name: '', colour: '#008BFD', isConfirmed: false },
     { id: 2, name: '', colour: '#F7FF00', isConfirmed: false }
   ]);
-  const [currentStage, setCurrentStage] = useState('selection')
+  const [currentStage, setCurrentStage] = useState('selection');
+  const [players, setPlayers] = useState([]);
 
   // Fetch player odds from API when page first loads
   useEffect(() => {
