@@ -9,7 +9,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 
 // Define the Stage2_Draw component
-function Draw({participants, players, onBack, onComplete}) {
+function Draw({selectedTournament, participants, players, onBack, onComplete}) {
 // It recieves: participants, players, onBack, onComplete
     const [currentGroup, setCurrentGroup] = useState(0);
     const [drawResults, setDrawResults] = useState({});
@@ -58,7 +58,10 @@ function Draw({participants, players, onBack, onComplete}) {
   return (
     <div className="stage2-layout">
         <PlayerQueue
+        selectedTournament={selectedTournament}
         players={players}
+        currentGroupPlayers={currentGroupPlayers}
+        participants={participants}
         currentGroup={currentGroup}
         />
         <Spinner
