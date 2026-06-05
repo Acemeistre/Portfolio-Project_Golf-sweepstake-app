@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import TournamentSelector from "./components/TournamentSelector/TournamentSelector";
 import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
+import Draw from "./components/Stage2_Draw/Stage2_Draw";
 
 function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
@@ -85,12 +86,13 @@ function App() {
         </>
         )}
         {currentStage === 'draw' && (
-          <div> 
-            <h2>Stage 2 - The Draw</h2>
-            <button onClick={() => setCurrentStage('selection')}>
-              Back to Selection
-            </button>
-          </div>
+           <Draw
+        selectedTournament={selectedTournament}
+        participants={participants.filter(p => p.isConfirmed)}
+        players={players}
+        onBack={() => setCurrentStage('selection')}
+        onComplete={() => setCurrentStage('scores')}
+        />
         )}
         {currentStage === 'scores' && (
           <div>

@@ -13,8 +13,8 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
 // It recieves: participants, players, onBack, onComplete
     const [currentGroup, setCurrentGroup] = useState(0);
     const [drawResults, setDrawResults] = useState({});
-    const [participant, setParticipant] = useState(participants)
-}
+    const [availableParticipants, setAvailableParticipants] = useState(participants)
+
 
   // Derived value: calculate group size (total players divided by number of participants)
     const groupSize = players.length / participants.length;
@@ -75,7 +75,7 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
         />
     </div>
   )
-
+}
   // Column 1 gets: the full player list, current group info
   // Column 2 gets: current group's players, available participants, onSpin handler
   // Column 3 gets: draw results, participants

@@ -14,7 +14,7 @@ return (
 
         {/*Subheading: selected tournament name*/}
         <h2 className="player-queue__heading">{selectedTournament}</h2>
-    // 
+
         {/* Scrollable list container */}
         <div className="player-queue__scroll-list">
     
