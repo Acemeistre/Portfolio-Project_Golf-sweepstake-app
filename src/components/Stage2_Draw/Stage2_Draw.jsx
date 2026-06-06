@@ -15,6 +15,9 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
     const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
 
+useEffect(() => {
+    handleCurrentGroup()
+}, [availableParticipants])
 
   // Derived value: calculate group size (total players divided by number of participants)
     const groupSize = players.length / participants.length;
@@ -68,6 +71,7 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
         currentGroupPlayers={currentGroupPlayers}
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
+        handleCurrentGroup={handleCurrentGroup}
         />
         <DrawResults
         drawResults={drawResults}

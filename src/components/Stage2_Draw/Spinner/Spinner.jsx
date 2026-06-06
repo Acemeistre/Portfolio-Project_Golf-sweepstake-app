@@ -4,7 +4,7 @@ import { Wheel } from 'react-custom-roulette'
 import './Spinner.css'
 
 // Define spinner component that receives: currentGroupPlayers, availableParticipants, handleSpin
-function Spinner({currentGroupPlayers, availableParticipants, handleSpin}) {
+function Spinner({currentGroupPlayers, availableParticipants, handleSpin, handleCurrentGroup}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
     // State: should the wheel be spinning (boolean)
@@ -13,7 +13,7 @@ function Spinner({currentGroupPlayers, availableParticipants, handleSpin}) {
     const [prizeNumber, setPrizeNumber] = useState(0);
 
     // Derived value: format availableParticipants into the data shape the Wheel component expects
-    const drawAvailableParticipants = availableParticipants.map({option: p.name});
+    const drawAvailableParticipants = availableParticipants.map(p => ({option: p.name}));
 
     // Handler: what happens when the button is clicked
     // Set isDrawStarted to true
@@ -30,6 +30,7 @@ function Spinner({currentGroupPlayers, availableParticipants, handleSpin}) {
     const handleStopSpinning = () => {
         setSpin(false);
         handleSpin(availableParticipants[prizeNumber])
+        handleCurrentGroup();
     }
    // Return the column layout
 
@@ -47,14 +48,15 @@ function Spinner({currentGroupPlayers, availableParticipants, handleSpin}) {
             <br />
             {isDrawStarted ? 'Spin again' : 'Go!'} 
             </button>
+            {drawAvailableParticipants.length > 0 && (
             <Wheel 
             mustStartSpinning={spin}
             prizeNumber={prizeNumber}
             data={drawAvailableParticipants}
             onStopSpinning={handleStopSpinning}
             />
-
-        </div>
+        )}
+    </div>
     )
 }
 // Export default
