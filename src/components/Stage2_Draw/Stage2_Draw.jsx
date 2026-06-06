@@ -11,19 +11,19 @@ import DrawResults from './DrawResults/DrawResults';
 // Define the Stage2_Draw component
 function Draw({selectedTournament, participants, players, onBack, onComplete}) {
 // It recieves: participants, players, onBack, onComplete
-    const [currentGroup, setCurrentGroup] = useState(0);
+    const [currentRound, setCurrentRound] = useState(0);
     const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
 
 useEffect(() => {
-    handleCurrentGroup()
+    handleCurrentRound()
 }, [availableParticipants])
 
-  // Derived value: calculate group size (total players divided by number of participants)
-    const groupSize = players.length / participants.length;
+  // Derived value: calculate round size (total players divided by number of participants)
+    const roundSize = players.length / participants.length;
 
-  // Derived value: work out which players belong to the current group
-    const currentGroupPlayers = players.slice(currentGroup * groupSize, (currentGroup + 1) * groupSize);
+  // Derived value: work out which players belong to the current round
+    const currentRoundPlayers = players.slice(currentRound * roundSize, (currentRound + 1) * roundSize);
 
   // Handler: what happens when a spin lands on a participant
     const handleSpin = (participant) => {
@@ -33,45 +33,44 @@ useEffect(() => {
             setAvailableParticipants(updatedParticipants)
             setDrawResults(prev => ({
                 ...prev,
-                [participant.id]: [...(prev[participant.id] || []), currentGroupPlayers[0]]
+                [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[0]]
             }))
         }
      }
 
-  // Handler: what happens when the current group is fully drawn (advance to next group)
-    const handleCurrentGroup = () => {
+  // Handler: what happens when the current round is fully drawn (advance to next round)
+    const handleCurrentRound = () => {
         if (availableParticipants.length === 0) {
-            setCurrentGroup(prev => prev + 1)
+            setCurrentRound(prev => prev + 1)
             setAvailableParticipants(participants)
         }}
 
-  // Handler: what happens when all groups are done (trigger onComplete)
+  // Handler: what happens when all rounds are done (trigger onComplete)
     const handleDrawComplete = () => {
-        const totalGroups = players.length / participants.length
-        if (currentGroup >= totalGroups) {
+        const totalRounds = players.length / participants.length
+        if (currentRound >= totalRounds) {
             onComplete()
         }
     }
 
   // Return the three-column layout
 
-  // Column 1 gets: the full player list, current group info
-  // Column 2 gets: current group's players, available participants, onSpin handler
+  // Column 1 gets: the full player list, current round info
+  // Column 2 gets: current round's players, available participants, onSpin handler
   // Column 3 gets: draw results, participants
   return (
     <div className="stage2-layout">
         <PlayerQueue
         selectedTournament={selectedTournament}
         players={players}
-        currentGroupPlayers={currentGroupPlayers}
+        currentRoundPlayers={currentRoundPlayers}
         participants={participants}
-        currentGroup={currentGroup}
+        currentRound={currentRound}
         />
         <Spinner
-        currentGroupPlayers={currentGroupPlayers}
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
-        handleCurrentGroup={handleCurrentGroup}
+        handleCurrentRound={handleCurrentRound}
         />
         <DrawResults
         drawResults={drawResults}
@@ -80,9 +79,6 @@ useEffect(() => {
     </div>
   )
 }
-  // Column 1 gets: the full player list, current group info
-  // Column 2 gets: current group's players, available participants, onSpin handler
-  // Column 3 gets: draw results, participants
-        
+
 // Export default
 export default Draw;

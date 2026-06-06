@@ -4,9 +4,9 @@ import React from 'react';
 import './PlayerQueue.css';
 
 // Define the PlayerQueue component
-function PlayerQueue({selectedTournament, players, currentGroupPlayers, participants, currentGroup}) {
-// Derived value: calculate group size from players and participants
-const groupSize = players.length / participants.length;
+function PlayerQueue({selectedTournament, players, currentRoundPlayers, participants, currentRound}) {
+// Derived value: calculate round size from players and participants
+const roundSize = players.length / participants.length;
 
 // Return the column layout
 return (   
@@ -21,23 +21,23 @@ return (
         {/* Map over players and render each one */}
         {players.map((player, index) => {
 
-            // Which group does this player belong to?
-            const playerGroup = Math.floor(index / groupSize) + 1
+            // Which round does this player belong to?
+            const playerRound = Math.floor(index / roundSize) + 1
 
-            // Is this player in the current group?
-            const isCurrentGroup = Math.floor(index / groupSize) === currentGroup
+            // Is this player in the current round?
+            const isCurrentRound = Math.floor(index / roundSize) === currentRound
 
             // Is this the next player to be drawn?
-            const isNextPlayer = player === currentGroupPlayers[0]
+            const isNextPlayer = player === currentRoundPlayers[0]
 
                 return (
                     <div
                         key={player.name}
                         className={`player-queue__row 
-                            ${isCurrentGroup ? 'player-queue__row--current-group' : ''} 
+                            ${isCurrentRound ? 'player-queue__row--current-round' : ''} 
                             ${isNextPlayer ? 'player-queue__row--next' : ''}`}
                     >
-                        <span className="player-queue__group">{playerGroup}</span>
+                        <span className="player-queue__round">{playerRound}</span>
                         <span className="player-queue__name">{player.name}</span>
                         <span className="player-queue__odds">{player.price}</span>
                     </div>
