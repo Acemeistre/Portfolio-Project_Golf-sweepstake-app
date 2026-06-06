@@ -75,6 +75,8 @@ useEffect(() => {
         <DrawResults
         drawResults={drawResults}
         participants={participants}
+        currentRound={currentRound}
+        players={players}
         />
     </div>
   )
