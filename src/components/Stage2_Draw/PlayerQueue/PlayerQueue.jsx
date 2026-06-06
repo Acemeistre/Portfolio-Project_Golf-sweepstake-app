@@ -6,7 +6,7 @@ import './PlayerQueue.css';
 // Define the PlayerQueue component
 function PlayerQueue({selectedTournament, players, currentRoundPlayers, participants, currentRound}) {
 // Derived value: calculate round size from players and participants
-const roundSize = players.length / participants.length;
+const roundSize = participants.length;
 
 // Return the column layout
 return (   
