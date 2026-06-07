@@ -9,8 +9,12 @@ import DrawResults from './DrawResults/DrawResults';
 
 
 // Define the Stage2_Draw component
-function Draw({selectedTournament, participants, players, onBack, onComplete}) {
 // It recieves: participants, players, onBack, onComplete
+function Draw({selectedTournament, participants, players, onBack, onComplete}) {
+
+  // State: which group are we currently drawing for (start at 0)
+  // State: the draw results so far (an object or array mapping participants to their players)
+  // State: which participants are still available to spin for the current group
     const [currentRound, setCurrentRound] = useState(0);
     const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
@@ -24,6 +28,10 @@ useEffect(() => {
 
   // Derived value: work out which players belong to the current round
     const currentRoundPlayers = players.slice(currentRound * roundSize, (currentRound + 1) * roundSize);
+
+  //Derived value: work out when all players drawn out to DrawResults equals the players.length  
+  const totalAssigned = Object.values(drawResults).flat().length
+  const isDrawComplete = totalAssigned === players.length
 
   // Handler: what happens when a spin lands on a participant
     const handleSpin = (participant) => {
@@ -53,6 +61,29 @@ useEffect(() => {
         }
     }
 
+  //Handler: what happens if the draw is already live
+    const handleBack = () => {
+      const confirm = window.confirm("Are you certain? Going back will lose your draw progress.") 
+      if (!confirm) return 
+      onBack()
+    }
+
+  //Handler: what happens once all rounds have been completed?
+    const handleDrawContinue = () => {
+      const confirm = window.confirm("Are you certain you wish to complete the draw and continue?")
+      if (!confirm) return
+      onComplete()
+    }
+
+  //Handler: what needs to happens to the Draw if a reset is clicked?
+    const handleResetDraw = () => {
+      const confirm = window.confirm("Are you certain? This will restart the draw from the beginning")
+      if (!confirm) return
+      setCurrentRound(0);
+      setDrawResults({});
+      setAvailableParticipants(participants);
+    }
+
   // Return the three-column layout
 
   // Column 1 gets: the full player list, current round info
@@ -78,6 +109,33 @@ useEffect(() => {
         currentRound={currentRound}
         players={players}
         />
+        <div className='stage2-buttons'>
+        <div className="back-btn-wrapper">
+          <button 
+            className="back-btn"
+            onClick={handleBack}
+          >
+            Back
+          </button>
+        </div>
+        <div className="restart-btn-wrapper">
+          <button 
+            className="restart-btn"
+            onClick={handleResetDraw}
+          >
+            Restart
+          </button>
+        </div>
+        <div className="continue-btn-wrapper">
+          <button 
+            className={`continue-btn ${isDrawComplete ? 'continue-btn--active' : 'continue-btn--disabled'}`}
+            onClick={handleDrawContinue}
+            disabled={!isDrawComplete}
+          >
+            Continue
+          </button>
+        </div>
+        </div>
     </div>
   )
 }
