@@ -4,7 +4,7 @@ import { Wheel } from 'react-custom-roulette'
 import './Spinner.css'
 
 // Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
-function Spinner({availableParticipants, handleSpin, handleCurrentRound}) {
+function Spinner({availableParticipants, handleSpin}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
     // State: should the wheel be spinning (boolean)
@@ -30,7 +30,6 @@ function Spinner({availableParticipants, handleSpin, handleCurrentRound}) {
     const handleStopSpinning = () => {
         setSpin(false);
         handleSpin(availableParticipants[prizeNumber])
-        handleCurrentRound();
     }
    // Return the column layout
 

@@ -19,39 +19,54 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
     const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
 
-useEffect(() => {
-    handleCurrentRound()
-}, [availableParticipants])
 
-  // Derived value: calculate round size (total players divided by number of participants)
-    const roundSize = players.length / participants.length;
 
-  // Derived value: work out which players belong to the current round
-    const currentRoundPlayers = players.slice(currentRound * roundSize, (currentRound + 1) * roundSize);
+ // Derived value: calculate remainder and current round players
+    const remainder = players.length % participants.length
+
+    const currentRoundStart = currentRound === 0
+        ? 0
+        : remainder + (currentRound - 1) * participants.length
+
+    const currentRoundEnd = currentRound === 0
+        ? remainder
+        : remainder + currentRound * participants.length
+
+    const currentRoundPlayers = players.slice(currentRoundStart, currentRoundEnd)
 
   //Derived value: work out when all players drawn out to DrawResults equals the players.length  
   const totalAssigned = Object.values(drawResults).flat().length
   const isDrawComplete = totalAssigned === players.length
 
-  // Handler: what happens when a spin lands on a participant
-    const handleSpin = (participant) => {
-        if (participant) {
-            const updatedParticipants = (availableParticipants.filter(p => p.id !== participant.id)) 
-            
-            setAvailableParticipants(updatedParticipants)
-            setDrawResults(prev => ({
-                ...prev,
-                [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[0]]
-            }))
-        }
-     }
+  //Derived value: Track how many participants are left within the currentRound
+  const playerIndex = participants.length - availableParticipants.length
 
-  // Handler: what happens when the current round is fully drawn (advance to next round)
-    const handleCurrentRound = () => {
-        if (availableParticipants.length === 0) {
-            setCurrentRound(prev => prev + 1)
-            setAvailableParticipants(participants)
-        }}
+  // Handler: what happens when a spin lands on a participant
+  const handleSpin = (participant) => {
+    if (participant) {
+            console.log('playerIndex:', playerIndex)
+            console.log('currentRoundPlayers:', currentRoundPlayers)
+            console.log('assigning:', currentRoundPlayers[playerIndex])
+            console.log('drawResults after update:', drawResults)
+            console.log('spinning for participant:', participant)
+            console.log('all participants:', participants)
+        const updatedParticipants = availableParticipants.filter(p => p.id !== participant.id)
+        
+        setAvailableParticipants(updatedParticipants)
+        setDrawResults(prev => ({
+            ...prev,
+            [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[playerIndex]]
+        }))
+
+        if (playerIndex + 1 >= currentRoundPlayers.length) {
+        setTimeout(() => {
+          setCurrentRound(prev => prev + 1)
+          setAvailableParticipants(participants)
+        }, 500)
+    }
+  }
+}  
+
 
   // Handler: what happens when all rounds are done (trigger onComplete)
     const handleDrawComplete = () => {
@@ -97,11 +112,12 @@ useEffect(() => {
         currentRoundPlayers={currentRoundPlayers}
         participants={participants}
         currentRound={currentRound}
+        remainder={remainder}
         />
         <Spinner
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
-        handleCurrentRound={handleCurrentRound}
+        
         />
         <DrawResults
         drawResults={drawResults}

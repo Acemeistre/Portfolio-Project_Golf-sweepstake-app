@@ -8,7 +8,7 @@ import './DrawResults.css'
 // It receives: drawResults, participants, currentRound, players
 function DrawResults({ drawResults, participants, currentRound, players }) {
     // Derived value: calculate total rounds from players and participants
-    const totalRounds = players.length / participants.length; 
+    const totalRounds = Math.ceil(players.length / participants.length); 
     // Return the column layout
     return (
 
@@ -23,10 +23,10 @@ function DrawResults({ drawResults, participants, currentRound, players }) {
                 const assignedPlayers = drawResults[participant.id] || []
 
                 // Current round player (TBD if not yet drawn)
-                const currentPlayer = assignedPlayers[currentRound]
+                const currentPlayer = assignedPlayers[assignedPlayers.length - 1]
 
                 // Previous round player
-                const previousPlayer = assignedPlayers[currentRound - 1]
+                const previousPlayer = assignedPlayers[assignedPlayers.length - 2]
             return (
                 <div
                     key={participant.id} 

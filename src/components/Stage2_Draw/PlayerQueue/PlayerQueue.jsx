@@ -4,9 +4,9 @@ import React from 'react';
 import './PlayerQueue.css';
 
 // Define the PlayerQueue component
-function PlayerQueue({selectedTournament, players, currentRoundPlayers, participants, currentRound}) {
+function PlayerQueue({selectedTournament, remainder, players, currentRoundPlayers, participants, currentRound}) {
 // Derived value: calculate round size from players and participants
-const roundSize = participants.length;
+const roundSize = Math.ceil(players.length / participants.length);
 
 // Return the column layout
 return (   
@@ -22,10 +22,10 @@ return (
         {players.map((player, index) => {
 
             // Which round does this player belong to?
-            const playerRound = Math.floor(index / roundSize) + 1
+            const playerRound = index < remainder ? 1 : Math.floor((index - remainder) / participants.length) + 2
 
             // Is this player in the current round?
-            const isCurrentRound = Math.floor(index / roundSize) === currentRound
+            const isCurrentRound = index < remainder ? currentRound === 0 : Math.floor((index - remainder) / participants.length) + 1 === currentRound
 
             // Is this the next player to be drawn?
             const isNextPlayer = player === currentRoundPlayers[0]

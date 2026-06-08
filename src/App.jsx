@@ -10,11 +10,23 @@ function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
   const [sortOption, setSortOption] = useState('');
   const [participants, setParticipants] = useState([
-    { id: 1, name: '', colour: '#008BFD', isConfirmed: false },
-    { id: 2, name: '', colour: '#F7FF00', isConfirmed: false }
+    { id: Date.now(), name: '', colour: '#008BFD', isConfirmed: false },
+    { id: Date.now() + 1, name: '', colour: '#F7FF00', isConfirmed: false }
   ]);
   const [currentStage, setCurrentStage] = useState('selection');
   const [players, setPlayers] = useState([]);
+
+  const dummyPlayers = [
+    { name: 'Player 1', price: 1000 },
+    { name: 'Player 2', price: 750 },
+    { name: 'Player 3', price: 500 },
+    { name: 'Player 4', price: 250 },
+    { name: 'Player 5', price: 100 },
+    { name: 'Player 6', price: 50 },
+    { name: 'Player 7', price: 25 },
+    { name: 'Player 8', price: 10 },
+    
+]
 
   // Fetch player odds from API when page first loads
   useEffect(() => {
@@ -27,7 +39,7 @@ function App() {
     // Navigate to player outcomes and store them
     .then(data => {
       const outcomes = data[0].bookmakers[0].markets[0].outcomes
-      setPlayers(outcomes)
+      setPlayers(dummyPlayers)
     })
   }, [])
   
@@ -47,9 +59,11 @@ function App() {
 
   //Sort players based on selected sort option
   const sortedPlayers = [...players].sort((a,b) =>
-    sortOption === 'Odds' ? a.price - b.price : a.price - b.price
+    sortOption === 'Odds' ? b.price - a.price : b.price - a.price
 )
-  setPlayers(sortedPlayers)
+  const remainder = players.length % confirmedParticipants.length
+
+
   setCurrentStage('draw')
   }
 
