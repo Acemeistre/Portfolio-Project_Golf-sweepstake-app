@@ -4,7 +4,7 @@ import { Wheel } from 'react-custom-roulette'
 import './Spinner.css'
 
 // Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
-function Spinner({availableParticipants, handleSpin}) {
+function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
     // State: should the wheel be spinning (boolean)
@@ -37,25 +37,33 @@ function Spinner({availableParticipants, handleSpin}) {
     // The Wheel component with its required props
     return (
         <div className="spinner">
-          <button
-            className="spinner__btn"
-            onClick={handleSpinButton}
-            aria-label="Spin wheel"
-            title="Spin wheel"
-            >
-            {isDrawStarted ? 'Good luck!' : 'Start the Draw?'}
-            <br />
-            {isDrawStarted ? 'Spin again' : 'Go!'} 
-            </button>
-            {drawAvailableParticipants.length > 0 && (
+            <h2 className="spinner__heading">
+                {isDrawStarted ? 'Good luck!' : 'Start the Draw?'}
+            </h2>
+            <button
+                className="spinner__btn"
+                onClick={handleSpinButton}
+                aria-label="Spin wheel"
+                title="Spin wheel"
+                >
+                {isDrawStarted ? 'Spin again' : 'Go!'} 
+                </button>
+                {drawAvailableParticipants.length > 0 && (
             <Wheel 
-            mustStartSpinning={spin}
-            prizeNumber={prizeNumber}
-            data={drawAvailableParticipants}
-            onStopSpinning={handleStopSpinning}
+                mustStartSpinning={spin}
+                prizeNumber={prizeNumber}
+                data={drawAvailableParticipants}
+                onStopSpinning={handleStopSpinning}
             />
-        )}
-    </div>
+            )}
+            <button 
+                className={`continue-btn ${isDrawComplete ? 'continue-btn--active' : 'continue-btn--disabled'}`}
+                onClick={onComplete}
+                disabled={!isDrawComplete}
+            >
+            Continue
+            </button>
+        </div>
     )
 }
 // Export default

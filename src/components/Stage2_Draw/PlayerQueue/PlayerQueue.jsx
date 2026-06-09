@@ -4,7 +4,7 @@ import React from 'react';
 import './PlayerQueue.css';
 
 // Define the PlayerQueue component
-function PlayerQueue({selectedTournament, remainder, players, currentRoundPlayers, participants, currentRound}) {
+function PlayerQueue({tournament, remainder, players, currentRoundPlayers, participants, currentRound, onBack}) {
 // Derived value: calculate round size from players and participants
 const roundSize = Math.ceil(players.length / participants.length);
 
@@ -13,11 +13,25 @@ return (
     <div className="player-queue">
 
         {/*Subheading: selected tournament name*/}
-        <h2 className="player-queue__heading">{selectedTournament}</h2>
+        <div 
+            className="player-queue__heading"
+            style={{ backgroundColor: tournament.colour }}
+        >
+            <span className="player-queue__heading-name">{tournament.name}</span>
+            <span className="player-queue__heading-date">{tournament.date}</span>
+            <span className="player-queue__heading-location">{tournament.location}</span>
+        </div>
 
+
+
+        
         {/* Scrollable list container */}
         <div className="player-queue__scroll-list">
-    
+            <div className="player-queue__header-row">
+                <span className="player-queue__round">Round</span>
+                <span className="player-queue__name">Player</span>
+                <span className="player-queue__odds">Odds</span>
+            </div>
         {/* Map over players and render each one */}
         {players.map((player, index) => {
 
@@ -37,12 +51,21 @@ return (
                             ${isCurrentRound ? 'player-queue__row--current-round' : ''} 
                             ${isNextPlayer ? 'player-queue__row--next' : ''}`}
                     >
+                        
                         <span className="player-queue__round">{playerRound}</span>
                         <span className="player-queue__name">{player.name}</span>
                         <span className="player-queue__odds">{player.price}</span>
                     </div>
                     )
                 })}
+            </div>
+            <div className="back-btn-wrapper">
+            <button 
+                className="back-btn"
+                onClick={onBack}
+            >
+                Back
+            </button>
             </div>
         </div>
     )

@@ -6,6 +6,41 @@ import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 import Draw from "./components/Stage2_Draw/Stage2_Draw";
 
+const tournaments = [
+    { 
+        id: 'masters', 
+        name: 'The Masters',
+        date: 'April 9-12, 2026',
+        location: 'Augusta, Georgia',
+        colour: '#006747',
+        apiKey: 'golf_masters_tournament_winner'
+    },
+    { 
+        id: 'pga', 
+        name: 'PGA Championship',
+        date: 'May 14-17, 2026',
+        location: 'Aronimink GC, Pennsylvania',
+        colour: '#003087',
+        apiKey: 'golf_pga_championship_winner'
+    },
+    { 
+        id: 'us-open', 
+        name: 'The US Open',
+        date: 'June 18-21, 2026',
+        location: 'Shinnecock Hills, New York',
+        colour: '#d30a0a',
+        apiKey: 'golf_us_open_winner'
+    },
+    { 
+        id: 'the-open', 
+        name: 'The Open Championship',
+        date: 'July 17-20, 2026',
+        location: 'Royal Birkdale, The UK',
+        colour: '#C8A84B',
+        apiKey: 'golf_the_open_championship_winner'
+    },
+]
+
 function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
   const [sortOption, setSortOption] = useState('');
@@ -16,6 +51,9 @@ function App() {
   const [currentStage, setCurrentStage] = useState('selection');
   const [players, setPlayers] = useState([]);
 
+  const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
+  console.log('selectedTournamentData:', selectedTournamentData)
+  
   const dummyPlayers = [
     { name: 'Player 1', price: 1000 },
     { name: 'Player 2', price: 750 },
@@ -106,6 +144,7 @@ function App() {
         players={players}
         onBack={() => setCurrentStage('selection')}
         onComplete={() => setCurrentStage('scores')}
+        tournament={selectedTournamentData}
         />
         )}
         {currentStage === 'scores' && (

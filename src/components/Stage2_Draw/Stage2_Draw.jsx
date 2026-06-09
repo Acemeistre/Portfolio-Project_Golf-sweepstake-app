@@ -10,7 +10,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 // Define the Stage2_Draw component
 // It recieves: participants, players, onBack, onComplete
-function Draw({selectedTournament, participants, players, onBack, onComplete}) {
+function Draw({selectedTournament, tournament, participants, players, onBack, onComplete}) {
 
   // State: which group are we currently drawing for (start at 0)
   // State: the draw results so far (an object or array mapping participants to their players)
@@ -65,8 +65,7 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
         }, 500)
     }
   }
-}  
-
+}
 
   // Handler: what happens when all rounds are done (trigger onComplete)
     const handleDrawComplete = () => {
@@ -113,6 +112,7 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
         participants={participants}
         currentRound={currentRound}
         remainder={remainder}
+        tournament={tournament}
         />
         <Spinner
         availableParticipants={availableParticipants}
@@ -125,33 +125,6 @@ function Draw({selectedTournament, participants, players, onBack, onComplete}) {
         currentRound={currentRound}
         players={players}
         />
-        <div className='stage2-buttons'>
-        <div className="back-btn-wrapper">
-          <button 
-            className="back-btn"
-            onClick={handleBack}
-          >
-            Back
-          </button>
-        </div>
-        <div className="restart-btn-wrapper">
-          <button 
-            className="restart-btn"
-            onClick={handleResetDraw}
-          >
-            Restart
-          </button>
-        </div>
-        <div className="continue-btn-wrapper">
-          <button 
-            className={`continue-btn ${isDrawComplete ? 'continue-btn--active' : 'continue-btn--disabled'}`}
-            onClick={handleDrawContinue}
-            disabled={!isDrawComplete}
-          >
-            Continue
-          </button>
-        </div>
-        </div>
     </div>
   )
 }
