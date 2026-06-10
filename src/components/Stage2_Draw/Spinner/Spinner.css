@@ -51,9 +51,3 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.75rem;
   }
-
-  .continue-btn {
-    display: flex;
-    justify-self: center;
-    margin-top: 5rem;
-  }

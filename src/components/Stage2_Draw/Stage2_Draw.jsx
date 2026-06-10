@@ -10,7 +10,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 // Define the Stage2_Draw component
 // It recieves: participants, players, onBack, onComplete
-function Draw({selectedTournament, tournament, participants, players, onBack, onComplete}) {
+function Draw({selectedTournament, tournament, participants, players, onBack, onReset, onComplete}) {
 
   // State: which group are we currently drawing for (start at 0)
   // State: the draw results so far (an object or array mapping participants to their players)
@@ -119,22 +119,40 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
         currentRound={currentRound}
         remainder={remainder}
         tournament={tournament}
-        onBack={handleBack}
         />
         <Spinner
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
         onComplete={handleDrawContinue}
-        isDrawComplete={isDrawComplete}
         />
         <DrawResults
         drawResults={drawResults}
         participants={participants}
         currentRound={currentRound}
         players={players}
-        onReset={handleResetDraw}
         />
+        <div className="stage2-buttons">
+            <button 
+                className="back-btn"
+                onClick={onBack}
+            >
+                Back
+            </button>
+                        <button 
+                className="stage2-continue-btn"
+                onClick={onComplete}
+            >
+                Continue
+            </button>
+                        <button 
+                className="restart-btn"
+                onClick={onReset}
+            >
+                Restart
+            </button>
+        </div>
     </div>
+    
   )
 }
 

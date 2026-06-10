@@ -6,7 +6,7 @@ import './DrawResults.css'
 
 // Define the DrawResults component
 // It receives: drawResults, participants, currentRound, players
-function DrawResults({ drawResults, participants, currentRound, players, onReset }) {
+function DrawResults({ drawResults, participants, currentRound, players }) {
     // Derived value: calculate total rounds from players and participants
     const totalRounds = Math.ceil(players.length / participants.length); 
     // Return the column layout
@@ -16,6 +16,13 @@ function DrawResults({ drawResults, participants, currentRound, players, onReset
             <div className='draw-results__header'>
                 Round: {currentRound + 1} / {totalRounds}
             </div>
+                <div className='draw-results__table'>
+        {/* Column headers */}
+        <div className='draw-results__header-row'>
+            <span className='draw-results__table-header__participant'>Entry</span>
+            <span className='draw-results__table-header__current'>Current</span>
+            <span className='draw-results__table-header__previous'>Previous</span>
+        </div>
                 {/* Map over participants and render each row */}
                 {participants.map(participant => {
                 
@@ -41,12 +48,7 @@ function DrawResults({ drawResults, participants, currentRound, players, onReset
                 )
                 
             })}
-          <button 
-            className="restart-btn"
-            onClick={onReset}
-          >
-            Restart
-          </button>
+            </div>
         </div>       
     )
 }

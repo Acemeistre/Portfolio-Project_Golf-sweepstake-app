@@ -5,7 +5,7 @@ import './Spinner.css'
 import ColourPicker from '../../ColourPicker/ColourPicker';
 
 // Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
-function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}) {
+function Spinner({availableParticipants, handleSpin}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
     // State: should the wheel be spinning (boolean)
@@ -71,13 +71,6 @@ function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}
             <div className="spinner__pointer" />
         </div>
             )}
-            <button 
-                className={`continue-btn ${isDrawComplete ? 'continue-btn--active' : 'continue-btn--disabled'}`}
-                onClick={onComplete}
-                disabled={!isDrawComplete}
-            >
-            Continue
-            </button>
         </div>
     )
 }

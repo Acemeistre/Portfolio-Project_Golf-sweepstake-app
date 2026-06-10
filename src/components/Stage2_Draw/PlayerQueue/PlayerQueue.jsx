@@ -4,7 +4,7 @@ import React from 'react';
 import './PlayerQueue.css';
 
 // Define the PlayerQueue component
-function PlayerQueue({tournament, remainder, players, currentRoundPlayers, participants, currentRound, onBack}) {
+function PlayerQueue({tournament, remainder, players, currentRoundPlayers, participants, currentRound}) {
 
 // Derived value: calculate round size from players and participants
 const roundSize = Math.ceil(players.length / participants.length);
@@ -48,16 +48,6 @@ return (
                 )
             })}
         </div>
-
-        <div className="back-btn-wrapper">
-            <button 
-                className="back-btn"
-                onClick={onBack}
-            >
-                Back
-            </button>
-        </div>
-
     </div>
 )
 }

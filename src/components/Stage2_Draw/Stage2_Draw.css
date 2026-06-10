@@ -7,3 +7,29 @@
     gap: 8rem;
     width: 100%;
 }
+
+.stage2-buttons {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.back-btn,
+.restart-btn,
+.stage2-continue-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn { background-color: yellow; }
+.stage2-continue-btn { background-color: #C8A84B; }
+.restart-btn { background-color: #d30a0a; }
+
