@@ -108,7 +108,7 @@ function App() {
   return (
     <div className="app">
       <div className="app__background" />
-      <Header/>
+      <Header showWelcome={currentStage === 'selection'} />
       <main className="main">
         {currentStage === 'selection' && (
         <>

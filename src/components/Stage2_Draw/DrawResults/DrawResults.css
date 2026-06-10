@@ -1,31 +1,7 @@
-.stage2-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  gap: 8rem;
-  width: 100%;
-}
-
-.stage2-buttons {
+.draw-results {
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.back-btn-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.back-btn {
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: .5rem;
-    background-color: yellow;
-    cursor: pointer;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 300px;
+    flex-shrink: 0;
 }

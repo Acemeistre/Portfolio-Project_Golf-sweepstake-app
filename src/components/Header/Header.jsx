@@ -3,7 +3,7 @@ import './Header.css';
 import bannerDesktop from '../../assets/Banner_desktop_v2.3.jpg';
 import bannerMobile from '../../assets/Hero-image_mobile_v2.0.png';
 
-function Header() {
+function Header({ showWelcome = true }) {
       const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100)
 
   useEffect(() => {
@@ -23,11 +23,13 @@ function Header() {
                 className="header__banner-image"
                 />
             </div>
+            {showWelcome && (
             <div className="header__welcome">
                 <h1>Welcome to the Major Sweepstake.<br></br>
                     Please choose from the options below...
                 </h1>
             </div>
+            )}
         </header>
     );
 }

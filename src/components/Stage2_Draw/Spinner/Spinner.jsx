@@ -2,6 +2,7 @@
 import { useState }from 'react'
 import { Wheel } from 'react-custom-roulette'
 import './Spinner.css'
+import ColourPicker from '../../ColourPicker/ColourPicker';
 
 // Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
 function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}) {
@@ -13,7 +14,11 @@ function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}
     const [prizeNumber, setPrizeNumber] = useState(0);
 
     // Derived value: format availableParticipants into the data shape the Wheel component expects
-    const drawAvailableParticipants = availableParticipants.map(p => ({option: p.name}));
+    const drawAvailableParticipants = availableParticipants.map(p => ({
+        option: p.name, 
+        style: {backgroundColor: p.colour},
+        
+    }));
 
     // Handler: what happens when the button is clicked
     // Set isDrawStarted to true
@@ -41,20 +46,30 @@ function Spinner({availableParticipants, handleSpin, isDrawComplete, onComplete}
                 {isDrawStarted ? 'Good luck!' : 'Start the Draw?'}
             </h2>
             <button
-                className="spinner__btn"
+                className={`spinner__btn ${spin? 'spinner__btn--disabled' : ''}`}
                 onClick={handleSpinButton}
+                disabled={spin}
                 aria-label="Spin wheel"
                 title="Spin wheel"
                 >
                 {isDrawStarted ? 'Spin again' : 'Go!'} 
                 </button>
                 {drawAvailableParticipants.length > 0 && (
-            <Wheel 
-                mustStartSpinning={spin}
-                prizeNumber={prizeNumber}
-                data={drawAvailableParticipants}
-                onStopSpinning={handleStopSpinning}
-            />
+            <div className="spinner__wheel-wrapper">
+                {drawAvailableParticipants.length > 0 && (
+                <Wheel 
+                    mustStartSpinning={spin}
+                    prizeNumber={prizeNumber}
+                    data={drawAvailableParticipants}
+                    onStopSpinning={handleStopSpinning}
+                    outerBorderColor="#C8A84B"
+                    radiusLineColor="#C8A84B"
+                    pointerProps={{ style: { display: 'none' } }}
+                    spinDuration={0.5}
+                />
+                )}
+            <div className="spinner__pointer" />
+        </div>
             )}
             <button 
                 className={`continue-btn ${isDrawComplete ? 'continue-btn--active' : 'continue-btn--disabled'}`}

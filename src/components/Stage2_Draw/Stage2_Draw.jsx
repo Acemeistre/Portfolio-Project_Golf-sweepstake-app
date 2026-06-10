@@ -38,6 +38,12 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
   const totalAssigned = Object.values(drawResults).flat().length
   const isDrawComplete = totalAssigned === players.length
 
+  //Derived value: fiter out the drawn players at the end of each spin from the player queue
+  const drawnPlayers = Object.values(drawResults).flat()
+  const remainingPlayers = players
+    .map((p, index) => ({ ...p, originalIndex: index }))
+    .filter(p => !drawnPlayers.find(dp => dp.name === p.name))
+
   //Derived value: Track how many participants are left within the currentRound
   const playerIndex = participants.length - availableParticipants.length
 
@@ -107,23 +113,26 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
     <div className="stage2-layout">
         <PlayerQueue
         selectedTournament={selectedTournament}
-        players={players}
+        players={remainingPlayers}
         currentRoundPlayers={currentRoundPlayers}
         participants={participants}
         currentRound={currentRound}
         remainder={remainder}
         tournament={tournament}
+        onBack={handleBack}
         />
         <Spinner
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
-        
+        onComplete={handleDrawContinue}
+        isDrawComplete={isDrawComplete}
         />
         <DrawResults
         drawResults={drawResults}
         participants={participants}
         currentRound={currentRound}
         players={players}
+        onReset={handleResetDraw}
         />
     </div>
   )
