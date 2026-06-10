@@ -1,3 +1,5 @@
+
+
 .stage2-layout {
     display: flex;
     flex-direction: row;
@@ -14,8 +16,8 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 20rem;
+    justify-content: space-between;
+    padding: 0 46rem;
 }
 
 .back-btn,

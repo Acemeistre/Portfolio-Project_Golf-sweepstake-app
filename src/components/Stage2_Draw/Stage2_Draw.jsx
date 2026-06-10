@@ -64,12 +64,21 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
             [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[playerIndex]]
         }))
 
-        if (playerIndex + 1 >= currentRoundPlayers.length) {
-        setTimeout(() => {
-          setCurrentRound(prev => prev + 1)
-          setAvailableParticipants(participants)
-        }, 500)
-    }
+if (playerIndex + 1 >= currentRoundPlayers.length) {
+    setTimeout(() => {
+        setDrawResults(prev => {
+            const updated = { ...prev }
+            participants.forEach(p => {
+                if (!updated[p.id] || updated[p.id].length === 0) {
+                    updated[p.id] = [{ name: '-', price: null }]
+                }
+            })
+            return updated
+        })
+        setCurrentRound(prev => prev + 1)
+        setAvailableParticipants(participants)
+    }, 500)
+}
   }
 }
 
@@ -130,6 +139,7 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
         participants={participants}
         currentRound={currentRound}
         players={players}
+        
         />
         <div className="stage2-buttons">
             <button 

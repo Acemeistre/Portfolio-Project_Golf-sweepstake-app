@@ -10,6 +10,7 @@
   .spinner__btn {
     display: flex;
     justify-self: center;
+    text-justify: center;
     background-color: #C8A84B;
     padding: .75rem 5rem;
     margin-top: 1rem;
@@ -41,7 +42,6 @@
     border-left: 24px solid transparent;
     border-right: 24px solid transparent;
     border-bottom: 48px solid black;
-
     z-index: 10;
 }
 
