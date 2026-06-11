@@ -5,7 +5,7 @@ import './Spinner.css'
 import ColourPicker from '../../ColourPicker/ColourPicker';
 
 // Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
-function Spinner({availableParticipants, handleSpin}) {
+function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
     // State: should the wheel be spinning (boolean)
@@ -48,7 +48,7 @@ function Spinner({availableParticipants, handleSpin}) {
             <button
                 className={`spinner__btn ${spin? 'spinner__btn--disabled' : ''}`}
                 onClick={handleSpinButton}
-                disabled={spin}
+                disabled={spin || isDrawComplete}
                 aria-label="Spin wheel"
                 title="Spin wheel"
                 >

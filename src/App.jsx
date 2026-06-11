@@ -60,9 +60,13 @@ function App() {
     { name: 'Player 3', price: 500 },
     { name: 'Player 4', price: 250 },
     { name: 'Player 5', price: 100 },
-    { name: 'Player 6', price: 50 },
-    { name: 'Player 7', price: 25 },
-    { name: 'Player 8', price: 10 },
+    { name: 'Player 6', price: 75 },
+    { name: 'Player 7', price: 50 },
+    { name: 'Player 8', price: 40 },
+    { name: 'Player 9', price: 30 },
+    { name: 'Player 10', price: 30 },
+    { name: 'Player 11', price: 20 },
+    { name: 'Player 12', price: 10 },
     
 ]
 

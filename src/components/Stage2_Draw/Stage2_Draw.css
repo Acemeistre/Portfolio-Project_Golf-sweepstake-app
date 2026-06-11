@@ -1,23 +1,27 @@
-
-
 .stage2-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 4rem;
+    width: 100%;
+}
+
+.stage2-columns {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 2rem 4rem;
     gap: 8rem;
     width: 100%;
 }
 
 .stage2-buttons {
-    position: fixed;
     bottom: 2rem;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 1068px;
     display: flex;
     justify-content: space-between;
-    padding: 0 46rem;
 }
 
 .back-btn,
@@ -32,6 +36,6 @@
 }
 
 .back-btn { background-color: yellow; }
-.stage2-continue-btn { background-color: #C8A84B; }
+.stage2-continue-btn { background-color: #006747; }
 .restart-btn { background-color: #d30a0a; }
 

@@ -9,7 +9,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 
 // Define the Stage2_Draw component
-// It recieves: participants, players, onBack, onComplete
+// It recieves: selectedTournament, tournament, participants, players, onBack, onComplete, onReset
 function Draw({selectedTournament, tournament, participants, players, onBack, onReset, onComplete}) {
 
   // State: which group are we currently drawing for (start at 0)
@@ -34,18 +34,22 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
 
     const currentRoundPlayers = players.slice(currentRoundStart, currentRoundEnd)
 
-  //Derived value: work out when all players drawn out to DrawResults equals the players.length  
-  const totalAssigned = Object.values(drawResults).flat().length
-  const isDrawComplete = totalAssigned === players.length
-
   //Derived value: fiter out the drawn players at the end of each spin from the player queue
   const drawnPlayers = Object.values(drawResults).flat()
   const remainingPlayers = players
     .map((p, index) => ({ ...p, originalIndex: index }))
     .filter(p => !drawnPlayers.find(dp => dp.name === p.name))
 
+    console.log('remainingPlayers:', remainingPlayers);
+
   //Derived value: Track how many participants are left within the currentRound
   const playerIndex = participants.length - availableParticipants.length
+
+  //Derived value: Tracks whether the draw has begun or not.
+  const hasDrawStarted = Object.keys(drawResults).length > 0
+
+  //Derived value: tracks when the draw has been completed
+   const isDrawComplete = remainingPlayers.length === 0
 
   // Handler: what happens when a spin lands on a participant
   const handleSpin = (participant) => {
@@ -92,8 +96,10 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
 
   //Handler: what happens if the draw is already live
     const handleBack = () => {
+      if (hasDrawStarted) {
       const confirm = window.confirm("Are you certain? Going back will lose your draw progress.") 
-      if (!confirm) return 
+      if (!confirm) return
+      } 
       onBack()
     }
 
@@ -106,8 +112,10 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
 
   //Handler: what needs to happens to the Draw if a reset is clicked?
     const handleResetDraw = () => {
+      if (hasDrawStarted) {
       const confirm = window.confirm("Are you certain? This will restart the draw from the beginning")
       if (!confirm) return
+      }
       setCurrentRound(0);
       setDrawResults({});
       setAvailableParticipants(participants);
@@ -120,6 +128,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
   // Column 3 gets: draw results, participants
   return (
     <div className="stage2-layout">
+      <div className='stage2-columns'>
         <PlayerQueue
         selectedTournament={selectedTournament}
         players={remainingPlayers}
@@ -133,6 +142,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
         availableParticipants={availableParticipants}
         handleSpin={handleSpin}
         onComplete={handleDrawContinue}
+        isDrawComplete={isDrawComplete}
         />
         <DrawResults
         drawResults={drawResults}
@@ -141,22 +151,24 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
         players={players}
         
         />
+        </div>
         <div className="stage2-buttons">
             <button 
                 className="back-btn"
-                onClick={onBack}
+                onClick={handleBack}
             >
                 Back
             </button>
                         <button 
                 className="stage2-continue-btn"
-                onClick={onComplete}
+                onClick={handleDrawContinue}
+                disabled={!isDrawComplete}
             >
                 Continue
             </button>
                         <button 
                 className="restart-btn"
-                onClick={onReset}
+                onClick={handleResetDraw}
             >
                 Restart
             </button>
