@@ -13,7 +13,8 @@ const tournaments = [
         date: 'April 9-12, 2026',
         location: 'Augusta, Georgia',
         colour: '#006747',
-        apiKey: 'golf_masters_tournament_winner'
+        apiKey: 'golf_masters_tournament_winner',
+        isPast: true
     },
     { 
         id: 'pga', 
@@ -21,7 +22,8 @@ const tournaments = [
         date: 'May 14-17, 2026',
         location: 'Aronimink GC, Pennsylvania',
         colour: '#003087',
-        apiKey: 'golf_pga_championship_winner'
+        apiKey: 'golf_pga_championship_winner',
+        isPast: true
     },
     { 
         id: 'us-open', 
@@ -29,7 +31,8 @@ const tournaments = [
         date: 'June 18-21, 2026',
         location: 'Shinnecock Hills, New York',
         colour: '#d30a0a',
-        apiKey: 'golf_us_open_winner'
+        apiKey: 'golf_us_open_winner',
+        isPast: false
     },
     { 
         id: 'the-open', 
@@ -37,7 +40,8 @@ const tournaments = [
         date: 'July 17-20, 2026',
         location: 'Royal Birkdale, The UK',
         colour: '#C8A84B',
-        apiKey: 'golf_the_open_championship_winner'
+        apiKey: 'golf_the_open_championship_winner',
+        isPast: false
     },
 ]
 

@@ -7,7 +7,8 @@ const tournaments = [
         date: 'April 9-12, 2026',
         location: 'Augusta, Georgia',
         colour: '#006747',
-        apiKey: 'golf_masters_tournament_winner'
+        apiKey: 'golf_masters_tournament_winner',
+        isPast: true
     },
     { 
         id: 'pga', 
@@ -15,7 +16,8 @@ const tournaments = [
         date: 'May 14-17, 2026',
         location: 'Aronimink GC, Pennsylvania',
         colour: '#003087',
-        apiKey: 'golf_pga_championship_winner'
+        apiKey: 'golf_pga_championship_winner',
+        isPast: true
     },
     { 
         id: 'us-open', 
@@ -23,7 +25,8 @@ const tournaments = [
         date: 'June 18-21, 2026',
         location: 'Shinnecock Hills, New York',
         colour: '#d30a0a',
-        apiKey: 'golf_us_open_winner'
+        apiKey: 'golf_us_open_winner',
+        isPast: false
     },
     { 
         id: 'the-open', 
@@ -31,7 +34,8 @@ const tournaments = [
         date: 'July 17-20, 2026',
         location: 'Royal Birkdale, The UK',
         colour: '#C8A84B',
-        apiKey: 'golf_the_open_championship_winner'
+        apiKey: 'golf_the_open_championship_winner',
+        isPast: false
     },
 ]
 
@@ -45,13 +49,16 @@ function TournamentSelector({ selectedTournament, onTournamentChange }) {
             {tournaments.map((tournament) => (
                 <div
                     key={tournament.id}
-                    className={`tournament-selector__card ${selectedTournament === tournament.id ? 'tournament-selector__card--selected' : ''}`}
+                    className={`tournament-selector__card 
+                        ${selectedTournament === tournament.id ? 'tournament-selector__card--selected' : ''}
+                        ${tournament.isPast ? 'tournament-selector__card--past' : ''}`}
                     style={{ 
-                        borderColor: tournament.colour,
+                        borderColor: tournament.isPast ? '#ccc' : tournament.colour,
                         backgroundColor: selectedTournament === tournament.id ? tournament.colour : 'transparent'
                     }}
-                    onClick={() => onTournamentChange(tournament.id)}
+                    onClick={() => !tournament.isPast && onTournamentChange(tournament.id)}
                     role="button"
+                    aria-disabled={tournament.isPast}
                     aria-label={`Select ${tournament.name}, ${tournament.date}`}
                     aria-pressed={selectedTournament === tournament.id}
                     title={`Select ${tournament.name}, ${tournament.date}`}
