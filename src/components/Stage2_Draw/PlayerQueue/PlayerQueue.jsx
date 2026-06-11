@@ -31,9 +31,21 @@ return (
                 <span className="player-queue__odds">Odds</span>
             </div>
             {players.map((player, index) => {
-                const playerRound = player.originalIndex < remainder ? 1 : Math.floor((player.originalIndex - remainder) / participants.length) + 2
-                const isCurrentRound = player.originalIndex < remainder ? currentRound === 0 : Math.floor((player.originalIndex - remainder) / participants.length) + 1 === currentRound
+
+                const playerRound = remainder === 0
+    ? Math.floor(player.originalIndex / participants.length) + 1
+    : player.originalIndex < remainder 
+    ? 1 
+    : Math.floor((player.originalIndex - remainder) / participants.length) + 2
+
+const isCurrentRound = remainder === 0
+    ? Math.floor(player.originalIndex / participants.length) === currentRound
+    : player.originalIndex < remainder 
+    ? currentRound === 0 
+    : Math.floor((player.originalIndex - remainder) / participants.length) + 1 === currentRound
+                
                 const isNextPlayer = player === currentRoundPlayers[0]
+                
                 return (
                     <div
                         key={player.name}

@@ -10,6 +10,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
+    padding: 0rem 2rem;
     margin-top: 5rem;
     margin-bottom: 1.3rem;
 }
@@ -79,4 +80,10 @@
     flex-shrink: 0;
     text-align: left;
     font-weight: 600;
+}
+
+@media (max-width: 420px) {
+    .draw-results {
+        width: 20rem;
+    }
 }

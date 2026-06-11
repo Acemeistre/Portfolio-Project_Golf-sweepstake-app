@@ -22,16 +22,19 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
 
 
  // Derived value: calculate remainder and current round players
-    const remainder = players.length % participants.length
+const remainder = players.length % participants.length
 
-    const currentRoundStart = currentRound === 0
+const currentRoundStart = remainder === 0
+    ? currentRound * participants.length
+    : currentRound === 0
         ? 0
         : remainder + (currentRound - 1) * participants.length
 
-    const currentRoundEnd = currentRound === 0
+const currentRoundEnd = remainder === 0
+    ? (currentRound + 1) * participants.length
+    : currentRound === 0
         ? remainder
         : remainder + currentRound * participants.length
-
     const currentRoundPlayers = players.slice(currentRoundStart, currentRoundEnd)
 
   //Derived value: fiter out the drawn players at the end of each spin from the player queue

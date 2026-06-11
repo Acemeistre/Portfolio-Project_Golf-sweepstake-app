@@ -90,3 +90,15 @@
     width: 90%;
   }
 }
+
+@media (max-width: 560px) {
+    .app__background {
+        top: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .app__background {
+        top: 200px;
+    }
+}

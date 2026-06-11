@@ -110,3 +110,9 @@
     flex: none;
   }
 }
+
+@media (max-width: 560px) {
+    .participant-entry__input {
+        width: 120px;
+    }
+}
