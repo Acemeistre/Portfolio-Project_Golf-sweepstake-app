@@ -96,6 +96,11 @@
     flex-shrink: 0;
 }
 
+@media (max-width: 1480px) {
+    .player-queue__heading {
+    margin: 0 auto;
+    }
+}
 
 @media (max-width: 420px) {
     .player-queue {
