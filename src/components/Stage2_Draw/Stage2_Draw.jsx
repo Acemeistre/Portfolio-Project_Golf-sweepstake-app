@@ -24,38 +24,49 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
  // Derived value: calculate remainder and current round players
 const remainder = players.length % participants.length
 
+//Derived value: calculate where, in the players array, does the current round begin
+/*How it does it: If there is no remainder → end at '(currentRound + 1) * participants.length'
+Otherwise, if we're in the remainder round (round 0) → end at 'remainder'
+Otherwise → end at 'remainder + (currentRound - 1) * participants.length'*/
 const currentRoundStart = remainder === 0
     ? currentRound * participants.length
     : currentRound === 0
         ? 0
         : remainder + (currentRound - 1) * participants.length
 
-const currentRoundEnd = remainder === 0
+//Derived value: calculate where, in the players array, does the current round end
+//How it does it: same as currentRoundStart, but no -1 from "(currentRound - 1)"
     ? (currentRound + 1) * participants.length
     : currentRound === 0
         ? remainder
         : remainder + currentRound * participants.length
-    const currentRoundPlayers = players.slice(currentRoundStart, currentRoundEnd)
 
-  //Derived value: fiter out the drawn players at the end of each spin from the player queue
-  const drawnPlayers = Object.values(drawResults).flat()
-  const remainingPlayers = players
+//Derived value: calculate the current round using currentRoundStart and currentRoundEnd
+const currentRoundPlayers = players.slice(currentRoundStart, currentRoundEnd)
+
+//Derived value: grab the values from drawResults and place them in a single array to track the drawnPlayers
+const drawnPlayers = Object.values(drawResults).flat()
+
+//Derived value: fiter out the drawn players at the end of each spin from the player queue
+const remainingPlayers = players
+    //stamp the original player index for playerQueue to calculate the correct round number
     .map((p, index) => ({ ...p, originalIndex: index }))
+    //keep only the players whose name IS NOT found in the drawnPlayers array
     .filter(p => !drawnPlayers.find(dp => dp.name === p.name))
 
     console.log('remainingPlayers:', remainingPlayers);
 
-  //Derived value: Track how many participants are left within the currentRound
-  const playerIndex = participants.length - availableParticipants.length
+// Derived value: Track which player in the current round should be assigned next
+const playerIndex = participants.length - availableParticipants.length
 
-  //Derived value: Tracks whether the draw has begun or not.
-  const hasDrawStarted = Object.keys(drawResults).length > 0
+//Derived value: Tracks whether the draw has begun or not.
+const hasDrawStarted = Object.keys(drawResults).length > 0
 
-  //Derived value: tracks when the draw has been completed
-   const isDrawComplete = remainingPlayers.length === 0
+//Derived value: tracks when the draw has been completed
+const isDrawComplete = remainingPlayers.length === 0
 
-  // Handler: what happens when a spin lands on a participant
-  const handleSpin = (participant) => {
+// Handler: what happens when a spin lands on a participant
+const handleSpin = (participant) => {
     if (participant) {
             console.log('playerIndex:', playerIndex)
             console.log('currentRoundPlayers:', currentRoundPlayers)
