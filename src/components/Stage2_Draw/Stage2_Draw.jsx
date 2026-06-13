@@ -36,6 +36,7 @@ const currentRoundStart = remainder === 0
 
 //Derived value: calculate where, in the players array, does the current round end
 //How it does it: same as currentRoundStart, but no -1 from "(currentRound - 1)"
+const currentRoundEnd = remainder === 0
     ? (currentRound + 1) * participants.length
     : currentRound === 0
         ? remainder
@@ -151,6 +152,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
         currentRound={currentRound}
         remainder={remainder}
         tournament={tournament}
+        playerIndex={playerIndex}
         />
         <Spinner
         availableParticipants={availableParticipants}

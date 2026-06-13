@@ -96,6 +96,15 @@
     flex-shrink: 0;
 }
 
+.player-queue__row--current-round {
+    background-color: lightgreen;
+}
+
+.player-queue__row--next {
+    background-color: #C8A84B;
+    font-weight: 700;
+}
+
 @media (max-width: 1480px) {
     .player-queue__heading {
     margin: 0 auto;
