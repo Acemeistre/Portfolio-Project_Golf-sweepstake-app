@@ -1,5 +1,5 @@
 // Import React and useState
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './Stage2_Draw.css';
 
 // Import the three column components
@@ -10,7 +10,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 // Define the Stage2_Draw component
 // It recieves: selectedTournament, tournament, participants, players, onBack, onComplete, onReset
-function Draw({selectedTournament, tournament, participants, players, onBack, onReset, onComplete}) {
+function Draw({ tournament, participants, players, onBack, onComplete}) {
 
   // State: which group are we currently drawing for (start at 0)
   // State: the draw results so far (an object or array mapping participants to their players)
@@ -18,8 +18,6 @@ function Draw({selectedTournament, tournament, participants, players, onBack, on
     const [currentRound, setCurrentRound] = useState(0);
     const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
-
-
 
  // Derived value: calculate remainder and current round players
 const remainder = players.length % participants.length
@@ -35,7 +33,7 @@ const currentRoundStart = remainder === 0
         : remainder + (currentRound - 1) * participants.length
 
 //Derived value: calculate where, in the players array, does the current round end
-//How it does it: same as currentRoundStart, but no -1 from "(currentRound - 1)"
+// Same logic as currentRoundStart but calculates the end index instead of the start
 const currentRoundEnd = remainder === 0
     ? (currentRound + 1) * participants.length
     : currentRound === 0
@@ -55,8 +53,6 @@ const remainingPlayers = players
     //keep only the players whose name IS NOT found in the drawnPlayers array
     .filter(p => !drawnPlayers.find(dp => dp.name === p.name))
 
-    console.log('remainingPlayers:', remainingPlayers);
-
 // Derived value: Track which player in the current round should be assigned next
 const playerIndex = participants.length - availableParticipants.length
 
@@ -69,22 +65,21 @@ const isDrawComplete = remainingPlayers.length === 0
 // Handler: what happens when a spin lands on a participant
 const handleSpin = (participant) => {
     if (participant) {
-            console.log('playerIndex:', playerIndex)
-            console.log('currentRoundPlayers:', currentRoundPlayers)
-            console.log('assigning:', currentRoundPlayers[playerIndex])
-            console.log('drawResults after update:', drawResults)
-            console.log('spinning for participant:', participant)
-            console.log('all participants:', participants)
-        const updatedParticipants = availableParticipants.filter(p => p.id !== participant.id)
-        
+        // Remove the landed participant from the available list for this round
+        const updatedParticipants = availableParticipants.filter(p => p.id !== participant.id)  
         setAvailableParticipants(updatedParticipants)
+        // Add the current round's player to this participant's draw results
         setDrawResults(prev => ({
             ...prev,
             [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[playerIndex]]
         }))
 
+// If this was the last spin of the round...
 if (playerIndex + 1 >= currentRoundPlayers.length) {
+    // Delay state updates to avoid React timing issues
     setTimeout(() => {
+        // Fill any empty participant arrays with a placeholder
+        // (handles remainder participants who weren't drawn in round 0)
         setDrawResults(prev => {
             const updated = { ...prev }
             participants.forEach(p => {
@@ -94,20 +89,13 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
             })
             return updated
         })
+        // Advance to next round and reset available participants
         setCurrentRound(prev => prev + 1)
         setAvailableParticipants(participants)
     }, 500)
 }
   }
 }
-
-  // Handler: what happens when all rounds are done (trigger onComplete)
-    const handleDrawComplete = () => {
-        const totalRounds = players.length / participants.length
-        if (currentRound >= totalRounds) {
-            onComplete()
-        }
-    }
 
   //Handler: what happens if the draw is already live
     const handleBack = () => {
@@ -136,16 +124,16 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
       setAvailableParticipants(participants);
     }
 
-  // Return the three-column layout
+  // Return the stage 2 layout
 
-  // Column 1 gets: the full player list, current round info
-  // Column 2 gets: current round's players, available participants, onSpin handler
-  // Column 3 gets: draw results, participants
+  // Column 1 (PlayerQueue): full player list with round highlighting
+  // Column 2 (Spinner): wheel and spin button
+  // Column 3 (DrawResults): draw results table with current and previous round players
+  // stage2-buttons contains the back, continue and restart buttons below the columns
   return (
     <div className="stage2-layout">
       <div className='stage2-columns'>
         <PlayerQueue
-        selectedTournament={selectedTournament}
         players={remainingPlayers}
         currentRoundPlayers={currentRoundPlayers}
         participants={participants}

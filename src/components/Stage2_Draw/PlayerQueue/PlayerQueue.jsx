@@ -1,19 +1,14 @@
-// Import React
-import React from 'react';
 // Import PlayerQueue.css
 import './PlayerQueue.css';
 
-// Define the PlayerQueue component
+// Define the PlayerQueue function signature
 function PlayerQueue({tournament, playerIndex, remainder, players, currentRoundPlayers, participants, currentRound}) {
-
-// Derived value: calculate round size from players and participants
-const roundSize = Math.ceil(players.length / participants.length);
 
 // Return the column layout
 return (   
     <div className="player-queue">
 
-        {/* Subheading: selected tournament name */}
+        {/* Subheading: Tournament card: displays name, date and location with tournament colour background */}
         <div 
             className="player-queue__heading"
             style={{ backgroundColor: tournament.colour }}
@@ -30,20 +25,27 @@ return (
                 <span className="player-queue__name">Player</span>
                 <span className="player-queue__odds">Odds</span>
             </div>
-            {players.map((player, index) => {
+            {players.map((player) => {
 
+            // Calculate which round this player belongs to:
+            // If no remainder → divide original position by participants, round down, add 1 for human-readable round number
+            // If player is in remainder group → they're always in round 1
+            // Otherwise → skip past remainder players, divide by participants, add 2 (1 for zero-index, 1 because round 1 is taken by remainder)
             const playerRound = remainder === 0
                 ? Math.floor(player.originalIndex / participants.length) + 1
                 : player.originalIndex < remainder 
                 ? 1 
                 : Math.floor((player.originalIndex - remainder) / participants.length) + 2
-
+            
+            // Check if this player is in the round currently being drawn:
+            // Same logic as playerRound but returns true/false instead of a round number    
             const isCurrentRound = remainder === 0
                 ? Math.floor(player.originalIndex / participants.length) === currentRound
                 : player.originalIndex < remainder 
                 ? currentRound === 0 
                 : Math.floor((player.originalIndex - remainder) / participants.length) + 1 === currentRound
                 
+            // Check if this player is the next to be drawn in the current round    
             const isNextPlayer = player.name === currentRoundPlayers[playerIndex]?.name
                 
                 return (

@@ -1,14 +1,13 @@
-// Import React
-import React from 'react'
 // Import DrawResults.css
 import './DrawResults.css'
-// ----------
 
 // Define the DrawResults component
 // It receives: drawResults, participants, currentRound, players
-function DrawResults({ drawResults, participants, currentRound, players, remainder }) {
+function DrawResults({ drawResults, participants, currentRound, players }) {
+    
     // Derived value: calculate total rounds from players and participants
     const totalRounds = Math.ceil(players.length / participants.length); 
+    
     // Return the column layout
     return (
 
@@ -24,26 +23,29 @@ function DrawResults({ drawResults, participants, currentRound, players, remaind
             <span className='draw-results__table-header__previous'>Previous</span>
         </div>
         
-                {/* Map over participants and render each row */}
-               
-                {participants.map(participant => {
-                console.log('currentRound:', currentRound)
-                const assignedPlayers = drawResults[participant.id] || []
+            {/* Map over participants and render each row */}
+            {participants.map(participant => {
+            
+            // Get this participant's assigned players so far (empty array if none yet)
+            const assignedPlayers = drawResults[participant.id] || []
                 
-                // Get this participant's assigned players so far
-                const completedRounds = currentRound  
-                // rounds that have finished
-                const hasCurrentRoundPlayer = assignedPlayers.length > completedRounds
-
-                 const currentPlayer = hasCurrentRoundPlayer 
-                ? assignedPlayers[assignedPlayers.length - 1] 
-                : null
-
-                const previousPlayer = assignedPlayers.length > 0 && !hasCurrentRoundPlayer
-                ? assignedPlayers[assignedPlayers.length - 1]
-                : assignedPlayers.length > 1 && hasCurrentRoundPlayer
-                ? assignedPlayers[assignedPlayers.length - 2]
-                : null
+            // Check if this participant has been drawn in the current round
+            const hasCurrentRoundPlayer = assignedPlayers.length > currentRound
+                
+            // Current player: show their most recently assigned player if drawn this round,
+            // otherwise show nothing
+            const currentPlayer = hasCurrentRoundPlayer 
+            ? assignedPlayers[assignedPlayers.length - 1] 
+            : null
+                
+            // If drawn this round and has a previous player → show second to last assigned player
+            // If not yet drawn this round but has players → show their most recent player in previous column
+            // Otherwise → show nothing (start of draw or first round) 
+            const previousPlayer = assignedPlayers.length > 0 && !hasCurrentRoundPlayer
+            ? assignedPlayers[assignedPlayers.length - 1]
+            : assignedPlayers.length > 1 && hasCurrentRoundPlayer
+            ? assignedPlayers[assignedPlayers.length - 2]
+            : null
 
             return (
                 <div
@@ -55,9 +57,7 @@ function DrawResults({ drawResults, participants, currentRound, players, remaind
                     <span className="draw-results__current">{currentPlayer ? currentPlayer.name : ''}</span>
                     <span className="draw-results__previous">{previousPlayer ? previousPlayer.name : ''}</span>
                 </div>
-                
                 )
-                
             })}
             </div>
 

@@ -2,9 +2,8 @@
 import { useState }from 'react'
 import { Wheel } from 'react-custom-roulette'
 import './Spinner.css'
-import ColourPicker from '../../ColourPicker/ColourPicker';
 
-// Define spinner component that receives: currentRoundPlayers, availableParticipants, handleSpin
+// Define spinner component that receives: availableParticipants, handleSpin, onComplete and isDrawComplete
 function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}) {
     // State: has the draw started yet (boolean)
     const [isDrawStarted, setIsDrawStarted] = useState(false);
@@ -16,21 +15,21 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
     // Derived value: format availableParticipants into the data shape the Wheel component expects
     const drawAvailableParticipants = availableParticipants.map(p => ({
         option: p.name, 
-        style: {backgroundColor: p.colour},
+        style: {backgroundColor: p.colour}
         
     }));
 
     // Handler: what happens when the button is clicked
     // Set isDrawStarted to true
     // Pick a random prize number based on available participants length
-    // Set mustSpin to true
+    // Set Spin to true
     const handleSpinButton = () => {
         setIsDrawStarted(true);
         setPrizeNumber(Math.floor(Math.random() * availableParticipants.length));
         setSpin(true);
     }
     // Handler: what happens when the wheel stops spinning
-    // Set mustSpin to false
+    // Set Spin to false
     // Call handleSpin with the participant that was landed on
     const handleStopSpinning = () => {
         setSpin(false);
@@ -38,8 +37,10 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
     }
    // Return the column layout
 
-    // The combined button (Start the Draw? / Good luck!) based on isDrawStarted
-    // The Wheel component with its required props
+    // Heading: changes between 'Start the Draw?' and 'Good luck!' based on isDrawStarted
+    // Spin button: disabled while spinning or when draw is complete
+    // Wheel: renders with participant colours, hidden default pointer replaced by custom CSS pointer
+    // Continue button: only active when draw is complete
     return (
         <div className="spinner">
             <h2 className="spinner__heading">
@@ -54,7 +55,7 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
                 >
                 {isDrawStarted ? 'Spin again' : 'Go!'} 
                 </button>
-                {drawAvailableParticipants.length > 0 && (
+            
             <div className="spinner__wheel-wrapper">
                 {drawAvailableParticipants.length > 0 && (
                 <Wheel 
@@ -70,7 +71,6 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
                 )}
             <div className="spinner__pointer" />
         </div>
-            )}
         </div>
     )
 }
