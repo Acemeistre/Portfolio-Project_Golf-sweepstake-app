@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-function LiveScores() {
+function LiveScores({ drawResults, selectedTournamentData, participants }) {
 
     const apiKey = import.meta.env.VITE_GOLF_SLASH_LEADERBOARDS_API_KEY
 

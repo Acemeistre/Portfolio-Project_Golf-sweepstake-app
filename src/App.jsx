@@ -148,6 +148,8 @@ function App() {
             <LiveScores
             drawResults={drawResults}
             onDrawResults={setDrawResults}
+            selectedTournamentData={selectedTournamentData}
+            participants={confirmedParticipants}
             />
         )}
           
