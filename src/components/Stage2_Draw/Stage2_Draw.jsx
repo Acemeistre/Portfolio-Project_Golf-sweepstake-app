@@ -10,13 +10,12 @@ import DrawResults from './DrawResults/DrawResults';
 
 // Define the Stage2_Draw component
 // It recieves: selectedTournament, tournament, participants, players, onBack, onComplete, onReset
-function Draw({ tournament, participants, players, onBack, onComplete}) {
+function Draw({ tournament, participants, players, onBack, onComplete, drawResults, onDrawResults}) {
 
   // State: which group are we currently drawing for (start at 0)
   // State: the draw results so far (an object or array mapping participants to their players)
   // State: which participants are still available to spin for the current group
     const [currentRound, setCurrentRound] = useState(0);
-    const [drawResults, setDrawResults] = useState({});
     const [availableParticipants, setAvailableParticipants] = useState(participants)
 
  // Derived value: calculate remainder and current round players
@@ -69,7 +68,7 @@ const handleSpin = (participant) => {
         const updatedParticipants = availableParticipants.filter(p => p.id !== participant.id)  
         setAvailableParticipants(updatedParticipants)
         // Add the current round's player to this participant's draw results
-        setDrawResults(prev => ({
+        onDrawResults(prev => ({
             ...prev,
             [participant.id]: [...(prev[participant.id] || []), currentRoundPlayers[playerIndex]]
         }))
@@ -80,7 +79,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
     setTimeout(() => {
         // Fill any empty participant arrays with a placeholder
         // (handles remainder participants who weren't drawn in round 0)
-        setDrawResults(prev => {
+        onDrawResults(prev => {
             const updated = { ...prev }
             participants.forEach(p => {
                 if (!updated[p.id] || updated[p.id].length === 0) {
@@ -120,7 +119,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
       if (!confirm) return
       }
       setCurrentRound(0);
-      setDrawResults({});
+      onDrawResults({});
       setAvailableParticipants(participants);
     }
 

@@ -5,6 +5,8 @@ import TournamentSelector from "./components/TournamentSelector/TournamentSelect
 import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 import Draw from "./components/Stage2_Draw/Stage2_Draw";
+import LiveScores from "./components/Stage3_Scores/Stage3_Scores";
+
 
 const tournaments = [
     { 
@@ -54,6 +56,7 @@ function App() {
   ]);
   const [currentStage, setCurrentStage] = useState('selection');
   const [players, setPlayers] = useState([]);
+  const [drawResults, setDrawResults] = useState({})
 
   const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
   console.log('selectedTournamentData:', selectedTournamentData)
@@ -146,12 +149,16 @@ function App() {
         onBack={() => setCurrentStage('selection')}
         onComplete={() => setCurrentStage('scores')}
         tournament={selectedTournamentData}
+        drawResults={drawResults}
+        onDrawResults={setDrawResults}
         />
         )}
         {currentStage === 'scores' && (
-          <div>
-            <h2>Stage 3 - Live Scores</h2>
-            </div>
+       
+            <LiveScores
+            drawResults={drawResults}
+            onDrawResults={setDrawResults}
+            />
         )}
           
       </main>
