@@ -30,9 +30,19 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
 
     const apiKey = import.meta.env.VITE_GOLF_SLASH_LEADERBOARDS_API_KEY
 
-      useEffect(() => {
+    useEffect(() => {
         fetchLeaderboard()
   }, [])
+
+    useEffect(() => {
+        if (!isPolling) return
+
+        const interval = setInterval(() => {
+            fetchLeaderboard()
+        }, 900000) // 15 minutes in milliseconds
+
+        return () => clearInterval(interval)
+    }, [isPolling])
 
     const getPlayerColour = (targetPlayer) => {
         let colour = null
@@ -62,6 +72,9 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
 
      return (
          <div className="leaderboard">
+            <button onClick={() => setIsPolling(!isPolling)}>
+                {isPolling ? "Pause" : "Go Live"}
+            </button>
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
           <tr>
