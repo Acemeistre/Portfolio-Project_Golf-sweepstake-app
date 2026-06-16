@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import ColourPicker from "../ColourPicker/ColourPicker";
 
-function LiveScores({ drawResults, selectedTournamentData, participants }) {
+function LiveScores({ drawResults, selectedTournamentData, participants, onDrawResults }) {
     const [leaderboardData, setLeaderboardData] = useState([]);
     const [isPolling, setIsPolling] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -45,6 +45,18 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
             }
         })
         return colour
+    }
+
+    const handleAddLateEntry = () => {
+        const matchedParticipant = participants.find(p => p.colour === colour)
+        onDrawResults(prev => ({
+            ...prev,
+            [matchedParticipant.id]: [...prev[matchedParticipant.id], 
+                {name: name, price:null}]    
+        }))
+        setName('')
+        setColour(null)
+        setInputOpen(false)
     }
     
 
@@ -90,7 +102,13 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
             currentColour={colour}
             takenColours={[]}
             onColourChange={(newColour) => setColour(newColour)}  
-            /> 
+            />
+            <button 
+            className="late-entry__confirm-btn"
+            onClick={handleAddLateEntry}
+            >
+            Add
+            </button>
         </div>
         )}
     </div>
