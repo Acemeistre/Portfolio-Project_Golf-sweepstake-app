@@ -1,12 +1,37 @@
+.poll-btn {
+    display: flex;
+    padding: .25rem;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 600;
+    border-radius: .25rem;
+}
+
 .status-dot {
     display: inline-block;
+    align-self: center;
     border-radius: 50%;
     width: 5px;
     height: 5px;
 }
 
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .status-dot--live {
-    background-color: lightgreen;
+    background-color: green;
+    animation: pulse 1.5s infinite;
 }
 
 .status-dot--paused {
