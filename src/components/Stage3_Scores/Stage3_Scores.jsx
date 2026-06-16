@@ -30,7 +30,29 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
   }, [])
 
      return (
-        <h1>Stage 3</h1>
+         <div className="leaderboard">
+      <table className="leaderboard-table">
+        <thead className="leaderboard-table__header">
+          <tr>
+            <th className="leaderboard-table__header-position">#</th>
+            <th className="leaderboard-table__header-name">Player</th>
+            <th className="leaderboard-table__header-score">Score</th>
+            <th className="leaderboard-table__header-hole">Hole</th>
+          </tr>
+        </thead>
+        <tbody>
+          {leaderboardData.map((player) => (
+            <tr key={player.playerId} className="leaderboard-row">
+              <td className="leaderboard-row__player-position">{player.position}</td>
+              <td className="leaderboard-row__player-name">{player.firstName} {player.lastName}</td>
+              <td className="leaderboard-row__player-score">{player.total}</td>
+              <td className="leaderboard-row__player-hole">{player.thru}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
     )
 }
 
