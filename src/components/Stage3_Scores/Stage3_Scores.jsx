@@ -74,6 +74,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
          <div className="leaderboard">
             <button onClick={() => setIsPolling(!isPolling)}>
                 {isPolling ? "Pause" : "Go Live"}
+                <span className={`status-dot ${isPolling? 'status-dot--live' : 'status-dot--paused'}`}></span>
             </button>
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
