@@ -1,0 +1,14 @@
+.status-dot {
+    display: inline-block;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}
+
+.status-dot--live {
+    background-color: lightgreen;
+}
+
+.status-dot--paused {
+    background-color: grey;
+}

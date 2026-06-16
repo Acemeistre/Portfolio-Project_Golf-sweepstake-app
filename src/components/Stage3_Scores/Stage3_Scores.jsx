@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import ColourPicker from "../ColourPicker/ColourPicker";
+import "./Stage3_Scores.css"
 
 function LiveScores({ drawResults, selectedTournamentData, participants, onDrawResults }) {
     const [leaderboardData, setLeaderboardData] = useState([]);
