@@ -29,6 +29,20 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
         fetchLeaderboard()
   }, [])
 
+    const getPlayerColour = (targetPlayer) => {
+        let colour = null
+        Object.entries(drawResults).forEach(([id, playerArray]) => {
+            const fullName = `${targetPlayer.firstName} ${targetPlayer.lastName}`
+            const match = playerArray.find(drawnPlayer => drawnPlayer.name === fullName)
+            if (match) {
+                const participant = participants.find(p => p.id === Number(id))
+                colour = participant.colour
+            }
+        })
+        return colour
+    }
+    
+
      return (
          <div className="leaderboard">
       <table className="leaderboard-table">
