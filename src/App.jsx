@@ -62,8 +62,10 @@ function App() {
   console.log('selectedTournamentData:', selectedTournamentData)
   
   const dummyPlayers = [
-    { name: 'Player 1', price: 1000 },
-    { name: 'Player 2', price: 750 },
+    { name: 'Justin Rose', price: 1000 },
+    { name: 'Shane Lowry', price: 750 },
+    { name: 'Adam Scott', price: 500 },
+    { name: 'Jordan Spieth', price: 350 },
     
 ]
 

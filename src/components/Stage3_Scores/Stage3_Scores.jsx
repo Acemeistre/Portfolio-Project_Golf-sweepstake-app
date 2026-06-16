@@ -56,7 +56,10 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
         </thead>
         <tbody>
           {leaderboardData.map((player) => (
-            <tr key={player.playerId} className="leaderboard-row">
+            <tr key={player.playerId} 
+                className="leaderboard-row"
+                style={{backgroundColor: getPlayerColour(player)}}
+                >
               <td className="leaderboard-row__player-position">{player.position}</td>
               <td className="leaderboard-row__player-name">{player.firstName} {player.lastName}</td>
               <td className="leaderboard-row__player-score">{player.total}</td>
