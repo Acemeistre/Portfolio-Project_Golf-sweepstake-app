@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import ColourPicker from "../ColourPicker/ColourPicker";
 
 function LiveScores({ drawResults, selectedTournamentData, participants }) {
     const [leaderboardData, setLeaderboardData] = useState([]);
@@ -6,6 +7,10 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
     
+    const [inputOpen, setInputOpen] = useState(false);
+    const [name, setName] = useState('');
+    const [colour, setColour] = useState(null);
+
     const fetchLeaderboard = async () => {
         setIsLoading(true)
          try {
@@ -68,8 +73,27 @@ function LiveScores({ drawResults, selectedTournamentData, participants }) {
           ))}
         </tbody>
       </table>
+    <button 
+        className="add-participant"
+        onClick={() => setInputOpen(true)}
+        >
+           +
+        </button>
+        {inputOpen && (
+            <div className="late-entry-form">
+            <input 
+                className="late-entry__input"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
+            <ColourPicker className="participant-entry__colour-swatch"
+            currentColour={colour}
+            takenColours={[]}
+            onColourChange={(newColour) => setColour(newColour)}  
+            /> 
+        </div>
+        )}
     </div>
-
     )
 }
 
