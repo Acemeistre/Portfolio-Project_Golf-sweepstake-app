@@ -54,12 +54,14 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         const daysSinceStart = Math.floor((today - start) / msPerDay)
         const currentDay = daysSinceStart + 1
         const todaysWindow = selectedTournamentData.pollingWindows.find(w => w.day === currentDay)
-        
+        if (!todaysWindow) {
+            return false
+        }
         const now = new Date()
         const hours = String(now.getHours()).padStart(2, '0')
         const minutes = String(now.getMinutes()).padStart(2, '0')
         const currentTime = `${hours}:${minutes}`
-
+ 
         const isOvernight = todaysWindow.start > todaysWindow.end
         if (isOvernight) {
         // inside window if current time is AFTER start OR BEFORE end
@@ -102,6 +104,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         return colour
     }
 
+ 
     const handleAddLateEntry = () => {
         const matchedParticipant = participants.find(p => p.colour === colour)
         onDrawResults(prev => ({
@@ -123,6 +126,12 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
                 {isPolling ? "Pause" : "Go Live"}
                 <span className={`status-dot ${isPolling? 'status-dot--live' : 'status-dot--paused'}`}></span>
             </button>
+        {isLoading && leaderboardData.length === 0 && (
+            <p>Loading leaderboard...</p>
+        )}
+        {isLoading && leaderboardData.length > 0 && (
+            <span>Updating...</span>
+        )}
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
           <tr>
