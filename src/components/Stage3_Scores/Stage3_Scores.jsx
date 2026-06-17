@@ -23,6 +23,9 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             'x-rapidapi-host': 'live-golf-data.p.rapidapi.com',
             'x-rapidapi-key': apiKey
             }})
+            if (!response.ok) {
+                throw new Error('Failed to fetch leaderboard data')
+            }
             const data = await response.json()
         setLeaderboardData(data.leaderboardRows)
             } catch (error) {
@@ -132,6 +135,9 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         {isLoading && leaderboardData.length > 0 && (
             <span>Updating...</span>
         )}
+        {error && (
+        <p>{error}</p>
+        )}
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
           <tr>
@@ -142,7 +148,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
           </tr>
         </thead>
         <tbody>
-          {leaderboardData.map((player) => (
+          {leaderboardData?.map((player) => (
             <tr key={player.playerId} 
                 className="leaderboard-row"
                 style={{backgroundColor: getPlayerColour(player)}}
