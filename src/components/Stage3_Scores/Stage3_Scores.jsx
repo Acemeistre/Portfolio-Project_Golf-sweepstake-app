@@ -7,6 +7,8 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
     const [isPolling, setIsPolling] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
+
+    const [wasInWindow, setWasInWindow] = useState(false);
     
     const [inputOpen, setInputOpen] = useState(false);
     const [name, setName] = useState('');
@@ -68,7 +70,24 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         }
     }
 
+    useEffect(() => {
+        const checkWindow = () => {
+            const inWindow = isWithinPollingWindow()
+            setWasInWindow(prevWasInWindow => {
+        if (inWindow) {
+            setIsPolling(true)
+        } else if (prevWasInWindow) {
+            setIsPolling(false)
+        }
+       return inWindow
+            })
+    }
 
+    checkWindow() // check immediately on mount
+        const checkInterval = setInterval(checkWindow, 60000) // then check every minute
+
+        return () => clearInterval(checkInterval)
+    }, [])
 
     const getPlayerColour = (targetPlayer) => {
         let colour = null
