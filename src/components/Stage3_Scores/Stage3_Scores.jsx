@@ -45,6 +45,31 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         return () => clearInterval(interval)
     }, [isPolling])
 
+    const isWithinPollingWindow = () => {
+        const start = new Date(selectedTournamentData.startDate)
+        const today = new Date()
+        const msPerDay = 1000 * 60 * 60 * 24
+        const daysSinceStart = Math.floor((today - start) / msPerDay)
+        const currentDay = daysSinceStart + 1
+        const todaysWindow = selectedTournamentData.pollingWindows.find(w => w.day === currentDay)
+        
+        const now = new Date()
+        const hours = String(now.getHours()).padStart(2, '0')
+        const minutes = String(now.getMinutes()).padStart(2, '0')
+        const currentTime = `${hours}:${minutes}`
+
+        const isOvernight = todaysWindow.start > todaysWindow.end
+        if (isOvernight) {
+        // inside window if current time is AFTER start OR BEFORE end
+        return currentTime >= todaysWindow.start || currentTime <= todaysWindow.end
+        } else {
+        // inside window if current time is AFTER start AND BEFORE end
+        return currentTime >= todaysWindow.start && currentTime <= todaysWindow.end
+        }
+    }
+
+
+
     const getPlayerColour = (targetPlayer) => {
         let colour = null
         Object.entries(drawResults).forEach(([id, playerArray]) => {

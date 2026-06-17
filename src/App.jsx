@@ -31,10 +31,17 @@ const tournaments = [
         id: 'us-open', 
         name: 'The US Open',
         date: 'June 18-21, 2026',
+        startDate: '2026-06-18',
         location: 'Shinnecock Hills, New York',
         colour: '#d30a0a',
         apiKey: 'golf_us_open_winner',
-        isPast: false
+        isPast: false,
+        pollingWindows: [
+        { day: 1, start: '16:30', end: '00:30' },
+        { day: 2, start: '16:30', end: '00:30' },
+        { day: 3, start: '17:30', end: '00:30' },
+        { day: 4, start: '17:30', end: '00:30' },
+        ]
     },
     { 
         id: 'the-open', 
@@ -45,6 +52,7 @@ const tournaments = [
         apiKey: 'golf_the_open_championship_winner',
         isPast: false
     },
+    
 ]
 
 function App() {
