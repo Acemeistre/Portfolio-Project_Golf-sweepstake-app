@@ -128,7 +128,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
     
 
      return (
-         <div className="leaderboard">
+        <div className="Stage 3 wrapper">
             <button 
             className="poll-btn"
             onClick={() => setIsPolling(!isPolling)}>
@@ -144,6 +144,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         {error && (
         <p>{error}</p>
         )}
+        <div className="leaderboard">
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
           <tr>
@@ -177,8 +178,9 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         
         </tbody>
       </table>
+      </div>
     <button 
-        className="add-participant"
+        className="add-participant__btn"
         onClick={() => setInputOpen(true)}
         >
            +
@@ -203,6 +205,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             </button>
         </div>
         )}
+    
     </div>
     )
 }

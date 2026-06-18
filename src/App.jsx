@@ -37,7 +37,7 @@ const tournaments = [
         apiKey: 'golf_us_open_winner',
         isPast: false,
         pollingWindows: [
-        { day: 1, start: '16:30', end: '00:30' },
+        { day: 1, start: '22:30', end: '00:30' },
         { day: 2, start: '16:30', end: '00:30' },
         { day: 3, start: '17:30', end: '00:30' },
         { day: 4, start: '17:30', end: '00:30' },
