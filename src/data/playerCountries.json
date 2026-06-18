@@ -495,22 +495,22 @@
   },
   {
     "name": "Kota Kaneko",
-    "lastName": "Kaneko",
+    "countryCode": "Kaneko",
     "rank": 101
   },
   {
     "name": "John Parry",
-    "lastName": "Parry",
+    "countryCode": "gb-eng",
     "rank": 102
   },
   {
     "name": "Denny McCarthy",
-    "lastName": "McCarthy",
+    "countryCode": "McCarthy",
     "rank": 103
   },
   {
     "name": "Blades Brown",
-    "lastName": "Brown",
+    "countryCode": "Brown",
     "rank": 104
   },
   {
@@ -520,7 +520,7 @@
   },
   {
     "name": "Chris Kirk",
-    "lastName": "Kirk",
+    "countryCode": "us",
     "rank": 106
   },
   {
@@ -540,7 +540,7 @@
   },
   {
     "name": "Brooks Koepka",
-    "lastName": "Koepka",
+    "countryCode": "us",
     "rank": 110
   },
   {
@@ -565,12 +565,12 @@
   },
   {
     "name": "Adrien Saddier",
-    "lastName": "Saddier",
+    "countryCode": "fr",
     "rank": 115
   },
   {
     "name": "Emiliano Grillo",
-    "lastName": "Grillo",
+    "countryCode": "ar",
     "rank": 116
   },
   {
@@ -630,7 +630,7 @@
   },
   {
     "name": "Jackson Suber",
-    "lastName": "Suber",
+    "countryCode": "us",
     "rank": 128
   },
   {
@@ -645,7 +645,7 @@
   },
   {
     "name": "William Mouw",
-    "lastName": "Mouw",
+    "countryCode": "us",
     "rank": 131
   },
   {
@@ -655,7 +655,7 @@
   },
   {
     "name": "Kevin Roy",
-    "lastName": "Roy",
+    "countryCode": "us",
     "rank": 133
   },
   {
@@ -665,12 +665,12 @@
   },
   {
     "name": "Billy Horschel",
-    "lastName": "Horschel",
+    "countryCode": "us",
     "rank": 135
   },
   {
     "name": "Cameron Smith",
-    "lastName": "Smith",
+    "countryCode": "au",
     "rank": 136
   },
   {
@@ -680,7 +680,7 @@
   },
   {
     "name": "Davis Thompson",
-    "lastName": "Thompson",
+    "countryCode": "us",
     "rank": 138
   },
   {
@@ -695,7 +695,7 @@
   },
   {
     "name": "Tom Kim",
-    "lastName": "Kim",
+    "countryCode": "kr",
     "rank": 141
   },
   {
@@ -745,7 +745,7 @@
   },
   {
     "name": "Laurie Canter",
-    "lastName": "Canter",
+    "countryCode": "gb-eng",
     "rank": 151
   },
   {
@@ -830,7 +830,7 @@
   },
   {
     "name": "Adrien Dumont de Chassart",
-    "lastName": "Chassart",
+    "countryCode": "be",
     "rank": 168
   },
   {
@@ -850,7 +850,7 @@
   },
   {
     "name": "Chandler Phillips",
-    "lastName": "Phillips",
+    "countryCode": "us",
     "rank": 172
   },
   {
@@ -895,7 +895,7 @@
   },
   {
     "name": "Peter Uihlein",
-    "lastName": "Uihlein",
+    "countryCode": "us",
     "rank": 181
   },
   {
@@ -910,7 +910,7 @@
   },
   {
     "name": "Ben Kohles",
-    "lastName": "Kohles",
+    "countryCode": "us",
     "rank": 184
   },
   {
@@ -920,7 +920,7 @@
   },
   {
     "name": "Hennie Du Plessis",
-    "lastName": "Plessis",
+    "countryCode": "rsa",
     "rank": 186
   },
   {
@@ -930,7 +930,7 @@
   },
   {
     "name": "Carlos Ortiz",
-    "lastName": "Ortiz",
+    "countryCode": "mx",
     "rank": 188
   },
   {
@@ -940,7 +940,7 @@
   },
   {
     "name": "Neal Shipley",
-    "lastName": "Shipley",
+    "countryCode": "us",
     "rank": 190
   },
   {
@@ -1010,7 +1010,7 @@
   },
   {
     "name": "Zac Blair",
-    "lastName": "Blair",
+    "countryCode": "us",
     "rank": 204
   },
   {
@@ -1060,7 +1060,7 @@
   },
   {
     "name": "Nathan Kimsey",
-    "lastName": "Kimsey",
+    "countryCode": "gb-eng",
     "rank": 214
   },
   {
@@ -1075,7 +1075,7 @@
   },
   {
     "name": "Ugo Coussaud",
-    "lastName": "Coussaud",
+    "countryCode": "fr",
     "rank": 217
   },
   {
@@ -1125,7 +1125,7 @@
   },
   {
     "name": "Taylor Montgomery",
-    "lastName": "Montgomery",
+    "countryCode": "us",
     "rank": 227
   },
   {
@@ -1140,7 +1140,7 @@
   },
   {
     "name": "Cooper Dossey",
-    "lastName": "Dossey",
+    "countryCode": "us",
     "rank": 230
   },
   {
@@ -1215,7 +1215,7 @@
   },
   {
     "name": "Dustin Johnson",
-    "lastName": "Johnson",
+    "countryCode": "us",
     "rank": 245
   },
   {
@@ -1290,7 +1290,7 @@
   },
   {
     "name": "Jackson Koivun",
-    "lastName": "Koivun",
+    "countryCode": "us",
     "rank": 260
   },
   {
@@ -1300,7 +1300,7 @@
   },
   {
     "name": "Ben Silverman",
-    "lastName": "Silverman",
+    "countryCode": "ca",
     "rank": 262
   },
   {
@@ -1365,7 +1365,7 @@
   },
   {
     "name": "Niklas Nørgaard",
-    "lastName": "Nørgaard",
+    "countryCode": "dk",
     "rank": 275
   },
   {
@@ -1395,7 +1395,7 @@
   },
   {
     "name": "Matthew Jordan",
-    "lastName": "Jordan",
+    "countryCode": "gb-eng",
     "rank": 281
   },
   {
@@ -1420,12 +1420,12 @@
   },
   {
     "name": "James Nicholas",
-    "lastName": "Nicholas",
+    "countryCode": "us",
     "rank": 286
   },
   {
     "name": "Caleb Surratt",
-    "lastName": "Surratt",
+    "countryCode": "us",
     "rank": 287
   },
   {
@@ -1615,7 +1615,7 @@
   },
   {
     "name": "Angel Hidalgo Jordan",
-    "lastName": "Jordan",
+    "countryCode": "es",
     "rank": 325
   },
   {
@@ -1680,7 +1680,7 @@
   },
   {
     "name": "Jimmy Stanger",
-    "lastName": "Stanger",
+    "countryCode": "us",
     "rank": 338
   },
   {
@@ -1770,7 +1770,7 @@
   },
   {
     "name": "Harry Higgs",
-    "lastName": "Higgs",
+    "countryCode": "us",
     "rank": 356
   },
   {
@@ -1780,7 +1780,7 @@
   },
   {
     "name": "Rocco Repetto Taylor",
-    "lastName": "Taylor",
+    "countryCode": "es",
     "rank": 358
   },
   {
@@ -1805,12 +1805,12 @@
   },
   {
     "name": "Cole Hammer",
-    "lastName": "Hammer",
+    "countryCode": "us",
     "rank": 363
   },
   {
     "name": "Alejandro Tosti",
-    "lastName": "Tosti",
+    "countryCode": "ar",
     "rank": 364
   },
   {
@@ -1920,7 +1920,7 @@
   },
   {
     "name": "Dylan Wu",
-    "lastName": "Wu",
+    "countryCode": "us",
     "rank": 386
   },
   {
@@ -1935,7 +1935,7 @@
   },
   {
     "name": "Ryuichi Oiwa",
-    "lastName": "Oiwa",
+    "countryCode": "jp",
     "rank": 389
   },
   {
@@ -2005,7 +2005,7 @@
   },
   {
     "name": "Taihei Sato",
-    "lastName": "Sato",
+    "countryCode": "jp",
     "rank": 403
   },
   {
@@ -2180,7 +2180,7 @@
   },
   {
     "name": "Filippo Celli",
-    "lastName": "Celli",
+    "countryCode": "it",
     "rank": 438
   },
   {
@@ -2495,187 +2495,187 @@
   },
   {
     "name": "Ben James",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },
   {
     "name": "Preston Stout",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },
   {
     "name": "Miles Russell",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },
   {
     "name": "Nick Hardy",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Carl Yuan",
-    "countryCode": "na"
+    "countryCode": "cn"
 
   },  
   {
     "name": "Graeme McDowell",
-    "countryCode": "na"
+    "countryCode": "gb-nir"
 
   },  
   {
     "name": "Marcelo Rozo",
-    "countryCode": "na"
+    "countryCode": "co"
 
   },  
   {
     "name": "Padraig Harrington",
-    "countryCode": "na"
+    "countryCode": "ie"
 
   },  
   {
     "name": "Ryder Cowan",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Jackson Van Paris",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Giuseppe Puebla",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Spencer Tibbits",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Vaughn Harber",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Jackson Ormond",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Brandon Wu",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Jake Peacock",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },  
   {
     "name": "Robbie Higgins",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Kaito Onishi",
-    "countryCode": "na"
+    "countryCode": "jp"
 
   },    
   {
     "name": "Hamilton Coleman",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Mateo Pulcini",
-    "countryCode": "na"
+    "countryCode": "ar"
 
   },    
   {
     "name": "Brandon Holtz",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Jackson Herrington",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Ethan Fang",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Greyson Leach",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Jack Schoenberger",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "J.B. Holmes",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Chase Kyes",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Eric Lee",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Marek Fleming",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Jake Sollon",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Manav Shah",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Gunnlaugur Arni Sveinsson",
-    "countryCode": "na"
+    "countryCode": "is"
 
   },    
   {
     "name": "T.K. Kim",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Matt Robles",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Bryan Lee",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },
   {
     "name": "Mason Howell",
-    "countryCode": "na"
+    "countryCode": "us"
 
   },    
   {
     "name": "Logan Reilly",
-    "countryCode": "na"
+    "countryCode": "us"
 
   }    
 ]
