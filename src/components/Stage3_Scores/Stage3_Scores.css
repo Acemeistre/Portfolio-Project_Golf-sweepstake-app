@@ -37,3 +37,8 @@
 .status-dot--paused {
     background-color: grey;
 }
+
+.player-flag {
+    width: 1rem;
+    height: auto;
+}

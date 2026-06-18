@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import ColourPicker from "../ColourPicker/ColourPicker";
 import "./Stage3_Scores.css"
+import playerCountries from '../../data/playerCountries.json'
 
 function LiveScores({ drawResults, selectedTournamentData, participants, onDrawResults }) {
     const [leaderboardData, setLeaderboardData] = useState([]);
@@ -107,6 +108,11 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         return colour
     }
 
+    const getPlayerFlag = (player) => {
+        const fullName = `${player.firstName} ${player.lastName}`
+        const match = playerCountries.find(entry => entry.name === fullName)
+    return match ? match.countryCode : 'na'
+    }
  
     const handleAddLateEntry = () => {
         const matchedParticipant = participants.find(p => p.colour === colour)
@@ -148,17 +154,23 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
           </tr>
         </thead>
         <tbody>
-          {leaderboardData?.map((player) => (
+          {leaderboardData?.map((player) => {
+            
+            return (
             <tr key={player.playerId} 
                 className="leaderboard-row"
                 style={{backgroundColor: getPlayerColour(player)}}
                 >
               <td className="leaderboard-row__player-position">{player.position}</td>
-              <td className="leaderboard-row__player-name">{player.firstName} {player.lastName}</td>
+              <td className="leaderboard-row__player-name">
+                <img className="player-flag" src={`https://flagcdn.com/${getPlayerFlag(player)}.svg`} alt={player.firstName} />
+                {player.firstName} {player.lastName}</td>
               <td className="leaderboard-row__player-score">{player.total}</td>
               <td className="leaderboard-row__player-hole">{player.thru}</td>
             </tr>
-          ))}
+            )
+          })}
+        
         </tbody>
       </table>
     <button 

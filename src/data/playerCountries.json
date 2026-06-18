@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Scottie Scheffler",
+    "countryCode": "us"
+  },
+  {
+    "name": "Rory McIlroy",
+    "countryCode": "gb-nir"
+  },
+  {
+    "name": "Cameron Young",
+    "countryCode": "us"  
+  },
+  {
+    "name": "Matt Fitzpatrick",
+    "countryCode": "gb-eng"
+  
+  },
+  {
+    "name": "Russell Henley",
+    "countryCode": "us"
+  
+  },
+  {
+    "name": "Tommy Fleetwood",
+    "countryCode": "gb-eng"
+  
+  },
+  {
+    "name": "Justin Rose",
+    "countryCode": "gb-eng"
+  
+  },
+  {
+    "name": "Jon Rahm",
+    "countryCode": "es"
+   
+  }
+]

@@ -101,7 +101,6 @@ function App() {
     return match ? match.rank : 9999
   }
 
-
   //Handle continue button click
   const handleContinue = () => {
     if (hasUnconfirmedText) {
