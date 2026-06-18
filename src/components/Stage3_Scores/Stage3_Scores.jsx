@@ -18,7 +18,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         setIsLoading(true)
          try {
         // code that might fail goes here
-            const url = "https://live-golf-data.p.rapidapi.com/leaderboard?orgId=1&tournId=026&year=2025"
+            const url = "https://live-golf-data.p.rapidapi.com/leaderboard?orgId=1&tournId=026&year=2026"
             const response = await fetch(url, {headers: {
             'x-rapidapi-host': 'live-golf-data.p.rapidapi.com',
             'x-rapidapi-key': apiKey

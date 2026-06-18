@@ -6,7 +6,7 @@ import PlayerSorter from "./components/PlayerSorter/PlayerSorter";
 import ParticipantEntry from "./components/ParticipantEntry/ParticipantEntry";
 import Draw from "./components/Stage2_Draw/Stage2_Draw";
 import LiveScores from "./components/Stage3_Scores/Stage3_Scores";
-
+import worldRankings from './data/worldRankings.json'
 
 const tournaments = [
     { 
@@ -70,9 +70,13 @@ function App() {
   console.log('selectedTournamentData:', selectedTournamentData)
   
   const dummyPlayers = [
+    { name: 'Alex Fitzpatrick', price: 500 },
+    { name: 'Sungjae Im', price: 1200},
     { name: 'Justin Rose', price: 1000 },
     { name: 'Shane Lowry', price: 750 },
-    { name: 'Adam Scott', price: 500 },
+    { name: 'Jason Day', price: 400},
+    { name: 'Adam Scott', price: 1000 },
+    { name: 'Michael Kim', price: 100},
     { name: 'Jordan Spieth', price: 350 },
     
 ]
@@ -92,6 +96,12 @@ function App() {
   // Check for unconfirmed rows with text
   const hasUnconfirmedText = participants.some(p => !p.isConfirmed && p.name.trim() !== '')
 
+  const getPlayerRank = (player) => {
+        const match = worldRankings.find(entry => entry.fullName === player.name)
+    return match ? match.rank : 9999
+  }
+
+
   //Handle continue button click
   const handleContinue = () => {
     if (hasUnconfirmedText) {
@@ -100,9 +110,15 @@ function App() {
   }
 
   //Sort players based on selected sort option
-  const sortedPlayers = [...players].sort((a,b) =>
-    sortOption === 'Odds' ? b.price - a.price : b.price - a.price
-)
+  const sortedPlayers = [...players].sort((a, b) => {
+    if (sortOption === 'Odds') {
+        return b.price - a.price
+    } else {
+        return getPlayerRank(a) - getPlayerRank(b)
+    }
+  })
+  setPlayers(sortedPlayers)
+
   const remainder = players.length % confirmedParticipants.length
 
 
