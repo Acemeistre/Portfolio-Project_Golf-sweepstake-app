@@ -163,7 +163,11 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
                 >
               <td className="leaderboard-row__player-position">{player.position}</td>
               <td className="leaderboard-row__player-name">
+                {getPlayerFlag(player) === 'na' ? (
+                    <span>🌍</span>
+                    ) : (
                 <img className="player-flag" src={`https://flagcdn.com/${getPlayerFlag(player)}.svg`} alt={player.firstName} />
+                    )}
                 {player.firstName} {player.lastName}</td>
               <td className="leaderboard-row__player-score">{player.total}</td>
               <td className="leaderboard-row__player-hole">{player.thru}</td>
