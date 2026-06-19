@@ -124,10 +124,44 @@ img {
     gap: 1rem;
 }
 
-.add-participant {
+.late-entry-form__row {
+    display: flex;
+    justify-content: center;
+}
+
+.late-entry__input {
+    margin-right: 1rem;
+}
+
+.late-entry__confirm-btn {
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    border: 3px solid black;
+    background-color: greenyellow;
+}
+
+.add-participant__btn {
     display: flex;
     justify-self: center;
+    font-size: 1.25rem;
+    padding: 0 .25rem;
+    border-radius: .5rem;
+    border: 3px solid black;
+    background-color: lightgreen;
 }
+
+.add-participant__btn--close {
+    display: flex;
+    justify-self: center;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    padding: 0 .4rem;
+    border-radius: .5rem;
+    border: 3px solid black;
+    background-color: lightcoral;
+}
+
 
 .footer {
     position: relative;

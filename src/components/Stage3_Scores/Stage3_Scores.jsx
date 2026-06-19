@@ -35,7 +35,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         setIsLoading(false)
     }   
 
-    const apiKey = import.meta.env.VITE_GOLF_SLASH_LEADERBOARDS_API_KEY
+     const apiKey = import.meta.env.VITE_GOLF_SLASH_LEADERBOARDS_API_KEY 
 
     useEffect(() => {
         fetchLeaderboard()
@@ -126,6 +126,14 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         setInputOpen(false)
     }
     
+    const isValidPlayerName = () => {
+        return leaderboardData.some(player => `${player.firstName} ${player.lastName}` === name )
+    }
+
+    const isAlreadyDrawn = () => {
+        return Object.values(drawResults).some(playerArray => playerArray.some(player => player.name === name)
+        )
+    }
 
      return (
         <div className="Stage 3 wrapper">
@@ -179,14 +187,15 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         </tbody>
       </table>
       </div>
+      <div className="late-entry-form__row">
     <button 
-        className="add-participant__btn"
-        onClick={() => setInputOpen(true)}
+        className={`add-participant__btn ${inputOpen ? 'add-participant__btn--close' : ''}`}
+        onClick={() => setInputOpen(!inputOpen)}
         >
-           +
+           {inputOpen ? 'x' : '+'}
         </button>
         {inputOpen && (
-            <div className="late-entry-form">
+            <>
             <input 
                 className="late-entry__input"
                 value={name}
@@ -200,11 +209,14 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             <button 
             className="late-entry__confirm-btn"
             onClick={handleAddLateEntry}
+            disabled={!isValidPlayerName() || isAlreadyDrawn()}
             >
             Add
             </button>
-        </div>
+            </>
+        
         )}
+        </div>
         <footer>
             <div className="footer"><p>2026 | Designed and coded by Glenn Niblett (aka Acemeistre)</p><span>Country flags courtesy of <a href="https://flagpedia.net/download">Flagcdn.com / Flagpedia.net</a></span></div>
         </footer>
