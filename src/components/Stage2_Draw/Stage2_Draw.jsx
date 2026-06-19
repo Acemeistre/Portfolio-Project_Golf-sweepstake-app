@@ -10,7 +10,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 // Define the Stage2_Draw component
 // It recieves: selectedTournament, tournament, participants, players, onBack, onComplete, onReset
-function Draw({ tournament, participants, players, onBack, onComplete, drawResults, onDrawResults}) {
+function Draw({ tournament, participants, players, onBack, onComplete, drawResults, onDrawResults, sortOption}) {
 
   // State: which group are we currently drawing for (start at 0)
   // State: the draw results so far (an object or array mapping participants to their players)
@@ -140,6 +140,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
         remainder={remainder}
         tournament={tournament}
         playerIndex={playerIndex}
+        sortOption={sortOption}
         />
         <Spinner
         availableParticipants={availableParticipants}

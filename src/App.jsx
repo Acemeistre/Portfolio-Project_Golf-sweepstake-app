@@ -70,14 +70,14 @@ function App() {
   console.log('selectedTournamentData:', selectedTournamentData)
   
   const dummyPlayers = [
-    { name: 'Alex Fitzpatrick', price: 500 },
-    { name: 'Sungjae Im', price: 1200},
-    { name: 'Justin Rose', price: 1000 },
-    { name: 'Shane Lowry', price: 750 },
-    { name: 'Jason Day', price: 400},
-    { name: 'Adam Scott', price: 1000 },
-    { name: 'Michael Kim', price: 100},
-    { name: 'Jordan Spieth', price: 350 },
+    { name: 'Alex Fitzpatrick', price: 500 , rank: 69 },
+    { name: 'Sungjae Im', price: 1200, rank: 74 },
+    { name: 'Justin Rose', price: 1000, rank: 7 },
+    { name: 'Shane Lowry', price: 750, rank: 44 },
+    { name: 'Jason Day', price: 400, rank: 47},
+    { name: 'Adam Scott', price: 1000, rank: 49 },
+    { name: 'Michael Kim', price: 100, rank: 50 },
+    { name: 'Jordan Spieth', price: 350, rank: 51 },
     
 ]
 
@@ -113,7 +113,7 @@ function App() {
     if (sortOption === 'Odds') {
         return b.price - a.price
     } else {
-        return getPlayerRank(a) - getPlayerRank(b)
+        return getPlayerRank(b) - getPlayerRank(a)
     }
   })
   setPlayers(sortedPlayers)
@@ -166,6 +166,7 @@ function App() {
         tournament={selectedTournamentData}
         drawResults={drawResults}
         onDrawResults={setDrawResults}
+        sortOption={sortOption}
         />
         )}
         {currentStage === 'scores' && (

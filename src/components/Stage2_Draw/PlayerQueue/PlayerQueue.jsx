@@ -2,7 +2,7 @@
 import './PlayerQueue.css';
 
 // Define the PlayerQueue function signature
-function PlayerQueue({tournament, playerIndex, remainder, players, currentRoundPlayers, participants, currentRound}) {
+function PlayerQueue({tournament, playerIndex, remainder, players, currentRoundPlayers, participants, currentRound, sortOption}) {
 
 // Return the column layout
 return (   
@@ -23,7 +23,7 @@ return (
             <div className="player-queue__header-row">
                 <span className="player-queue__round">Round</span>
                 <span className="player-queue__name">Player</span>
-                <span className="player-queue__odds">Odds</span>
+                <span className="player-queue__odds">{sortOption === 'Ranking' ? 'Rank' : 'Odds'}</span>
             </div>
             {players.map((player) => {
 
@@ -57,7 +57,7 @@ return (
                     >
                         <span className="player-queue__round">{playerRound}</span>
                         <span className="player-queue__name">{player.name}</span>
-                        <span className="player-queue__odds">{player.price}</span>
+                        <span className="player-queue__odds">{sortOption === 'Ranking' ? player.rank : player.price}</span>
                     </div>
                 )
             })}
