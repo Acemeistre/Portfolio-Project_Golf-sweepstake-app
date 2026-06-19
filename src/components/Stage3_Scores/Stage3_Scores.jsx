@@ -170,8 +170,8 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
                 <img className="player-flag" src={`https://flagcdn.com/${getPlayerFlag(player)}.svg`} alt={player.firstName} />
                     )}
                 {player.firstName} {player.lastName}</td>
-              <td className="leaderboard-row__player-score">{player.total}</td>
-              <td className="leaderboard-row__player-hole">{player.thru}</td>
+              <td className={`leaderboard-row__player-score ${player.status === 'active' ? 'live-text' : ''}`}>{player.total}</td>
+              <td className={`leaderboard-row__player-hole ${player.status === 'active' ? 'live-text' : ''}`}>{player.thru}</td>
             </tr>
             )
           })}

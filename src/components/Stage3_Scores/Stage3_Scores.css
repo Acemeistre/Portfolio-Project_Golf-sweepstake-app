@@ -38,6 +38,10 @@
     background-color: grey;
 }
 
+.live-text {
+    color: green;
+}
+
 .leaderboard {
     display: flex;
     justify-content: center;
