@@ -53,6 +53,7 @@
     padding: 1.5rem;
     border-radius: .5rem;
     border-collapse: collapse;
+    overflow: hidden;
 }
 
 table,th, td {
@@ -81,6 +82,9 @@ table,th, td {
     padding: .25rem 3.5rem;
 }
 
+.leaderboard-row:last-child {
+    border-radius: 0 0 1rem 1rem;
+}
 
 .leaderboard-row__player-position,
 .leaderboard-row__player-name,
@@ -123,4 +127,16 @@ img {
 .add-participant {
     display: flex;
     justify-self: center;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.footer span {
+    position: absolute;
+    right: 0;
 }

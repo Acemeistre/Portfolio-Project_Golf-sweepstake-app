@@ -59,8 +59,8 @@ function App() {
   const [selectedTournament, setSelectedTournament] = useState('');
   const [sortOption, setSortOption] = useState('');
   const [participants, setParticipants] = useState([
-    { id: Date.now(), name: '', colour: '#008BFD', isConfirmed: false },
-    { id: Date.now() + 1, name: '', colour: '#F7FF00', isConfirmed: false }
+    { id: Date.now(), name: '', colour: '#F37D78', isConfirmed: false },
+    { id: Date.now() + 1, name: '', colour: '#F6F896', isConfirmed: false }
   ]);
   const [currentStage, setCurrentStage] = useState('selection');
   const [players, setPlayers] = useState([]);

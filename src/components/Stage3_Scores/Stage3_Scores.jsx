@@ -205,8 +205,10 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             </button>
         </div>
         )}
-    
-    </div>
+        <footer>
+            <div className="footer"><p>2026 | Designed and coded by Glenn Niblett (aka Acemeistre)</p><span>Country flags courtesy of <a href="https://flagpedia.net/download">Flagcdn.com / Flagpedia.net</a></span></div>
+        </footer>
+    </div> 
     )
 }
 
