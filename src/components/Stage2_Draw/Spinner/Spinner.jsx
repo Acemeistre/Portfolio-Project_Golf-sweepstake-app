@@ -58,6 +58,7 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
             
             <div className="spinner__wheel-wrapper">
                 {drawAvailableParticipants.length > 0 && (
+                    <>
                 <Wheel 
                     mustStartSpinning={spin}
                     prizeNumber={prizeNumber}
@@ -68,9 +69,10 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
                     pointerProps={{ style: { display: 'none' } }}
                     spinDuration={0.5}
                 />
-                )}
-            <div className="spinner__pointer" />
-        </div>
+                <div className="spinner__pointer" />
+                </>
+                )} 
+            </div>
         </div>
     )
 }
