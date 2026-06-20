@@ -81,7 +81,11 @@ function App() {
 
   const [participants, setParticipants] = useState(() => {
     const saved = localStorage.getItem('participants')
+    try {
     return saved ? JSON.parse(saved) : defaultParticipants
+    } catch {
+    return defaultParticipants
+    }
   });
 
   const [currentStage, setCurrentStage] = useState(() => {
@@ -91,13 +95,21 @@ function App() {
   
   const [players, setPlayers] = useState(() => {
     const saved = localStorage.getItem('players')
+    try {
     return saved ? JSON.parse(saved) : dummyPlayers
+    } catch {
+    return dummyPlayers
+    }
   });
 
   const [drawResults, setDrawResults] = useState(() => {
     const saved = localStorage.getItem('drawResults')
+    try {
     return saved ? JSON.parse(saved) : {}
-  })
+    } catch {
+    return {}
+    }
+  });
 
   const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
   console.log('selectedTournamentData:', selectedTournamentData)
