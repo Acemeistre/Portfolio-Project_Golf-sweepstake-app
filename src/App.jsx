@@ -55,16 +55,49 @@ const tournaments = [
     
 ]
 
+const dummyPlayers = [
+  { name: 'Alex Fitzpatrick', price: 500 , rank: 69 },
+  { name: 'Sungjae Im', price: 1200, rank: 74 },
+  { name: 'Justin Rose', price: 1000, rank: 7 },
+  { name: 'Shane Lowry', price: 750, rank: 44 },
+  { name: 'Jason Day', price: 400, rank: 47},
+  { name: 'Adam Scott', price: 1000, rank: 49 },
+  { name: 'Michael Kim', price: 100, rank: 50 },
+  { name: 'Jordan Spieth', price: 350, rank: 51 },
+  ]
+
+const defaultParticipants = [
+  { id: Date.now(), name: '', colour: '#F37D78', isConfirmed: false },
+  { id: Date.now() + 1, name: '', colour: '#F6F896', isConfirmed: false }, 
+  ];
+
 function App() {
-  const [selectedTournament, setSelectedTournament] = useState('');
+  const [selectedTournament, setSelectedTournament] = useState(() => {
+    const saved = localStorage.getItem('selectedTournament')
+    return saved || ''
+  });
+
   const [sortOption, setSortOption] = useState('');
-  const [participants, setParticipants] = useState([
-    { id: Date.now(), name: '', colour: '#F37D78', isConfirmed: false },
-    { id: Date.now() + 1, name: '', colour: '#F6F896', isConfirmed: false }
-  ]);
-  const [currentStage, setCurrentStage] = useState('selection');
-  const [players, setPlayers] = useState([]);
-  const [drawResults, setDrawResults] = useState({})
+
+  const [participants, setParticipants] = useState(() => {
+    const saved = localStorage.getItem('participants')
+    return saved ? JSON.parse(saved) : defaultParticipants
+  });
+
+  const [currentStage, setCurrentStage] = useState(() => {
+    const saved = localStorage.getItem('currentStage')
+    return saved || 'selection'
+  });
+  
+  const [players, setPlayers] = useState(() => {
+    const saved = localStorage.getItem('players')
+    return saved ? JSON.parse(saved) : dummyPlayers
+  });
+
+  const [drawResults, setDrawResults] = useState(() => {
+    const saved = localStorage.getItem('drawResults')
+    return saved ? JSON.parse(saved) : {}
+  })
 
   const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
   console.log('selectedTournamentData:', selectedTournamentData)
@@ -81,13 +114,25 @@ function App() {
     
 ]
 
-  // Fetch player odds from API when page first loads
   useEffect(() => {
-    // Get API key from the environment variables file
+    localStorage.setItem('selectedTournament', selectedTournament)
+  }, [selectedTournament])
 
-      setPlayers(dummyPlayers)
-   
-  }, [])
+  useEffect(() => {
+   localStorage.setItem('participants', JSON.stringify(participants))
+  }, [participants])
+
+  useEffect(() => {
+  localStorage.setItem('currentStage', currentStage)
+  }, [currentStage])
+  
+  useEffect(() => {
+  localStorage.setItem('players', JSON.stringify(players))
+  }, [players])  
+
+  useEffect(() => {
+  localStorage.setItem('drawResults', JSON.stringify(drawResults))
+  }, [drawResults])  
   
   //Check if minimum requirements are met.
   const confirmedParticipants = participants.filter(p => p.isConfirmed)
