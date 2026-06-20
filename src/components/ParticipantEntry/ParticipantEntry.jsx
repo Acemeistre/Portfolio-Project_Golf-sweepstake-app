@@ -101,8 +101,9 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
         // Remove any trailing unconfirmed empty rows first
         const filtered = participants.filter(p => p.id === id || p.isConfirmed || p.name.trim() !== ''
         )
-        onParticipantsChange(filtered.map(p => p.id === id ? {...p, isConfirmed: false } : p
-        ))
+        const safeList = filtered.length >= 2 ? filtered : participants
+
+        onParticipantsChange(safeList.map(p => p.id === id ? {...p, isConfirmed: false } : p))
     }
 
     return (

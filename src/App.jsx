@@ -114,17 +114,6 @@ function App() {
   const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
   console.log('selectedTournamentData:', selectedTournamentData)
   
-  const dummyPlayers = [
-    { name: 'Alex Fitzpatrick', price: 500 , rank: 69 },
-    { name: 'Sungjae Im', price: 1200, rank: 74 },
-    { name: 'Justin Rose', price: 1000, rank: 7 },
-    { name: 'Shane Lowry', price: 750, rank: 44 },
-    { name: 'Jason Day', price: 400, rank: 47},
-    { name: 'Adam Scott', price: 1000, rank: 49 },
-    { name: 'Michael Kim', price: 100, rank: 50 },
-    { name: 'Jordan Spieth', price: 350, rank: 51 },
-    
-]
 
   useEffect(() => {
     localStorage.setItem('selectedTournament', selectedTournament)
