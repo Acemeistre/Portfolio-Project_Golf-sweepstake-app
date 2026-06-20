@@ -2498,6 +2498,56 @@
     "countryCode": "se",
     "rank": 500
   },
+    {
+    "name": "Padraig Harrington",
+    "countryCode": "ie",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Graeme McDowell",
+    "countryCode": "gb-nir",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Stewart Cink",
+    "countryCode": "us",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Phil Mickelson",
+    "countryCode": "us",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Ernie Els",
+    "countryCode": "za",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Henrik Stenson",
+    "countryCode": "se",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Darren Clarke",
+    "countryCode": "gb-nir",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "John Daly",
+    "countryCode": "us",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Todd Hamilton",
+    "countryCode": "us",
+    "majorWinner": "yes" 
+  },
+    {
+    "name": "Justin Leonard",
+    "countryCode": "us",
+    "majorWinner": "yes" 
+  },
   {
     "name": "Ben James",
     "countryCode": "us"
@@ -2524,18 +2574,8 @@
 
   },  
   {
-    "name": "Graeme McDowell",
-    "countryCode": "gb-nir"
-
-  },  
-  {
     "name": "Marcelo Rozo",
     "countryCode": "co"
-
-  },  
-  {
-    "name": "Padraig Harrington",
-    "countryCode": "ie"
 
   },  
   {
@@ -2625,8 +2665,7 @@
   },    
   {
     "name": "J.B. Holmes",
-    "countryCode": "us"
-
+    "countryCode": "us" 
   },    
   {
     "name": "Chase Kyes",
@@ -2682,5 +2721,17 @@
     "name": "Logan Reilly",
     "countryCode": "us"
 
+  },
+    {
+    "name": "Jack Buchanan",
+    "countryCode": "za"
+  },
+    {
+    "name": "Fifa Laopakdee",
+    "countryCode": "th"
+  },
+    {
+    "name": "Jiho Yang",
+    "countryCode": "kr" 
   }    
 ]
