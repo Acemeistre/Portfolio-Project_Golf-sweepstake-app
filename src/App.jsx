@@ -1,3 +1,6 @@
+// Import useEffect and useState Hooks. 
+// Import Header, Tournament Selector, Player Sorter, ParticipantEntry, Draw and LiveScores components.
+// Import worldRankings JSON for PlayerSorter and App css for stage 1 styling.
 import {useEffect, useState} from "react";
 import './App.css';
 import Header from "./components/Header/Header";
@@ -8,6 +11,7 @@ import Draw from "./components/Stage2_Draw/Stage2_Draw";
 import LiveScores from "./components/Stage3_Scores/Stage3_Scores";
 import worldRankings from './data/worldRankings.json'
 
+// Set key-value pairs in a static array to configure tournament data, including: id, name, date, location, colour, apiKey, isPast and polling windows.
 const tournaments = [
     { 
         id: 'masters', 
@@ -37,7 +41,7 @@ const tournaments = [
         apiKey: 'golf_us_open_winner',
         isPast: false,
         pollingWindows: [
-        { day: 1, start: '22:30', end: '00:30' },
+        { day: 1, start: '16:30', end: '00:30' },
         { day: 2, start: '16:30', end: '00:30' },
         { day: 3, start: '17:30', end: '00:30' },
         { day: 4, start: '17:30', end: '00:30' },
@@ -55,6 +59,8 @@ const tournaments = [
     
 ]
 
+// Temporary placeholder player data to set a static array configuration data for use in PlayerQueue
+// To be replaced with live fetch from The Odds API, returning real player names, once call quota resets.
 const dummyPlayers = [
   { name: 'Alex Fitzpatrick', price: 500 , rank: 69 },
   { name: 'Sungjae Im', price: 1200, rank: 74 },
@@ -66,21 +72,32 @@ const dummyPlayers = [
   { name: 'Jordan Spieth', price: 350, rank: 51 },
   ]
 
+// Set data array for default participants in the Participant entry useState as the initial fallback value.
 const defaultParticipants = [
   { id: Date.now(), name: '', colour: '#F37D78', isConfirmed: false },
   { id: Date.now() + 1, name: '', colour: '#F6F896', isConfirmed: false }, 
   ];
 
 function App() {
+  // Set the state of the selectedTournament
   const [selectedTournament, setSelectedTournament] = useState(() => {
+    // Intialize a const variable to retrieve data from local storage if a 
+    // previous selection was saved, otherwise default to an empty string.
     const saved = localStorage.getItem('selectedTournament')
     return saved || ''
   });
 
+  // Set the state of the sortOption
+  // Deliberately not persisted to localStorage as a means of acting as a natural confirmation step before moving to stage 2.
   const [sortOption, setSortOption] = useState('');
 
+  // Set the state of the participants
   const [participants, setParticipants] = useState(() => {
+    // Intialize a const variable to retrieve data from local storage if a 
+    // previous selection was saved.
     const saved = localStorage.getItem('participants')
+    // Add in a try/catch block to guard against potential data errors, using JSON.parse,
+    // otherwise fallback and return defaultParticipants array.
     try {
     return saved ? JSON.parse(saved) : defaultParticipants
     } catch {
@@ -88,13 +105,21 @@ function App() {
     }
   });
 
+  // Set the state of the currentStage
   const [currentStage, setCurrentStage] = useState(() => {
+    // Intialize a const variable to retrieve data from local storage if a 
+    // previous selection was saved, otherwise default to the 'selection' stage.
     const saved = localStorage.getItem('currentStage')
     return saved || 'selection'
   });
   
+  // Set the state of the players
   const [players, setPlayers] = useState(() => {
+    // Intialize a const variable to retrieve data from local storage if a 
+    // previous selection was saved.
     const saved = localStorage.getItem('players')
+    // Add in a try/catch block to guard against potential data errors, using JSON.parse,
+    // otherwise fallback and return the dummyPlayers array.
     try {
     return saved ? JSON.parse(saved) : dummyPlayers
     } catch {
@@ -102,8 +127,15 @@ function App() {
     }
   });
 
+  // Set the state of the drawResults
   const [drawResults, setDrawResults] = useState(() => {
+    // Intialize a const variable to retrieve data from local storage if a 
+    // previous selection was saved.
     const saved = localStorage.getItem('drawResults')
+    // Add in a try/catch block to guard against potential data errors, using JSON.parse,
+    // otherwise fallback and return an empty object.
+    // NOTE: drawResults is and object keyed by participant ID, each holding an array of their drawn players
+    // e.g. { participantId: [{ name: 'Player1', price: 1000 }], ... }
     try {
     return saved ? JSON.parse(saved) : {}
     } catch {
@@ -111,63 +143,85 @@ function App() {
     }
   });
 
-  const selectedTournamentData = tournaments.find(t => t.id === selectedTournament)
-  console.log('selectedTournamentData:', selectedTournamentData)
+  // derived value: set the object of selectedTournamentData using .find() on the tournaments array and return the item that matches its id.
+  const selectedTournamentData = tournaments.find(item => item.id === selectedTournament)
   
-
+  // name and save the value of selectedTournament to the selectedTournament key in local storage, using its dependency array of selectedTournament whenever its value changes.
   useEffect(() => {
     localStorage.setItem('selectedTournament', selectedTournament)
   }, [selectedTournament])
-
+ 
+  // name and save the value of participants, using JSON.stringify() to the participants key in local storage, using its dependency array of participants whenever its value changes.
   useEffect(() => {
    localStorage.setItem('participants', JSON.stringify(participants))
   }, [participants])
 
+  // name and save the value of currentStage to the currentStage key in local storage, using its dependency array of currentStage whenever its value changes.
   useEffect(() => {
   localStorage.setItem('currentStage', currentStage)
   }, [currentStage])
   
+  // name and save the value of players, using JSON.stringify() to the players key in local storage, using its dependency array of players whenever its value changes.
   useEffect(() => {
   localStorage.setItem('players', JSON.stringify(players))
-  }, [players])  
+  }, [players])
 
+  // name and save the value of drwaResults, using JSON.stringify() to the drawResults key in local storage, using its dependency array of drawResults whenever its value changes.
   useEffect(() => {
   localStorage.setItem('drawResults', JSON.stringify(drawResults))
   }, [drawResults])  
   
-  //Check if minimum requirements are met.
+  // set a derived variable to filter participants that are confirmed.
   const confirmedParticipants = participants.filter(p => p.isConfirmed)
+
+  // set a button check to confirm a tournament is selected, a sort option is selected and there are 2 or more participants that have been confirmed in order for continue button to be enabled.
   const isReadyToContinue = selectedTournament !== '' && confirmedParticipants.length >= 2 && sortOption!== ''
 
-  // Check for unconfirmed rows with text
+  // Check for any unconfirmed participant rows with text, checking they're not already confirmed and preventing whitespace bugs using .trim().
+  // NOTE - This derived value gets used for a warning dialogue on clicking the continue button, preventing users from accidental loss of unconfirmed entries.
   const hasUnconfirmedText = participants.some(p => !p.isConfirmed && p.name.trim() !== '')
 
+  // set a function to get Player rank, using player as its argument  
   const getPlayerRank = (player) => {
+    // set a variable 'match' and use method .find with our imported worldRankings to go through each entry item where the item's full name equals the player name
         const match = worldRankings.find(entry => entry.fullName === player.name)
+        // return our match condition to their rank for our truthy value or 9999 for a fallback 'worse that top 500 rank' falsey value
     return match ? match.rank : 9999
   }
 
-  //Handle continue button click
+  // Handles the Continue button click:
+  // 1. Warns if any participant has unconfirmed text, giving the user a chance to go back
   const handleContinue = () => {
     if (hasUnconfirmedText) {
       const confirm = window.confirm("You have an unconfirmed participant. Continue without them?")
     if (!confirm) return
-  }
-
-  //Sort players based on selected sort option
-  const sortedPlayers = [...players].sort((a, b) => {
-    if (sortOption === 'Odds') {
-        return b.price - a.price
-    } else {
-        return getPlayerRank(b) - getPlayerRank(a)
     }
-  })
-  setPlayers(sortedPlayers)
 
-  const remainder = players.length % confirmedParticipants.length
+    // 2. Sort players array based on selected sort option, keeping the array of players and using .sort array method
+    const sortedPlayers = [...players].sort((a, b) => {
+      // sort players of selection 'Odds', returning the highest value to the lowest
+      if (sortOption === 'Odds') {
+            if (a.price === b.price) {
+            // if both players have the same odds, sort alphabetically
+        return a.name.localeCompare(b.name)
+        }
+        return b.price - a.price
+      // sort players on selection of ranking going from lowest rank to highest.
+      } else {
+        const rankA = getPlayerRank(a)
+        const rankB = getPlayerRank(b)
+        // if both players have the same rank, sort alphabetically
+        if (rankA === rankB) {
+        return a.name.localeCompare(b.name)
+        }
+        return rankB - rankA
+      }
+    })
 
-
-  setCurrentStage('draw')
+    // 3. use setPlayers to change the data to the selection of sortedPlayers
+    setPlayers(sortedPlayers)
+    // progress the app to the 'draw' stage using setCurrentStage
+    setCurrentStage('draw')
   }
 
   return (
