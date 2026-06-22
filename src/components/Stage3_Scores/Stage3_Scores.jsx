@@ -1,9 +1,19 @@
+// Import useEffect and useState Hooks. 
+// Import ColourPicker component.
+// Import playerCountries JSON for getPlayerFlag function for flag lookup and Stage3_Scores css for stage 3 styling.
 import { useState, useEffect } from "react"
 import ColourPicker from "../ColourPicker/ColourPicker";
 import "./Stage3_Scores.css"
 import playerCountries from '../../data/playerCountries.json'
 
+// Define the LiveScores function signature
+// It receives: drawResults data for colour-coding rows, selectedTournamentData for having the configuration needed for polling window logic, 
+// participants for each participants details needed for colour coding and late entry and onDrawResults setter function for updating drawResults in the late entry feature.
 function LiveScores({ drawResults, selectedTournamentData, participants, onDrawResults }) {
+    // set our intial state values to:
+    // false for isPolling, isLoading, wasInWindow and inputOpen
+    // null for error and colour
+    // empty array for leaderboard and empty string for name
     const [leaderboardData, setLeaderboardData] = useState([]);
     const [isPolling, setIsPolling] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -15,22 +25,31 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
     const [name, setName] = useState('');
     const [colour, setColour] = useState(null);
 
+    // set an asynchronus function for fetchLeaderboard
     const fetchLeaderboard = async () => {
+        // set setIsLoading to true to trigger the loading UI whilst the fetch is in progress
         setIsLoading(true)
          try {
-        // code that might fail goes here
+        // add a url variable with it's actual address
             const url = "https://live-golf-data.p.rapidapi.com/leaderboard?orgId=1&tournId=026&year=2026"
+        // await the response of a fetch that sends url headers x-rapidapi-host and x-rapid-key
             const response = await fetch(url, {headers: {
             'x-rapidapi-host': 'live-golf-data.p.rapidapi.com',
             'x-rapidapi-key': apiKey
             }})
+            // set an error message to handle if the response is not ok
             if (!response.ok) {
                 throw new Error('Failed to fetch leaderboard data')
             }
+
+            // await the response to be converted using the .json() method and store it in variable 'data'.
             const data = await response.json()
-        setLeaderboardData(data.leaderboardRows)
+            // update the setLeaderboardData state with our 'data' from leaderboardRows
+            setLeaderboardData(data.leaderboardRows)
+            // if the try block fails (network error or bad response status), catch the error state to display error message to user
             } catch (error) {
         setError('Something went wrong')
+        // after the fetch request has completed setIsLoading back to false to complete the function
         }
         setIsLoading(false)
     }   
