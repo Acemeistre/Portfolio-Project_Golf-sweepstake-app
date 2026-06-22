@@ -54,37 +54,50 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         setIsLoading(false)
     }   
 
+    // import the golf slash leaderboard's API key
      const apiKey = import.meta.env.VITE_GOLF_SLASH_LEADERBOARDS_API_KEY 
 
+    // call the fetchLeaderboard using useEffect, with an empty dependency array, called once on mount
     useEffect(() => {
         fetchLeaderboard()
-  }, [])
+    }, [])
 
+    // set a useEffect to exit if isPolling false, else set an interval of 15 minutes for the fetchLeaderboard call if isPolling changes 
     useEffect(() => {
         if (!isPolling) return
-
         const interval = setInterval(() => {
             fetchLeaderboard()
         }, 900000) // 15 minutes in milliseconds
-
+        // return a cleanup function to clear the interval when isPolling changes or component unmounts, preventing multiple intervals stacking
         return () => clearInterval(interval)
     }, [isPolling])
 
+    // set up a function to handle polling windows
     const isWithinPollingWindow = () => {
-        const start = new Date(selectedTournamentData.startDate)
+        // set the start date of the selected tournament
+        // set a refernce point of the current day of the tournament
+        // calculate the milli seconds in a day
+        // calculate the number of days since the started of the tounament using math.floor
+        // add 1 to daysSinceStart to get the current day of the tournament
+        const start = new Date(selectedTournamentData.startDate) 
         const today = new Date()
         const msPerDay = 1000 * 60 * 60 * 24
         const daysSinceStart = Math.floor((today - start) / msPerDay)
         const currentDay = daysSinceStart + 1
+        // use the .find method on the pollingWindows value of selectedTournamentData, iterating through each items .day property until its equal to currentDay and save it to a const variable of todaysWindow.
         const todaysWindow = selectedTournamentData.pollingWindows.find(w => w.day === currentDay)
+        // guard clause: if no matching window is found (outside tournament dates), return false
         if (!todaysWindow) {
             return false
         }
-        const now = new Date()
-        const hours = String(now.getHours()).padStart(2, '0')
-        const minutes = String(now.getMinutes()).padStart(2, '0')
+        // set a string of today by calling the method getHours on it, passing over it with the .padStart tool, to give it a padding of two characters and save that format to a const variable of hours.
+        // padding ensure a consistent 'HH:MM' format for reliable string comparison, so do the same logic for minutes
+        const hours = String(today.getHours()).padStart(2, '0')
+        const minutes = String(today.getMinutes()).padStart(2, '0')
+        // use a template literal to combine variables hours and minutes to 'HH:MM' and save as currentTime for use for our polling window start/end times
         const currentTime = `${hours}:${minutes}`
- 
+        
+        // set a variable to 
         const isOvernight = todaysWindow.start > todaysWindow.end
         if (isOvernight) {
         // inside window if current time is AFTER start OR BEFORE end
