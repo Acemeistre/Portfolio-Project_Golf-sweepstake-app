@@ -201,19 +201,19 @@ function App() {
     const sortedPlayers = [...players].sort((a, b) => {
       // sort players of selection 'Odds', returning the highest value to the lowest
       if (sortOption === 'Odds') {
-            if (a.price === b.price) {
+          if (a.price === b.price) {
             // if both players have the same odds, sort alphabetically
-        return a.name.localeCompare(b.name)
-        }
-        return b.price - a.price
-      // sort players on selection of ranking going from lowest rank to highest.
-      } else {
-        const rankA = getPlayerRank(a)
-        const rankB = getPlayerRank(b)
-        // if both players have the same rank, sort alphabetically
-        if (rankA === rankB) {
-        return a.name.localeCompare(b.name)
-        }
+            return a.name.localeCompare(b.name)
+            }
+          return b.price - a.price
+          // sort players on selection of ranking going from lowest rank to highest.
+          } else {
+          const rankA = getPlayerRank(a)
+          const rankB = getPlayerRank(b)
+          if (rankA === rankB) {
+          // if both players have the same rank, sort alphabetically
+          return a.name.localeCompare(b.name)
+          }
         return rankB - rankA
       }
     })
