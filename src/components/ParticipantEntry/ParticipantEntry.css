@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-bottom: 1px solid #ddd;
 }
 
 .participant-entry__label {
@@ -22,7 +21,6 @@
     align-items: center;
     gap: 1rem;
     padding: .5rem;
-
 }
 
 .participant-entry__colour-swatch {
@@ -38,7 +36,7 @@
     padding: .5rem .75rem;
     font-size: 1rem;
     border-radius: .5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #C8A84B;
     flex: 1;
 }
 
@@ -56,8 +54,8 @@
 }
 
 .participant-entry__row--confirmed {
-    background-color: #87ca6e;
-    border: 2px solid #C8A84B;
+    background-color: #006747;
+    border: 2px solid #000;
     border-radius: .5rem;
     padding: .5rem;
 }
@@ -70,17 +68,20 @@
 }
 
 .participant-entry__btn--confirm {
-    background-color: #006747;
-    opacity: 0.85;
+    background-color: #98EF8F;
+    border: 2px solid #C8A84B;
+    
 }
 
 .participant-entry__btn--edit {
-    background-color: yellow;
+    background-color: #F6F896;
+    border: 2px solid #C8A84B;
 }
 
 .participant-entry__btn--remove {
-    background-color: #d30a0a;
-    opacity: 0.85;
+    background-color: #F37D78;
+    border: 2px solid #C8A84B;
+
 }
 
 .participant-entry__btn--confirm:hover,

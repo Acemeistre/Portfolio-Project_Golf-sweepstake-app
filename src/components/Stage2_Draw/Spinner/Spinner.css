@@ -11,15 +11,17 @@
     display: flex;
     justify-self: center;
     text-justify: center;
-    background-color: #C8A84B;
+    background-color: #98EF8F;
     padding: .75rem 5rem;
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
-    border: 2px solid #000000;
+    border: 2px solid #C8A84B;
     border-radius: .5rem;
     margin-bottom: 2rem;
     line-height: 2rem;
+    
+    font-family: 'IM Fell Great Primer', serif;
   }
 
   .spinner canvas {
@@ -48,6 +50,11 @@
   .spinner__heading {
     display: flex;
     justify-self: center;
-    font-family: 'Inter', sans-serif;
+    font-family: 'IM Fell Great Primer', serif;
     font-size: 1.75rem;
+  }
+
+  .spinner__btn:disabled {
+    background-color: #ccc;
+    border: 2px solid #ccc;
   }

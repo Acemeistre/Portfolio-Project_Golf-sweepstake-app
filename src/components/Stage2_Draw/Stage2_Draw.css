@@ -31,12 +31,27 @@
     font-weight: 600;
     border-radius: .5rem;
     cursor: pointer;
-    border: none;
 }
 
-.back-btn { background-color: yellow; }
+.back-btn,
+.restart-btn {
+    border: 2px solid #C8A84B;
+}
+
+.stage2-continue-btn {
+    border: 2px solid #000;
+    color: #fff;
+}
+
+
+.stage2-continue-btn:disabled {
+    background-color: #ccc;
+    border: 2px solid #888686;
+}
+
+.back-btn { background-color: #F6F896; }
 .stage2-continue-btn { background-color: #006747; }
-.restart-btn { background-color: #d30a0a; }
+.restart-btn { background-color: #F37D78; }
 
 @media (max-width: 1480px) {
     .stage2-columns {
