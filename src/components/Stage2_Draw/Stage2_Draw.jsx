@@ -160,6 +160,7 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
             <button 
                 className="back-btn"
                 onClick={handleBack}
+                title="return to the options selection stage - current progress remains saved"
             >
                 Back
             </button>
@@ -167,12 +168,17 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
                 className="stage2-continue-btn"
                 onClick={handleDrawContinue}
                 disabled={!isDrawComplete}
+                title={
+                  isDrawComplete ? "continue to the live scores" 
+                  : "unable to proceed further until the draw is completed"
+                }
             >
                 Continue
             </button>
                         <button 
                 className="restart-btn"
                 onClick={handleResetDraw}
+                title="WARNING: This will reset the progress of your current draw"
             >
                 Restart
             </button>

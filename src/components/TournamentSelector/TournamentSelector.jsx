@@ -26,7 +26,7 @@ const tournaments = [
         location: 'Shinnecock Hills, New York',
         colour: '#d30a0a',
         apiKey: 'golf_us_open_winner',
-        isPast: false
+        isPast: true
     },
     { 
         id: 'the-open', 
@@ -61,7 +61,9 @@ function TournamentSelector({ selectedTournament, onTournamentChange }) {
                     aria-disabled={tournament.isPast}
                     aria-label={`Select ${tournament.name}, ${tournament.date}`}
                     aria-pressed={selectedTournament === tournament.id}
-                    title={`Select ${tournament.name}, ${tournament.date}`}
+                    title={tournament.isPast 
+                    ? `${tournament.name} has already taken place` 
+                    : `Select ${tournament.name}, ${tournament.date}`}
                     >
 
                     <span className={`tournament-selector__card-name ${selectedTournament === tournament.id ? 'tournament-selector__card-name--selected' : ''}`}>

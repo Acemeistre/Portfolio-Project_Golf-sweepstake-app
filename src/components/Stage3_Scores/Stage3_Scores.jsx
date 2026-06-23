@@ -154,6 +154,30 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         return colour
     }
 
+    // set a function for getParticipantName that uses targetPlayer as its argument
+    const getParticipantName = (targetPlayer) => {
+        // set a variable for participant name without data
+        let participantName = null
+        // grab the entries property from our drawResults object, passing over each entry with their id and playerArray
+        Object.entries(drawResults).forEach(([id, playerArray]) => {
+            // using a template literal combine the target player's first name and last name, saving it to a const variable of full name
+            const fullName = `${targetPlayer.firstName} ${targetPlayer.lastName}`
+            // use the .find() method to pass over each item in the playerArray and save it to a const variable of match when the item name is equal to full name
+            const match = playerArray.find(drawnPlayer => drawnPlayer.name === fullName)
+            // use the .find() method to pass over each item in participants and save it to a const variable of participant when the item id is equal to the id of number
+            // our comparison id comes from Object.entries(drawResults) which is a string, so Number() converts that string back to a number for equal type and value comparison
+            if (match) {
+                const participant = participants.find(p => p.id === Number(id))
+                // set the variable of participantName to the value of participant name
+                participantName = participant.name
+            }
+        })
+        // return the value of participantName
+        return participantName
+    }
+
+
+
     // set a function for getPlayerFlag that uses player as its argument
     const getPlayerFlag = (player) => {
         // using a template literal combine the player's first name and last name, saving it to a const variable of full name
@@ -198,6 +222,8 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         <div className="Stage 3 wrapper">
             <button 
             className="poll-btn"
+            title={isPolling ? "pause the polling for live score updates " 
+            : "Recieve live score updates every 15 minutes"}
             onClick={() => setIsPolling(!isPolling)}>
                 {isPolling ? "Pause" : "Go Live"}
                 <span className={`status-dot ${isPolling? 'status-dot--live' : 'status-dot--paused'}`}></span>
@@ -228,13 +254,22 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             <tr key={player.playerId} 
                 className="leaderboard-row"
                 style={{backgroundColor: getPlayerColour(player)}}
+                title={`This player belongs to ${participantName}`}
                 >
-              <td className="leaderboard-row__player-position">{player.position}</td>
+              <td className="leaderboard-row__player-position"
+                  title="Current tournament leaderboard position"
+              >
+                {player.position}
+              </td>
               <td className="leaderboard-row__player-name">
                 {getPlayerFlag(player) === 'na' ? (
                     <span>🌍</span>
                     ) : (
-                <img className="player-flag" src={`https://flagcdn.com/${getPlayerFlag(player)}.svg`} alt={player.firstName} />
+                <img className="player-flag" 
+                     src={`https://flagcdn.com/${getPlayerFlag(player)}.svg`} 
+                     alt={player.firstName} 
+                     title="Player nationality"
+                     />
                     )}
                 <span className="player-name--full">{player.firstName} {player.lastName}</span>
                 <span className="player-name--short">{player.firstName[0]} {player.lastName}</span>
@@ -252,6 +287,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
     <button 
         className={`add-participant__btn ${inputOpen ? 'add-participant__btn--close' : ''}`}
         onClick={() => setInputOpen(!inputOpen)}
+        title={inputOpen ? "close late player entry form" : "add a late player addition" }
         >
            {inputOpen ? 'x' : '+'}
         </button>

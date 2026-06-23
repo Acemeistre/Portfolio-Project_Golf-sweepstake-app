@@ -250,6 +250,12 @@ function App() {
             className={`continue-btn ${isReadyToContinue ? 'continue-btn--active' : 'continue-btn--disabled'}`}
             onClick={isReadyToContinue ? handleContinue : null}
             disabled={!isReadyToContinue}
+            title={
+            !selectedTournament ? 'Please select a tournament first' :
+            !sortOption ? 'Please select a sort option' :
+            confirmedParticipants.length < 2 ? 'Please confirm at least 2 participants' :
+            'Continue to the draw'
+            }
           >
             Continue
           </button>

@@ -51,7 +51,10 @@ function Spinner({availableParticipants, handleSpin, onComplete, isDrawComplete}
                 onClick={handleSpinButton}
                 disabled={spin || isDrawComplete}
                 aria-label="Spin wheel"
-                title="Spin wheel"
+                title={
+                spin ? "unable to spin again whilst wheel is in motion" : 
+                !isDrawComplete ? "Spin to draw next player" :
+                "All players have been drawn, proceed to the live scores"}
                 >
                 {isDrawStarted ? 'Spin again' : 'Go!'} 
                 </button>

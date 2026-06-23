@@ -141,7 +141,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                             <button className="participant-entry__btn participant-entry__btn--confirm"
                                 onClick={() => confirmParticipant(participant.id)}
                                 aria-label="Confirm participant"
-                                title="Confirm participant"
+                                title="Confirm your name before continuing"
                             >
                                 <Check size={16} />
                             </button>

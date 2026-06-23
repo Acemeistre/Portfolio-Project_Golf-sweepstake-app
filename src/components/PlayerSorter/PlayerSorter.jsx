@@ -16,6 +16,7 @@ function PlayerSorter({ sortOption, onSortChange }) {
                     checked={sortOption === "Ranking"}
                     onChange={(e) => onSortChange(e.target.value)}
                     id="sort-ranking"
+                    title="sort players by world ranking - highest rank drawn last"
                 />
             <label htmlFor="sort-ranking">
                 Ranking
@@ -28,6 +29,7 @@ function PlayerSorter({ sortOption, onSortChange }) {
                 checked={sortOption === "Odds"}
                 onChange={(e) => onSortChange(e.target.value)}
                 id="sort-odds"
+                title="sort players by odds - highest odds drawn first"
             />
             <label htmlFor="sort-odds">
                 Odds
