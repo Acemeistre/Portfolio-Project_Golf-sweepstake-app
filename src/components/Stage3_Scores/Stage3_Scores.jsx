@@ -223,11 +223,11 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
     }
 
      return (
-        <div className="Stage 3 wrapper">
+        <div className="stage3-wrapper">
             <button 
             className="poll-btn"
             title={isPolling ? "pause the polling for live score updates " 
-            : "Recieve live score updates every 15 minutes"}
+            : "Receive live score updates every 15 minutes"}
             onClick={() => setIsPolling(!isPolling)}>
                 {isPolling ? "Pause" : "Go Live"}
                 <span className={`status-dot ${isPolling? 'status-dot--live' : 'status-dot--paused'}`}></span>
@@ -260,7 +260,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
             <tr key={player.playerId} 
                 className="leaderboard-row"
                 style={{backgroundColor: getPlayerColour(player)}}
-                title={getParticipantName ? `This player belongs to ${participantName}` : null }
+                title={participantName ? `This player belongs to ${participantName}` : null }
                 >
               <td className="leaderboard-row__player-position">
                 {player.position}
@@ -276,7 +276,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
                      />
                     )}
                 <span className="player-name--full">{player.firstName} {player.lastName}</span>
-                <span className="player-name--short">{player.firstName[0]} {player.lastName}</span>
+                <span className="player-name--short">{player.firstName[0]}. {player.lastName}</span>
                 </td>
               <td className={`leaderboard-row__player-score ${player.status === 'active' ? 'live-text' : ''}`}>{player.total}</td>
               <td className={`leaderboard-row__player-hole ${player.status === 'active' ? 'live-text' : ''}`}>{player.thru}</td>
@@ -292,6 +292,7 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         className={`add-participant__btn ${inputOpen ? 'add-participant__btn--close' : ''}`}
         onClick={() => setInputOpen(!inputOpen)}
         title={inputOpen ? "close late player entry form" : "add a late player addition" }
+        aria-label="Add late player entry"
         >
            {inputOpen ? 'x' : '+'}
         </button>

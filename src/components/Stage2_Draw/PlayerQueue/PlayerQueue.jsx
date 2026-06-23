@@ -1,7 +1,7 @@
 // Import PlayerQueue.css
 import './PlayerQueue.css';
 
-// Define the PlayerQueue function signature
+// PlayerQueue: receives tournament, players, participants and draw state to render the scrollable player list
 function PlayerQueue({tournament, playerIndex, remainder, players, currentRoundPlayers, participants, currentRound, sortOption}) {
 
 // Return the column layout
@@ -57,7 +57,7 @@ return (
                     >
                         <span className="player-queue__round">{playerRound}</span>
                         <span className="player-queue__name">{player.name}</span>
-                        <span className="player-queue__odds">{sortOption === 'Ranking' ? player.rank : player.price}</span>
+                        <span className="player-queue__rank-odds">{sortOption === 'Ranking' ? player.rank : player.price}</span>
                     </div>
                 )
             })}

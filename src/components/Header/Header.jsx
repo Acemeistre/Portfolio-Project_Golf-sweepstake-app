@@ -4,6 +4,7 @@ import bannerDesktop from '../../assets/Banner_desktop_v2.3.jpg';
 import bannerMobile from '../../assets/Hero-image_mobile_v2.0.png';
 
 function Header({ showWelcome = true }) {
+    // track window width to swap between mobile and desktop banner images
       const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100)
 
   useEffect(() => {
@@ -18,7 +19,7 @@ function Header({ showWelcome = true }) {
         <header className="header">
             <div className="header__banner">
                 <img 
-                src={window.innerWidth <= 1100 ? bannerMobile : bannerDesktop} 
+                src={isMobile ? bannerMobile : bannerDesktop} 
                 alt="Golf Sweepstake Banner"
                 className="header__banner-image"
                 />

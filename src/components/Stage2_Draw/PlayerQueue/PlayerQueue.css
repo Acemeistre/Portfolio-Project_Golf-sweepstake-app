@@ -75,7 +75,7 @@
 
 .player-queue__round,
 .player-queue__name,
-.player-queue__odds {
+.player-queue__rank-odds {
     padding: .25rem .5rem;
 }
 
@@ -90,7 +90,7 @@
     text-align: center;
 }
 
-.player-queue__odds {
+.player-queue__rank-odds {
     width: 4rem;
     text-align: right;
     flex-shrink: 0;

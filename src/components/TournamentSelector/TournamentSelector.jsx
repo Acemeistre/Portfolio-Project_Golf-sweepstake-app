@@ -1,45 +1,6 @@
 import './TournamentSelector.css';
 
-const tournaments = [
-    { 
-        id: 'masters', 
-        name: 'The Masters',
-        date: 'April 9-12, 2026',
-        location: 'Augusta, Georgia',
-        colour: '#006747',
-        apiKey: 'golf_masters_tournament_winner',
-        isPast: true
-    },
-    { 
-        id: 'pga', 
-        name: 'PGA Championship',
-        date: 'May 14-17, 2026',
-        location: 'Aronimink GC, Pennsylvania',
-        colour: '#003087',
-        apiKey: 'golf_pga_championship_winner',
-        isPast: true
-    },
-    { 
-        id: 'us-open', 
-        name: 'The US Open',
-        date: 'June 18-21, 2026',
-        location: 'Shinnecock Hills, New York',
-        colour: '#d30a0a',
-        apiKey: 'golf_us_open_winner',
-        isPast: true
-    },
-    { 
-        id: 'the-open', 
-        name: 'The Open Championship',
-        date: 'July 17-20, 2026',
-        location: 'Royal Birkdale, The UK',
-        colour: '#C8A84B',
-        apiKey: 'golf_the_open_championship_winner',
-        isPast: false
-    },
-]
-
-function TournamentSelector({ selectedTournament, onTournamentChange }) {
+function TournamentSelector({ selectedTournament, onTournamentChange, tournaments }) {
     return (
     <div className="tournament-selector">
         <label className="tournament-selector__label">

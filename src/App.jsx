@@ -39,7 +39,7 @@ const tournaments = [
         location: 'Shinnecock Hills, New York',
         colour: '#d30a0a',
         apiKey: 'golf_us_open_winner',
-        isPast: false,
+        isPast: true,
         pollingWindows: [
         { day: 1, start: '16:30', end: '00:30' },
         { day: 2, start: '16:30', end: '00:30' },
@@ -166,7 +166,7 @@ function App() {
   localStorage.setItem('players', JSON.stringify(players))
   }, [players])
 
-  // name and save the value of drwaResults, using JSON.stringify() to the drawResults key in local storage, using its dependency array of drawResults whenever its value changes.
+  // name and save the value of drawResults, using JSON.stringify() to the drawResults key in local storage, using its dependency array of drawResults whenever its value changes.
   useEffect(() => {
   localStorage.setItem('drawResults', JSON.stringify(drawResults))
   }, [drawResults])  
@@ -233,6 +233,7 @@ function App() {
         <>
         <div className="stage1-layout">
         <TournamentSelector
+        tournaments={tournaments}
         selectedTournament={selectedTournament}
         onTournamentChange={setSelectedTournament}
         />
@@ -263,28 +264,26 @@ function App() {
         </>
         )}
         {currentStage === 'draw' && (
-           <Draw
-        selectedTournament={selectedTournament}
-        participants={participants.filter(p => p.isConfirmed)}
-        players={players}
-        onBack={() => setCurrentStage('selection')}
-        onComplete={() => setCurrentStage('scores')}
-        tournament={selectedTournamentData}
-        drawResults={drawResults}
-        onDrawResults={setDrawResults}
-        sortOption={sortOption}
-        />
-        )}
-        {currentStage === 'scores' && (
-       
-            <LiveScores
-            drawResults={drawResults}
-            onDrawResults={setDrawResults}
-            selectedTournamentData={selectedTournamentData}
-            participants={confirmedParticipants}
+          <Draw
+          selectedTournament={selectedTournament}
+          participants={participants.filter(p => p.isConfirmed)}
+          players={players}
+          onBack={() => setCurrentStage('selection')}
+          onComplete={() => setCurrentStage('scores')}
+          tournament={selectedTournamentData}
+          drawResults={drawResults}
+          onDrawResults={setDrawResults}
+          sortOption={sortOption}
+          />
+          )}
+          {currentStage === 'scores' && (
+          <LiveScores
+          drawResults={drawResults}
+          onDrawResults={setDrawResults}
+          selectedTournamentData={selectedTournamentData}
+          participants={confirmedParticipants}
             />
-        )}
-          
+        )}        
       </main>
     </div>
   )

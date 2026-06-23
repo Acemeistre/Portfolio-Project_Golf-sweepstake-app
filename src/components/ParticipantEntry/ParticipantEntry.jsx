@@ -2,23 +2,9 @@ import {useState} from "react";
 import "./ParticipantEntry.css";
 import ColourPicker from "../ColourPicker/ColourPicker";
 import { Check, Pencil, X } from 'lucide-react';
+import { COLOURS } from '../../data/colours.js'
 
-const COLOURS = [
-  '#F37D78',
-  '#F88AB0',
-  '#E68FEF',
-  '#BE8BF3',
-  '#9896F8',
-  '#8FC8EF',
-  '#8BF3F2',
-  '#96F8C9',
-  '#98EF8F',
-  '#C0F38B',
-  '#F6F896',
-  '#EFB68F',
-]
-
-function ParticipantEntry({ participants, onParticipantsChange}) {
+function ParticipantEntry({ participants, onParticipantsChange }) {
     const addParticipant = () => {
         if (participants.length >=8 ) return;
         const takenColours = participants.map(p => p.colour)
@@ -35,7 +21,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
     const removeParticipant = (id) => {
         if (participants.length <= 2) return
     
-    //Check if there's alread an empty unconfirmed row.    
+    // Check if there's already an empty unconfirmed row.    
     const updated = participants.filter(p => p.id !== id)
 
     // If no empty rows exist and we're under 8, add one back
@@ -64,7 +50,7 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
         const participant = participants.find(p => p.id === id)
         if (!participant.name.trim()) return
 
-        //Check for duplicate names
+        // Check for duplicate names
         const isDuplicate = participants.some(p => 
             p.id !== id &&
             p.isConfirmed &&
@@ -116,7 +102,6 @@ function ParticipantEntry({ participants, onParticipantsChange}) {
                     <div key={participant.id} 
                     className={`participant-entry__row ${participant.isConfirmed ? 'participant-entry__row--confirmed' : ''}`}>
                        <ColourPicker className="participant-entry__colour-swatch"
-                            placeholder="pick your theme colour that tracks your player's progress throughout the app's experience"
                             currentColour={participant.colour}
                             takenColours={participants
                                 .filter(p => p.id !== participant.id)

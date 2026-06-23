@@ -1,23 +1,8 @@
 import { useState } from 'react'
 import './ColourPicker.css'
+import { COLOURS } from '../../data/colours.js'
 
-// set a palette of colours whos use remains constant throughout the app 
-const COLOURS = [
-  '#F37D78',
-  '#F88AB0',
-  '#E68FEF',
-  '#BE8BF3',
-  '#9896F8',
-  '#8FC8EF',
-  '#8BF3F2',
-  '#96F8C9',
-  '#98EF8F',
-  '#C0F38B',
-  '#F6F896',
-  '#EFB68F', 
-]
-
-// set a funtion signature that recives: currentColour, taken colours and onColour change from both ParticipantEntry.jsx 
+// set a function signature that receives: currentColour, taken colours and onColour change from both ParticipantEntry.jsx 
 // and Stage3_Scores.jsx and its disabled prop also from ParticipantEntry 
 function ColourPicker({ currentColour, takenColours, onColourChange, disabled }) {
   // set isOpen state to false upon ColourPicker mount
@@ -26,7 +11,7 @@ function ColourPicker({ currentColour, takenColours, onColourChange, disabled })
   const handleColourSelect = (colour) => {
     // use the .includes() method to pass over the array of colours in takenColours, exiting if colour is already taken by another participant
     if (takenColours.includes(colour)) return
-    // set the state with our new chosen colour
+    // notify the parent prop of the new chosen colour
     onColourChange(colour)
     // close the colour palette
     setIsOpen(false)

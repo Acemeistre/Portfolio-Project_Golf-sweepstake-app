@@ -1,4 +1,4 @@
-// Import React and useState
+// Import useState
 import { useState } from 'react';
 import './Stage2_Draw.css';
 
@@ -9,7 +9,7 @@ import DrawResults from './DrawResults/DrawResults';
 
 
 // Define the Stage2_Draw component
-// It recieves: selectedTournament, tournament, participants, players, onBack, onComplete, onReset
+// It receives: selectedTournament, tournament, participants, players, onBack, onComplete
 function Draw({ tournament, participants, players, onBack, onComplete, drawResults, onDrawResults, sortOption}) {
 
   // State: which group are we currently drawing for (start at 0)
@@ -98,16 +98,12 @@ if (playerIndex + 1 >= currentRoundPlayers.length) {
 
   //Handler: what happens if the draw is already live
     const handleBack = () => {
-      if (hasDrawStarted) {
-      const confirm = window.confirm("Are you certain? Going back will lose your draw progress.") 
-      if (!confirm) return
-      } 
       onBack()
     }
 
   //Handler: what happens once all rounds have been completed?
     const handleDrawContinue = () => {
-      const confirm = window.confirm("Are you certain you wish to complete the draw and continue?")
+      const confirm = window.confirm("Ready to proceed to the live scores? The draw can't be changed once you continue.")
       if (!confirm) return
       onComplete()
     }
