@@ -97,71 +97,98 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
         // use a template literal to combine variables hours and minutes to 'HH:MM' and save as currentTime for use for our polling window start/end times
         const currentTime = `${hours}:${minutes}`
         
-        // set a variable to 
+        // set a variable to check whether the polling windows' crosses the midnight boundary seperating two days
         const isOvernight = todaysWindow.start > todaysWindow.end
         if (isOvernight) {
-        // inside window if current time is AFTER start OR BEFORE end
+        // time can be overnight if currentTime is either after todaysWindow start time OR before todaysWindow end
         return currentTime >= todaysWindow.start || currentTime <= todaysWindow.end
         } else {
-        // inside window if current time is AFTER start AND BEFORE end
+        // times can't be overnight if currentTime is both after todaysWindow start time AND before todaysWindow end
         return currentTime >= todaysWindow.start && currentTime <= todaysWindow.end
         }
     }
 
+    // set a useEffect to check the moment of when our polling window transitions from inside to outside, including empty depedency to fire once, on mount 
     useEffect(() => {
         const checkWindow = () => {
+            // set a const variable for checking the current state of isWithinPollingWindow
             const inWindow = isWithinPollingWindow()
-            setWasInWindow(prevWasInWindow => {
+        // use the state value of setWasInWindow to check the previous value of WasInWindow
+        setWasInWindow(prevWasInWindow => {
         if (inWindow) {
+            // turn polling on if inWindow was true
             setIsPolling(true)
         } else if (prevWasInWindow) {
+            // turn polling off if prevInWindow was true but inWindow is false
             setIsPolling(false)
         }
-       return inWindow
-            })
-    }
-
-    checkWindow() // check immediately on mount
-        const checkInterval = setInterval(checkWindow, 60000) // then check every minute
-
+        // return inWindow to update wasInWindow with the current result, ready for the next 60-second check
+        return inWindow
+        })
+        }
+        checkWindow() // check immediately on mount
+            const checkInterval = setInterval(checkWindow, 60000) // then check every minute
+        // return a cleanup function to clear the interval when the component unmounts, preventing multiple intervals stacking
         return () => clearInterval(checkInterval)
     }, [])
 
+    // set a function for getPlayerColour that uses targetPlayer as its argument
     const getPlayerColour = (targetPlayer) => {
+        // set a variable for colour without data
         let colour = null
+        // grab the entries property from our drawResults object, passing over each entry with their id and playerArray
         Object.entries(drawResults).forEach(([id, playerArray]) => {
+            // using a template literal combine the target player's first name and last name, saving it to a const variable of full name
             const fullName = `${targetPlayer.firstName} ${targetPlayer.lastName}`
+            // use the .find() method to pass over each item in the playerArray and save it to a const variable of match when the item name is equal to full name
             const match = playerArray.find(drawnPlayer => drawnPlayer.name === fullName)
+            // use the .find() method to pass over each item in participants and save it to a const variable of participant when the item id is equal to the id of number
+            // our comparison id comes from Object.entries(drawResults) which is a string, so Number() converts that string back to a number for equal type and value comparison
             if (match) {
                 const participant = participants.find(p => p.id === Number(id))
+                // set the variable of colour to the value of partcipant colour
                 colour = participant.colour
             }
         })
+        // return the value of colour
         return colour
     }
 
+    // set a function for getPlayerFlag that uses player as its argument
     const getPlayerFlag = (player) => {
+        // using a template literal combine the player's first name and last name, saving it to a const variable of full name
         const fullName = `${player.firstName} ${player.lastName}`
+        // use the .find() method to pass over each item in the playerCountries array and save it to a const variable of match when the items name is equal to our player fullName
         const match = playerCountries.find(entry => entry.name === fullName)
+        // use a ternary operator to return the condition of our match using its .countryCode value if true or a string of na if false
     return match ? match.countryCode : 'na'
     }
- 
+    
+    // set a function for late entry submission that finds a matching participant by colour and adds a new player name to that participant's respective drawResults array, then resets the form
     const handleAddLateEntry = () => {
+        // use the .find() method to pass over each item in the participants array and save it to a const variable of matchedParticipant when the value of the item colour matches the colour state
         const matchedParticipant = participants.find(p => p.colour === colour)
+        // use the state change setter onDrawResults to look at the previous results (prev =>) and copy this result
         onDrawResults(prev => ({
             ...prev,
+            //  look at the id of our matched participant and copy this, adding the name value to the end of our array
             [matchedParticipant.id]: [...prev[matchedParticipant.id], 
-                {name: name, price:null}]    
+                { name: name }]    
         }))
+        // reset the entry field states on successful player entry/submission
         setName('')
         setColour(null)
         setInputOpen(false)
     }
     
+    // set a function to check the validity of a player name entry by using the .some() method to pass over the player items in the leaderboardData array,
+    // using a template literal to check that each of the player's firstName and lastName are equal to a name in leaderboardData
     const isValidPlayerName = () => {
         return leaderboardData.some(player => `${player.firstName} ${player.lastName}` === name )
     }
 
+    // set a function to prevent duplicate late entries by checking if a player has already been drawn by returning the values of drawResults object and using the .some() method 
+    // to pass over each playerArray item and each name value within each playerArray against the name in drawResults
     const isAlreadyDrawn = () => {
         return Object.values(drawResults).some(playerArray => playerArray.some(player => player.name === name)
         )
