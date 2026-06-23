@@ -74,6 +74,10 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
 
     // set up a function to handle polling windows
     const isWithinPollingWindow = () => {
+        // guard clause: if tournament has no polling windows configured, return false immediately
+        if (!selectedTournamentData?.pollingWindows) {
+            return false
+        }
         // set the start date of the selected tournament
         // set a refernce point of the current day of the tournament
         // calculate the milli seconds in a day
@@ -241,24 +245,24 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
       <table className="leaderboard-table">
         <thead className="leaderboard-table__header">
           <tr>
-            <th className="leaderboard-table__header-position">#</th>
-            <th className="leaderboard-table__header-name">Player</th>
+            <th className="leaderboard-table__header-position"
+                title="current tournament leaderboard position">#</th>
+            <th className="leaderboard-table__header-name"
+            >Player</th>
             <th className="leaderboard-table__header-score">Score</th>
             <th className="leaderboard-table__header-hole">Hole</th>
           </tr>
         </thead>
         <tbody>
           {leaderboardData?.map((player) => {
-            
+            const participantName = getParticipantName(player)
             return (
             <tr key={player.playerId} 
                 className="leaderboard-row"
                 style={{backgroundColor: getPlayerColour(player)}}
-                title={`This player belongs to ${participantName}`}
+                title={getParticipantName ? `This player belongs to ${participantName}` : null }
                 >
-              <td className="leaderboard-row__player-position"
-                  title="Current tournament leaderboard position"
-              >
+              <td className="leaderboard-row__player-position">
                 {player.position}
               </td>
               <td className="leaderboard-row__player-name">
