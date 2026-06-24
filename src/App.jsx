@@ -72,6 +72,14 @@ const dummyPlayers = [
   { name: 'Jordan Spieth', price: 350, rank: 51 },
   ]
 
+// use the .map() method to return all the players in World Rankings and save the values as name and rank and set price to null,
+// saving it to a const variable of rankingAsPlayers so that we reshape our worldRankings.json data into the shape our App expects 
+const rankingsAsPlayers = worldRankings.map(player => ({
+    name: player.fullName,
+    rank: player.rank,
+    price: null
+}))
+
 // Set data array for default participants in the Participant entry useState as the initial fallback value.
 const defaultParticipants = [
   { id: Date.now(), name: '', colour: '#F37D78', isConfirmed: false },
@@ -121,9 +129,9 @@ function App() {
     // Add in a try/catch block to guard against potential data errors, using JSON.parse,
     // otherwise fallback and return the dummyPlayers array.
     try {
-    return saved ? JSON.parse(saved) : dummyPlayers
+    return saved ? JSON.parse(saved) : rankingsAsPlayers
     } catch {
-    return dummyPlayers
+    return rankingsAsPlayers
     }
   });
 
