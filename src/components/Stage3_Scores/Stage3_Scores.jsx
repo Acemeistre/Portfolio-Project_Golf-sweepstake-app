@@ -59,7 +59,10 @@ function LiveScores({ drawResults, selectedTournamentData, participants, onDrawR
 
     // call the fetchLeaderboard using useEffect, with an empty dependency array, called once on mount
     useEffect(() => {
+        // safeguard burning through API calls by adding a check on fetch to selectedTournamentData by seeing if any polling windows are set
+        if (selectedTournamentData?.pollingWindows) {
         fetchLeaderboard()
+        }
     }, [])
 
     // set a useEffect to exit if isPolling false, else set an interval of 15 minutes for the fetchLeaderboard call if isPolling changes 
