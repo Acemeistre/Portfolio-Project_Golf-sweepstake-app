@@ -76,6 +76,7 @@
 .participant-entry__btn--edit {
     background-color: #F6F896;
     border: 2px solid #C8A84B;
+    margin-left: auto;
 }
 
 .participant-entry__btn--remove {

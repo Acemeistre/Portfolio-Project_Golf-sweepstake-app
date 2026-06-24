@@ -264,6 +264,8 @@ function App() {
         </>
         )}
         {currentStage === 'draw' && (
+        
+          
           <Draw
           selectedTournament={selectedTournament}
           participants={participants.filter(p => p.isConfirmed)}
@@ -275,7 +277,7 @@ function App() {
           onDrawResults={setDrawResults}
           sortOption={sortOption}
           />
-          )}
+        )}
           {currentStage === 'scores' && (
           <LiveScores
           drawResults={drawResults}
@@ -284,7 +286,16 @@ function App() {
           participants={confirmedParticipants}
             />
         )}        
-      </main>
+ </main>
+        <footer>
+            <div className="footer">
+                <span className='footer__version'>v1.1.06.26</span>
+                <p className="footer__credit">Designed and coded by Glenn Niblett (aka Acemeistre)</p>
+                {currentStage === 'scores' && (
+                    <span className="footer__flags">Country flags courtesy of <a href="https://flagpedia.net/download">Flagcdn.com / Flagpedia.net</a></span>
+                )}
+            </div>
+        </footer>
     </div>
   )
 }

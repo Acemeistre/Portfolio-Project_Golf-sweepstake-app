@@ -82,6 +82,12 @@
     font-weight: 600;
 }
 
+@media (max-width: 1480px) {
+    .draw-results__header {
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width: 420px) {
     .draw-results {
         width: 20rem;
