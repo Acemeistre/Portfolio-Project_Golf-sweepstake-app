@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
 import bannerDesktop from '../../assets/Banner_desktop_v2.3.jpg';
-import bannerMobile from '../../assets/Hero-image_mobile_v2.0.png';
+import bannerMobile from '../../assets/Hero-image_mobile_v2.1.jpg';
 
 function Header({ showWelcome = true }) {
     // track window width to swap between mobile and desktop banner images

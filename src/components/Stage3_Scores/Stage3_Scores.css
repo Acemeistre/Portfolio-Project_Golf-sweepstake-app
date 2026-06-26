@@ -113,15 +113,11 @@ table,th, td {
     font-weight: 500;
 }
 
-img {
-    margin: 0rem 1rem;
-}
-
-
 .player-flag {
     width: 1.5rem;
     height: .75rem;
     gap: 1rem;
+    margin: 0rem 1rem;
 }
 
 .late-entry-form__row {
