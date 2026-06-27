@@ -3,7 +3,7 @@
 </p>
 
 [![Static Badge](https://img.shields.io/badge/Version%3A-1.1.06.26-darkgreen)](#)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Codecademy](https://img.shields.io/badge/Codecademy-%2321759B.svg?logo=codecademy&logoColor=white)](https://www.codecademy.com/profiles/Acemeistre)
 [![GitHub](https://img.shields.io/badge/GitHub-repo-blue?logo=github
 )](https://github.com/Acemeistre/Portfolio-Project_Golf-sweepstake-app)
@@ -67,7 +67,7 @@ This app is intended purely for fun and enhanced enjoyment of golf's four major 
 * **Draw Results tracker** - view the results of the spins in the both the "current" round's group of assigned players and the "previous" round of players.
 * **Live leaderboard** - track live updates of every participant's player's data, including live score and hole number as players proceed through the real Major event. 
 * **Automated/Interactive polling** - keeps constant updates with calls to Slash Golf API every 15 minutes and can also be paused for unexpected events (such as inclement weather).
-* **Late Entry field** - Allows users to enter any players who replaced withdrawals after the App's main draw has taken place.
+* **Late Entry field** - allows users to enter any players who replaced withdrawals after the App's main draw has taken place.
 
 ## 🛠️ Tech Stack
 - **React** - components-based UI framework.
@@ -168,11 +168,11 @@ A paid API such as DataGolf or Sportradar would automate this in a production en
     - Execute the clean-up script to refresh the data for "playerCountries.json" (*later named "playerData.json"*).
 
 ## 🙏 Acknowledgements
-- Slash Golf API
-- The Odds API
-- Flagcdn.com / Flagpedia.net
-- Lucide React (icons)
-- react-custom-roulette (spinner)
+- [Slash Golf API](https://rapidapi.com/slashgolf/api/live-golf-data)
+- [The Odds API](https://the-odds-api.com/)
+- [Flagcdn.com](https://flagcdn.io/) / [Flagpedia.net](https://flagpedia.net/)
+- [Lucide React](https://lucide.dev/guide/react/) (icons)
+- [react-custom-roulette](https://www.npmjs.com/package/react-custom-roulette) (spinner)
 
 ## 🔓 License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
