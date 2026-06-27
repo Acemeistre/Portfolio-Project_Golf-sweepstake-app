@@ -19,7 +19,7 @@
 
 
 # ⛳ Golf Sweepstake app
-An app for enhanced enjoyment of golf's 4 major championships.
+An app to use for enhanced enjoyment of golf's 4 major championships.
 
 ## Table of contents
 - [Overview](#overview)
@@ -35,13 +35,13 @@ An app for enhanced enjoyment of golf's 4 major championships.
 - [License](#license)
 
 ## 📖 Overview
-The Major Sweepstake is a three-stage web app that lets groups of friends run a sweepstake across golf's four major championships.
+The Major Sweepstake is a three-stage web app that lets groups of friends run a sweepstake across any one of golf's four major championships.
 
-The overall idea is for users to be able to choose which of the 4 golf’s majors they want to enter into a sweepstake with their friends (can be for 2 to 8 participants), by entering their name, choosing a colour to represent their assigned professional players (drawn in stage 2 of the app) and choose which way they want the professional golfers to be drawn by (odds or rank).
+The overall idea is for users to be able to choose which of the 4 golf majors they want to enter into a sweepstake with their friends (can be for 2 to 8 participants), by entering their name, choosing a colour to represent their assigned professional players (drawn in stage 2 of the app) and choose which way they want the professional golfers to be drawn by (odds or rank).
 
-After confirmation of options the app then proceeds to the 2nd stage, which could be viewed as “the main event” where there’s a scrollable list showing every golf player in the chosen tournament’s field, a spinner with button to randomly assign players to participants and then a draw results column showing the result of the group in which players are assigned to their participants for the “current” round and its “previous round” that dynamically updates as the draw progresses.
+After confirmation of options the app then proceeds to the 2nd stage, which could be viewed as “the main event” where there’s a scrollable list showing every golf player in the chosen tournament’s field, a spinner with button to randomly assign players to participants and then a draw results column showing the result of the group in which players are assigned to their participants for the “current” round and its “previous round”, which dynamically updates as the draw progresses.
 
-Once the full draw is complete users can then progress to the final stage of the app, where they’ll be able to see a live leaderboard of the real tournament taking place, where they can track their assigned players via the colours they chose in stage one - each participant’s respectively assigned players will have their selection represented by their chosen colour being set as the background colour of the player’s row of data (position, national flag, name, current hole and current score).
+Once the full draw is complete users can then progress to the final stage of the app, where they’ll be able to see a live leaderboard of the real tournament taking place. This is where they can track their assigned players via the colours they chose in stage one - each participant’s respectively assigned players will have their selection represented by their chosen colour being set as the background colour of the player’s row of data (position, national flag, name, current hole and current score).
 The leaderboard updates every 15 minutes via API polling and can be paused via a polling button for edge scenarios like weather interruptions, etc.
 There’s also a little plus “+” button below the leaderboard for any late entries in case of the withdrawal of other players before the tournament began.
 
@@ -62,12 +62,12 @@ This app is intended purely for fun and enhanced enjoyment of golf's four major 
 ## ✨ Features
 * **Tournament selection** - allows you to choose from any 1 of golf's 4 major events. 
 * **Player sorter** - allows users to select how they sort the order that their golfers are drawn to participants, through either a professional golfer's ranking or their tournament odds.
-* **Participant entry** - where participants can enter their name and select from a choice of colours from a colour picker that will represent their assigned players drawn in stage 2 and viewed on the live leaderboard in stage 3.
+* **Participant entry** - where participants can enter their name and select from a choice of colours via a colour picker, that will represent their assigned players drawn in stage 2 and viewed on the live leaderboard in stage 3.
 * **Automated player assignment spinner** - allows participants to do a full draw of the tournament's golf pros with the simple click of a button that randomly lands on the app's spinner wheel canvas.
-* **Draw Results tracker** - view the results of the spins in the both the "current" round's group of assigned players and the "previous" round of players.
-* **Live leaderboard** - track live updates of every participant's player's data, including live score and hole number as players proceed through the real Major event. 
+* **Draw Results tracker** - view the results of the wheel spins in both the "current" round and "previous" round of player to participant assignment.
+* **Live leaderboard** - track live updates of every participant's player; including leaderboard position, live score and hole number as players proceed through the real major event. 
 * **Automated/Interactive polling** - keeps constant updates with calls to Slash Golf API every 15 minutes and can also be paused for unexpected events (such as inclement weather).
-* **Late Entry field** - allows users to enter any players who replaced withdrawals after the App's main draw has taken place.
+* **Late Entry field** - allows users to enter any players who replaced tournament withdrawals after the app's main draw has taken place.
 
 ## 🛠️ Tech Stack
 - **React** - components-based UI framework.
@@ -113,11 +113,11 @@ npm run dev
 [golf-sweepstake-app.vercel.app](https://golf-sweepstake-app.vercel.app/)
 
 ## ⚠️ Known limitations
-- This app currently only works on each individual’s own browser, using local storage persistence and has no back end that can share polling or API updates with friend’s other devices.
+- This app currently only works on each individual’s own browser, using local storage persistence and has no back end that can share polling or API updates with other friend’s devices.
 
 - The API quota for polling is currently exhausted from the App's build phase - live leaderboard data remains unavailable as this time, due to this limitation and will reset on the 15th of July, 2026.
 
-- The data for odds also met it’s quota during the app build, so there currently is no data available for the odds sort option.
+- The data for odds also met it’s quota during the app build (resets on July 1st, 2026), so there currently is no data available for the odds sort option.
 
 - World rankings data is maintained via a static JSON file, last updated for the week of the U.S.Open 2026. 
 A paid API such as DataGolf or Sportradar would automate this in a production environment.
@@ -132,7 +132,7 @@ A paid API such as DataGolf or Sportradar would automate this in a production en
 **The following points are the current pipeline of updates coming to future versions of the Golf Sweepstake app.**
 
 **JULY ONWARDS**:
-- Verify vite's hot reload firing the leaderboard API when making code updates.
+- Verify vite's hot reload feature stops firing the leaderboard API when making code updates.
 
 - Build the fetch command for one off call to odds API data, storing it to a JSON file and also adding a time check to disable the command after the first tee times on day 1 of each tournament.
 
@@ -147,7 +147,7 @@ A paid API such as DataGolf or Sportradar would automate this in a production en
 **REST OF YEAR:**
 - Look into shared backend databases for sharing app/polling data on multiple devices.
 
-- Add in a component of a key, for the participant's picked colours representing their drawn players, in stage 3 for visual reference.
+- Add in a component of a key in stage 3, that visually represents the participant's name with their chosen colour.
 
 - Add in a component that calculates the pay-out of a sweepstake break-down, based on total pot size and agreed placement pay-out amounts.
 
@@ -160,6 +160,7 @@ A paid API such as DataGolf or Sportradar would automate this in a production en
 
 - **Week leading to tournament** <br>
     - Execute the fetchRankings.js command to update "worldRankings.json".
+    - Execute the fetchOdds.js command to update "oddsData.json" *(once built in July)*.
     - Execute the fetchField.js to save to a new (*yet to be named*) json file.
     - Manually add player's data to "playerCountries.json" (*later named "playerData.json"*) for those who get through regional qualification and outside the parameters of our saved data.
 
