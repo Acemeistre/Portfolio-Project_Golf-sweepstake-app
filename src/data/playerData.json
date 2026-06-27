@@ -1,0 +1,4933 @@
+[
+  {
+    "name": "Scottie Scheffler",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+  {
+    "name": "Rory McIlroy",
+    "countryCode": "gb-nir",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+  {
+    "name": "Cameron Young",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false  
+  },
+  {
+    "name": "Matt Fitzpatrick",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Russell Henley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Tommy Fleetwood",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Justin Rose",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Jon Rahm",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+   
+  },
+  {
+    "name": "J.J. Spaun",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Collin Morikawa",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Chris Gotterup",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Xander Schauffele",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Ludvig Åberg",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Aaron Rai",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Ben Griffin",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Justin Thomas",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Robert MacIntyre",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Si Woo Kim",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Sepp Straka",
+    "countryCode": "at",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Alex Noren",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Tyrrell Hatton",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Harris English",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Ryan Gerard",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Hideki Matsuyama",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Jacob Bridgeman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Kristoffer Reitan",
+    "countryCode": "no",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Patrick Reed",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Viktor Hovland",
+    "countryCode": "no",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Akshay Bhatia",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Sam Burns",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Kurt Kitayama",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Bryson DeChambeau",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Nicolai Højgaard",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Wyndham Clark",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Min Woo Lee",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Patrick Cantlay",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Maverick McNealy",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "J.T. Poston",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Keegan Bradley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Bud Cauley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Rickie Fowler",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Alex Smalley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Jake Knapp",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Shane Lowry",
+    "countryCode": "ie",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Gary Woodland",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Daniel Berger",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Jason Day",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+   
+  },
+  {
+    "name": "Marco Penge",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Adam Scott",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Michael Kim",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+    
+  },
+  {
+    "name": "Jordan Spieth",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Nico Echavarria",
+    "countryCode": "co",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Matt McCarty",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Sam Stevens",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Ryan Fox",
+    "countryCode": "nz",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Corey Conners",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "David Puig",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Pierceson Coody",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Brian Harman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Michael Brennan",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Andrew Novak",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Ryo Hisatsune",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Nick Taylor",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Eric Cole",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Sami Valimaki",
+    "countryCode": "fi",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Harry Hall",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Thomas Detry",
+    "countryCode": "Detry",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Max Greyserman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Alex Fitzpatrick",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Jayden Schaper",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Matti Schmid",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+  {
+    "name": "Jordan Smith",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Aldrich Potgieter",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Sungjae Im",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Johnny Keefer",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Rasmus Højgaard",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Michael Thorbjornsen",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Casey Jarvis",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Matt Wallace",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Joaquin Niemann",
+    "countryCode": "cl",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Patrick Rodgers",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Rasmus Neergaard-Petersen",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Sahith Theegala",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Eugenio Chacarra",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Andrew Putnam",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Shaun Norris",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Mac Meissner",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Lucas Herbert",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+  {
+    "name": "Rico Hoey",
+    "countryCode": "ph",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Haotong Li",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+   
+  },
+  {
+    "name": "Daniel Hillier",
+    "countryCode": "nz",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Taylor Pendrith",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Ricky Castillo",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Christiaan Bezuidenhout",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Austin Smotherman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Sudarshan Yellamaraju",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+   
+  },
+  {
+    "name": "Stephan Jaeger",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Garrick Higgo",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+   
+  },
+  {
+    "name": "Max McGreevy",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  
+  },
+  {
+    "name": "Keith Mitchell",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+  {
+    "name": "Kota Kaneko",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 101
+  },
+  {
+    "name": "John Parry",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 102
+  },
+  {
+    "name": "Denny McCarthy",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 103
+  },
+  {
+    "name": "Blades Brown",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 104
+  },
+  {
+    "name": "David Lipsky",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 105
+  },
+  {
+    "name": "Chris Kirk",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 106
+  },
+  {
+    "name": "Lucas Glover",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 107
+  },
+  {
+    "name": "Tom Hoge",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 108
+  },
+  {
+    "name": "Tony Finau",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 109
+  },
+  {
+    "name": "Brooks Koepka",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 110
+  },
+  {
+    "name": "Angel Ayora",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 111
+  },
+  {
+    "name": "Chandler Blanchet",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 112
+  },
+  {
+    "name": "Max Homa",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 113
+  },
+  {
+    "name": "Elvis Smylie",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 114
+  },
+  {
+    "name": "Adrien Saddier",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 115
+  },
+  {
+    "name": "Emiliano Grillo",
+    "countryCode": "ar",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 116
+  },
+  {
+    "name": "Richard Sterne",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 117
+  },
+  {
+    "name": "Steven Fisk",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 118
+  },
+  {
+    "name": "Dan Brown",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 119
+  },
+  {
+    "name": "Kevin Yu",
+    "countryCode": "tw",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 120
+  },
+  {
+    "name": "Mark Hubbard",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 121
+  },
+  {
+    "name": "Andy Sullivan",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 122
+  },
+  {
+    "name": "Brandt Snedeker",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 123
+  },
+  {
+    "name": "Jose Luis Ballester",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 124
+  },
+  {
+    "name": "Oliver Lindell",
+    "countryCode": "fi",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 125
+  },
+  {
+    "name": "Brian Campbell",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 126
+  },
+  {
+    "name": "Doc Redman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 127
+  },
+  {
+    "name": "Jackson Suber",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 128
+  },
+  {
+    "name": "Jacob Skov Olesen",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 129
+  },
+  {
+    "name": "Thorbjørn Olesen",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 130
+  },
+  {
+    "name": "William Mouw",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 131
+  },
+  {
+    "name": "Mikael Lindberg",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 132
+  },
+  {
+    "name": "Kevin Roy",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 133
+  },
+  {
+    "name": "Keita Nakajima",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 134
+  },
+  {
+    "name": "Billy Horschel",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 135
+  },
+  {
+    "name": "Cameron Smith",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 136
+  },
+  {
+    "name": "Tom McKibbin",
+    "countryCode": "gb-nir",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 137
+  },
+  {
+    "name": "Davis Thompson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 138
+  },
+  {
+    "name": "JC Ritchie",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 139
+  },
+  {
+    "name": "Mackenzie Hughes",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 140
+  },
+  {
+    "name": "Tom Kim",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 141
+  },
+  {
+    "name": "Nacho Elvira",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 142
+  },
+  {
+    "name": "Travis Smyth",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 143
+  },
+  {
+    "name": "Dan Bradbury",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 144
+  },
+  {
+    "name": "Taylor Moore",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 144
+  },
+  {
+    "name": "Calum Hill",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 146
+  },
+  {
+    "name": "Ian Holt",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 147
+  },
+  {
+    "name": "Scott Vincent",
+    "countryCode": "zw",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 148
+  },
+  {
+    "name": "Thriston Lawrence",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 149
+  },
+  {
+    "name": "Jhonattan Vegas",
+    "countryCode": "ve",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 150
+  },
+  {
+    "name": "Laurie Canter",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 151
+  },
+  {
+    "name": "S.H. Kim",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 152
+  },
+  {
+    "name": "Takumi Kanaya",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 153
+  },
+  {
+    "name": "Marcus Armitage",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 154
+  },
+  {
+    "name": "Martin Couvra",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 155
+  },
+  {
+    "name": "Beau Hossler",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 156
+  },
+  {
+    "name": "Zach Bauchou",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 157
+  },
+  {
+    "name": "Davis Lamb",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 158
+  },
+  {
+    "name": "Jesper Svensson",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 159
+  },
+  {
+    "name": "Davis Bryant",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 160
+  },
+  {
+    "name": "Vince Whaley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 161
+  },
+  {
+    "name": "Lee Hodges",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 162
+  },
+  {
+    "name": "Kazuki Higa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 163
+  },
+  {
+    "name": "Davis Riley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 164
+  },
+  {
+    "name": "Jorge Campillo",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 165
+  },
+  {
+    "name": "Sergio Garcia",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 166
+  },
+  {
+    "name": "Adam Schenk",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 167
+  },
+  {
+    "name": "Adrien Dumont de Chassart",
+    "countryCode": "be",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 168
+  },
+  {
+    "name": "Chad Ramey",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 169
+  },
+  {
+    "name": "Joe Highsmith",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 170
+  },
+  {
+    "name": "Joakim Lagergren",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 171
+  },
+  {
+    "name": "Chandler Phillips",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 172
+  },
+  {
+    "name": "Dean Burmester",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 173
+  },
+  {
+    "name": "Matt Kuchar",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 174
+  },
+  {
+    "name": "Doug Ghim",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 175
+  },
+  {
+    "name": "Julien Guerrier",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 176
+  },
+  {
+    "name": "Austin Eckroat",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 177
+  },
+  {
+    "name": "Erik van Rooyen",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 178
+  },
+  {
+    "name": "Carson Young",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 179
+  },
+  {
+    "name": "Jeremy Gandon",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 180
+  },
+  {
+    "name": "Peter Uihlein",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 181
+  },
+  {
+    "name": "Byeong Hun An",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 182
+  },
+  {
+    "name": "A.J. Ewart",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 183
+  },
+  {
+    "name": "Ben Kohles",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 184
+  },
+  {
+    "name": "Bernd Wiesberger",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 185
+  },
+  {
+    "name": "Hennie Du Plessis",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 186
+  },
+  {
+    "name": "Ewen Ferguson",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 187
+  },
+  {
+    "name": "Carlos Ortiz",
+    "countryCode": "mx",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 188
+  },
+  {
+    "name": "Richard Lee",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 189
+  },
+  {
+    "name": "Neal Shipley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 190
+  },
+  {
+    "name": "Zecheng Dou",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 191
+  },
+  {
+    "name": "Seamus Power",
+    "countryCode": "ie",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 192
+  },
+  {
+    "name": "Alistair Docherty",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 193
+  },
+  {
+    "name": "Cole Sherwood",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 194
+  },
+  {
+    "name": "Grant Forrest",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 195
+  },
+  {
+    "name": "Karl Vilips",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 196
+  },
+  {
+    "name": "Anthony Kim",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 197
+  },
+  {
+    "name": "Antoine Rozner",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 198
+  },
+  {
+    "name": "Patrick Fishburn",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 199
+  },
+  {
+    "name": "Emilio Gonzalez",
+    "countryCode": "mx",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 200
+  },
+  {
+    "name": "Wenyi Ding",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 201
+  },
+  {
+    "name": "Francesco Laporta",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 202
+  },
+  {
+    "name": "Jay Card III",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 203
+  },
+  {
+    "name": "Zac Blair",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 204
+  },
+  {
+    "name": "Doyeob Mun",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 205
+  },
+  {
+    "name": "Kazuma Kobori",
+    "countryCode": "nz",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 206
+  },
+  {
+    "name": "Joel Dahmen",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 207
+  },
+  {
+    "name": "Abraham Ancer",
+    "countryCode": "mx",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 208
+  },
+  {
+    "name": "Freddy Schott",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 209
+  },
+  {
+    "name": "Victor Perez",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 210
+  },
+  {
+    "name": "Yanhan Zhou",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 211
+  },
+  {
+    "name": "Marc Leishman",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 212
+  },
+  {
+    "name": "John Pak",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 213
+  },
+  {
+    "name": "Nathan Kimsey",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 214
+  },
+  {
+    "name": "Ricardo Gouveia",
+    "countryCode": "pt",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 215
+  },
+  {
+    "name": "Lanto Griffin",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 216
+  },
+  {
+    "name": "Ugo Coussaud",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 217
+  },
+  {
+    "name": "Rafa Cabrera Bello",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 218
+  },
+  {
+    "name": "Branden Grace",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 219
+  },
+  {
+    "name": "MJ Daffue",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 220
+  },
+  {
+    "name": "Alvaro Ortiz",
+    "countryCode": "mx",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 221
+  },
+  {
+    "name": "Joost Luiten",
+    "countryCode": "nl",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 222
+  },
+  {
+    "name": "Sam Ryder",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 223
+  },
+  {
+    "name": "Hunter Eichhorn",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 224
+  },
+  {
+    "name": "Dylan Menante",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 225
+  },
+  {
+    "name": "Darius Van Driel",
+    "countryCode": "nl",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 225
+  },
+  {
+    "name": "Dylan Menante",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 226
+  },
+  {
+    "name": "Taylor Montgomery",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 227
+  },
+  {
+    "name": "Maximilian Steinlech",
+    "countryCode": "at",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 228
+  },
+  {
+    "name": "Trace Crowe",
+    "countryCode": "Crowe",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 229
+  },
+  {
+    "name": "Cooper Dossey",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 230
+  },
+  {
+    "name": "Daniel van Tonder",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 231
+  },
+  {
+    "name": "Taichi Kho",
+    "countryCode": "hk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 232
+  },
+  {
+    "name": "Ren Yonezawa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 233
+  },
+  {
+    "name": "Jacques Kruyswijk",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 234
+  },
+  {
+    "name": "Hank Lebioda",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 235
+  },
+  {
+    "name": "Brice Garnett",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 236
+  },
+  {
+    "name": "Alejandro Del Rey",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 237
+  },
+  {
+    "name": "Ian Gilligan",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 238
+  },
+  {
+    "name": "Richard Mansell",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 239
+  },
+  {
+    "name": "Logan McAllister",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 240
+  },
+  {
+    "name": "Cameron John",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 241
+  },
+  {
+    "name": "Taehoon Ok",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 242
+  },
+  {
+    "name": "Paul Peterson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 243
+  },
+  {
+    "name": "David Law",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 244
+  },
+  {
+    "name": "Dustin Johnson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 245
+  },
+  {
+    "name": "Adrian Otaegui",
+    "countryCode": "ae",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 246
+  },
+  {
+    "name": "Luke Clanton",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 247
+  },
+  {
+    "name": "Chan Kim",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 248
+  },
+  {
+    "name": "Danny Walker",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 249
+  },
+  {
+    "name": "Guido Migliozzi",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 250
+  },
+  {
+    "name": "Yurav Premlall",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 251
+  },
+  {
+    "name": "Adam Hadwin",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 252
+  },
+  {
+    "name": "Justin Lower",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 253
+  },
+  {
+    "name": "Ross Steelman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 254
+  },
+  {
+    "name": "Brandon Robinson Thompson",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 255
+  },
+  {
+    "name": "Jeffrey Kang",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 256
+  },
+  {
+    "name": "Michael Johnson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 257
+  },
+  {
+    "name": "Christo Lamprecht",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 258
+  },
+  {
+    "name": "Matthieu Pavon",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 258
+  },
+  {
+    "name": "Jackson Koivun",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 260
+  },
+  {
+    "name": "Tatsunori Shogenji",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 261
+  },
+  {
+    "name": "Ben Silverman",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 262
+  },
+  {
+    "name": "Pontus Nyholm",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 263
+  },
+  {
+    "name": "Caleb VanArragon",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 264
+  },
+  {
+    "name": "Frederic LaCroix",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 265
+  },
+  {
+    "name": "Thomas Pieters",
+    "countryCode": "be",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 266
+  },
+  {
+    "name": "Todd Clements",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 267
+  },
+  {
+    "name": "Jorge Fernández Valdés",
+    "countryCode": "ar",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 268
+  },
+  {
+    "name": "David Skinns",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 269
+  },
+  {
+    "name": "Taylor Dickson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 270
+  },
+  {
+    "name": "Lee Jung-hwan",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 271
+  },
+  {
+    "name": "Gregorio De Leo",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 272
+  },
+  {
+    "name": "Johannes Veerman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 273
+  },
+  {
+    "name": "Oihan Guillamoundeguy",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 274
+  },
+  {
+    "name": "Niklas Nørgaard",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 275
+  },
+  {
+    "name": "Kensei Hirata",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 276
+  },
+  {
+    "name": "Daniel Da Costa Rodrigues",
+    "countryCode": "pt",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 277
+  },
+  {
+    "name": "Joe Dean",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 278
+  },
+  {
+    "name": "Ian Snyman",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 279
+  },
+  {
+    "name": "Hayden Springer",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 280
+  },
+  {
+    "name": "Matthew Jordan",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 281
+  },
+  {
+    "name": "Mitchell Meissner",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 282
+  },
+  {
+    "name": "Nicolai Von Dellingshausen",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 283
+  },
+  {
+    "name": "Francesco Molinari",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 284
+  },
+  {
+    "name": "Chris Wood",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 285
+  },
+  {
+    "name": "James Nicholas",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 286
+  },
+  {
+    "name": "Caleb Surratt",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 287
+  },
+  {
+    "name": "Trent Phillips",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 288
+  },
+  {
+    "name": "Ryosuke Kinoshita",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 289
+  },
+  {
+    "name": "David Ford",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 290
+  },
+  {
+    "name": "Manuel Elvira",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 291
+  },
+  {
+    "name": "Isaiah Salinda",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 292
+  },
+  {
+    "name": "Renato Paratore",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 293
+  },
+  {
+    "name": "Sebastian Soderberg",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 294
+  },
+  {
+    "name": "Sandy Scott",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 295
+  },
+  {
+    "name": "Jeremy Paul",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 296
+  },
+  {
+    "name": "John VanDerLaan",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 297
+  },
+  {
+    "name": "Marcel Schneider",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 298
+  },
+  {
+    "name": "Mikumu Horikawa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 299
+  },
+  {
+    "name": "Yusaku Hoson",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 300
+  },
+  {
+    "name": "Ryo Ishikawa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 301
+  },
+  {
+    "name": "Zack Fischer",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 302
+  },
+  {
+    "name": "Minhyuk Song",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 303
+  },
+  {
+    "name": "Kris Ventura",
+    "countryCode": "no",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 304
+  },
+  {
+    "name": "Cam Davis",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 305
+  },
+  {
+    "name": "Ben Carr",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 306
+  },
+  {
+    "name": "Yuta Sugiura",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 307
+  },
+  {
+    "name": "Barend Botha",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 308
+  },
+  {
+    "name": "Yosuke Asaji",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 309
+  },
+  {
+    "name": "Nicolo Galletti",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 310
+  },
+  {
+    "name": "Tom Vaillant",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 311
+  },
+  {
+    "name": "Joel Girrbach",
+    "countryCode": "ch",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 312
+  },
+  {
+    "name": "Trevor Cone",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 313
+  },
+  {
+    "name": "Matteo Manassero",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 314
+  },
+  {
+    "name": "Julian Suri",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 315
+  },
+  {
+    "name": "S.T. Lee",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 316
+  },
+  {
+    "name": "Joseph Bramlett",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 317
+  },
+  {
+    "name": "Charlie Lindh",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 318
+  },
+  {
+    "name": "Tomoyo Ikemura",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 319
+  },
+  {
+    "name": "Jordan Gumberg",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 320
+  },
+  {
+    "name": "Davis Chatfield",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 321
+  },
+  {
+    "name": "Taiga Semikawa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 322
+  },
+  {
+    "name": "Bronson Burgoon",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 323
+  },
+  {
+    "name": "Pablo Ereno Perez",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 324
+  },
+  {
+    "name": "Angel Hidalgo",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 325
+  },
+  {
+    "name": "Greyson Sigg",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 326
+  },
+  {
+    "name": "Tomohiro Ishizaka",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 327
+  },
+  {
+    "name": "Young-han Song",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 328
+  },
+  {
+    "name": "S.Y. Noh",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 329
+  },
+  {
+    "name": "Paul Waring",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 330
+  },
+  {
+    "name": "Tapio Pulkkanen",
+    "countryCode": "fi",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 331
+  },
+  {
+    "name": "Ben Schmidt",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 332
+  },
+  {
+    "name": "Michael Hollick",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 333
+  },
+  {
+    "name": "Kieran Vincent",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 334
+  },
+  {
+    "name": "Sadom Kaewkanjana",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 335
+  },
+  {
+    "name": "Suteepat Prateeptienchai",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 336
+  },
+  {
+    "name": "Kyle Westmoreland",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 337
+  },
+  {
+    "name": "Jimmy Stanger",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 338
+  },
+  {
+    "name": "Connor Syme",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 339
+  },
+  {
+    "name": "Jazz Janewattananond",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 340
+  },
+  {
+    "name": "Jason Scrivener",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 341
+  },
+  {
+    "name": "Danthai Boonma",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 342
+  },
+  {
+    "name": "Andrea Pavan",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 343
+  },
+  {
+    "name": "Romain Langasque",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 344
+  },
+  {
+    "name": "Davis Shore",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 345
+  },
+  {
+    "name": "Talor Gooch",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 346
+  },
+  {
+    "name": "Nick Dunlap",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 347
+  },
+  {
+    "name": "Shugo Imahira",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 348
+  },
+  {
+    "name": "Hiroshi Iwata",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 349
+  },
+  {
+    "name": "Hugo Townsend",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 350
+  },
+  {
+    "name": "Kiradech Aphibarnrat",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 351
+  },
+  {
+    "name": "Jeff Winther",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 352
+  },
+  {
+    "name": "Miguel Tabuena",
+    "countryCode": "ph",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 353
+  },
+  {
+    "name": "Cameron Champ",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 354
+  },
+  {
+    "name": "Noah Goodwin",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 355
+  },
+  {
+    "name": "Harry Higgs",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 356
+  },
+  {
+    "name": "Carson Bacha",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 357
+  },
+  {
+    "name": "Rocco Repetto Taylor",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 358
+  },
+  {
+    "name": "Adam Wallin",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 359
+  },
+  {
+    "name": "Marcus Kinhult",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 360
+  },
+  {
+    "name": "Wei-Hsuan Wang",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 361
+  },
+  {
+    "name": "Jeunghun Wang",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 362
+  },
+  {
+    "name": "Cole Hammer",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 363
+  },
+  {
+    "name": "Alejandro Tosti",
+    "countryCode": "ar",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 364
+  },
+  {
+    "name": "Patton Kizzire",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 365
+  },
+  {
+    "name": "Riki Kawamoto",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 366
+  },
+  {
+    "name": "Nick Voke",
+    "countryCode": "nz",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 367
+  },
+  {
+    "name": "P. Tangkamolpraser",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 368
+  },
+  {
+    "name": "Ashun Wu",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 369
+  },
+  {
+    "name": "Oliver Bekker",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 370
+  },
+  {
+    "name": "Rattanon Wannasrichan",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 371
+  },
+  {
+    "name": "Ben Taylor",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 372
+  },
+  {
+    "name": "Satoshi Kodaira",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 373
+  },
+  {
+    "name": "Frankie Capan III",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 374
+  },
+  {
+    "name": "Austen Truslow",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 375
+  },
+  {
+    "name": "Yuto Katsuragawa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 376
+  },
+  {
+    "name": "Jang Yu Bin",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 377
+  },
+  {
+    "name": "Ryan van Velzen",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 378
+  },
+  {
+    "name": "Naoyuki Kataoka",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 379
+  },
+  {
+    "name": "Daniel Young",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 380
+  },
+  {
+    "name": "Will Enefer",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 381
+  },
+  {
+    "name": "Austin Hitt",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 382
+  },
+  {
+    "name": "Eddie Pepperell",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 383
+  },
+  {
+    "name": "Patrick Flavin",
+    "countryCode": "Flavin",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 384
+  },
+  {
+    "name": "Danny Willett",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 385
+  },
+  {
+    "name": "Dylan Wu",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 386
+  },
+  {
+    "name": "Brandon Stone",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 387
+  },
+  {
+    "name": "Quade Cummins",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 388
+  },
+  {
+    "name": "Ryuichi Oiwa",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 389
+  },
+  {
+    "name": "Sam Bairstow",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 390
+  },
+  {
+    "name": "Seungbin Choi",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 391
+  },
+  {
+    "name": "David Ravetto",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 392
+  },
+  {
+    "name": "Yoshinori Fujimoto",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 393
+  },
+  {
+    "name": "Louis Oosthuizen",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 394
+  },
+  {
+    "name": "Will Zalatoris",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 395
+  },
+  {
+    "name": "Bubba Watson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 396
+  },
+  {
+    "name": "Ryo Katsumata",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 397
+  },
+  {
+    "name": "Justin Suh",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 398
+  },
+  {
+    "name": "Hamish Brown",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 399
+  },
+  {
+    "name": "James Morrison",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 400
+  },
+  {
+    "name": "Austin Bautista",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 401
+  },
+  {
+    "name": "John Marshall Butler",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 402
+  },
+  {
+    "name": "Taihei Sato",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 403
+  },
+  {
+    "name": "Andreas Halvorsen",
+    "countryCode": "dk",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 404
+  },
+  {
+    "name": "Robby Shelton",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 405
+  },
+  {
+    "name": "Jeong Woo Ham",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 406
+  },
+  {
+    "name": "Marcel Siem",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 406
+  },
+  {
+    "name": "Myles Creighton",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 408
+  },
+  {
+    "name": "Zach Johnson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 409
+  },
+  {
+    "name": "Russell Knox",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 410
+  },
+  {
+    "name": "Matthew Anderson",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 411
+  },
+  {
+    "name": "Filip Mruzek",
+    "countryCode": "cz",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 412
+  },
+  {
+    "name": "Zander Lombard",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 413
+  },
+  {
+    "name": "Roger Sloan",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 414
+  },
+  {
+    "name": "Kevin Streelman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 415
+  },
+  {
+    "name": "Henrik Norlander",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 416
+  },
+  {
+    "name": "Takashi Ogiso",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 417
+  },
+  {
+    "name": "Shad Tuten",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 418
+  },
+  {
+    "name": "Bryson Nimmer",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 419
+  },
+  {
+    "name": "Wade Ormsby",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 419
+  },
+  {
+    "name": "Kevin Dougherty",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 421
+  },
+  {
+    "name": "Jonathan Broomhead",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 422
+  },
+  {
+    "name": "Adam Svensson",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 423
+  },
+  {
+    "name": "Derek Hitchner",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 424
+  },
+  {
+    "name": "Will Chandler",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 425
+  },
+  {
+    "name": "Justin Hastings",
+    "countryCode": "ky",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 426
+  },
+  {
+    "name": "Taiki Yoshida",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 427
+  },
+  {
+    "name": "Bael Jun Kim",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 429
+  },
+  {
+    "name": "Patrick Welch",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 428
+  },
+  {
+    "name": "Fabián Gómez",
+    "countryCode": "ar",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 430
+  },
+  {
+    "name": "Darren Fichardt",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 431
+  },
+  {
+    "name": "Rick Lamb",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 432
+  },
+  {
+    "name": "Brett White",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 433
+  },
+  {
+    "name": "Sebi Garcia",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 434
+  },
+  {
+    "name": "Donghyun Moon",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 435
+  },
+  {
+    "name": "Bryce Lewis",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 436
+  },
+  {
+    "name": "Josh Teater",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 437
+  },
+  {
+    "name": "Filippo Celli",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 438
+  },
+  {
+    "name": "Scott Jamieson",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 439
+  },
+  {
+    "name": "Poom Saksansin",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 440
+  },
+  {
+    "name": "Norman Xiong",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 440
+  },
+  {
+    "name": "Will Gordon",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 442
+  },
+  {
+    "name": "Jens Dantorp",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 443
+  },
+  {
+    "name": "Matthew Southgate",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 444
+  },
+  {
+    "name": "Peter Kuest",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 445
+  },
+  {
+    "name": "Stuart Macdonald",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 446
+  },
+  {
+    "name": "Thomas Rosenmueller",
+    "countryCode": "de",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 446
+  },
+  {
+    "name": "Rikuya Hoshino",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 448
+  },
+  {
+    "name": "Stefano Mazzoli",
+    "countryCode": "it",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 449
+  },
+  {
+    "name": "Dylan Frittelli",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 450
+  },
+  {
+    "name": "Mason Andersen",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 451
+  },
+  {
+    "name": "Deon Germishuys",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 452
+  },
+  {
+    "name": "Matthew Wolff",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 453
+  },
+  {
+    "name": "Drew Doyle",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 454
+  },
+  {
+    "name": "Wooyoung Cho",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 455
+  },
+  {
+    "name": "Yusuke Sakamoto",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 456
+  },
+  {
+    "name": "Martin Laird",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 457
+  },
+  {
+    "name": "Webb Simpson",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 458
+  },
+  {
+    "name": "Ivan Cantero Gutierrez",
+    "countryCode": "es",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 459
+  },
+  {
+    "name": "Hayden Buckley",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 460
+  },
+  {
+    "name": "Chan Choi",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 461
+  },
+  {
+    "name": "Richie Ramsay",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 462
+  },
+  {
+    "name": "Takanori Konishi",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 463
+  },
+  {
+    "name": "Louis Albertse",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 464
+  },
+  {
+    "name": "Theo Humphrey",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 465
+  },
+  {
+    "name": "Sean Crocker",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 466
+  },
+  {
+    "name": "MJ Maguire",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 467
+  },
+  {
+    "name": "Yuwa Kosaihira",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 468
+  },
+  {
+    "name": "Yuvraj Sandhu",
+    "countryCode": "in",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 469
+  },
+  {
+    "name": "Joey Savoie",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 470
+  },
+  {
+    "name": "Hunter Wolcott",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 471
+  },
+  {
+    "name": "Tobias Jonsson",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 472
+  },
+  {
+    "name": "Nick Gabrelcik",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 473
+  },
+  {
+    "name": "Ben Martin",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 473
+  },
+  {
+    "name": "Maxwell Moldovan",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 475
+  },
+  {
+    "name": "Patrick Newcomb",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 475
+  },
+  {
+    "name": "Suguru Shimoke",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 477
+  },
+  {
+    "name": "Rayhan Thomas",
+    "countryCode": "in",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 477
+  },
+  {
+    "name": "Drew Nesbitt",
+    "countryCode": "ca",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 479
+  },
+  {
+    "name": "Samuel Simpson",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 480
+  },
+  {
+    "name": "Mikiya Akutsu",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 481
+  },
+  {
+    "name": "Alexander Levy",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 482
+  },
+  {
+    "name": "Thomas Ponder",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 483
+  },
+  {
+    "name": "Trey Mullinax",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 484
+  },
+  {
+    "name": "Jack Senior",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 485
+  },
+  {
+    "name": "Harold Varner III",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 486
+  },
+  {
+    "name": "Euan Walker",
+    "countryCode": "gb-sct",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 487
+  },
+  {
+    "name": "Blaine Hale, Jr.",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 488
+  },
+  {
+    "name": "Camilo Villegas",
+    "countryCode": "co",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 489
+  },
+  {
+    "name": "Jeong Weon Ko",
+    "countryCode": "fr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 490
+  },
+  {
+    "name": "Ryutaro Nagano",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 491
+  },
+  {
+    "name": "Joshua Berry",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 492
+  },
+  {
+    "name": "Lee Westwood",
+    "countryCode": "gb-eng",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 493
+  },
+  {
+    "name": "Sanghyun Park",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 494
+  },
+  {
+    "name": "Fabrizio Zanotti",
+    "countryCode": "py",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 495
+  },
+  {
+    "name": "Taisei Shimizu",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 496
+  },
+  {
+    "name": "Mathinus Viljoen",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 497
+  },
+  {
+    "name": "Jack Thompson",
+    "countryCode": "au",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 498
+  },
+  {
+    "name": "Jinho Choi",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 499
+  },
+  {
+    "name": "Niklas Lemke",
+    "countryCode": "se",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false,
+    "rank": 500
+  },
+    {
+    "name": "Padraig Harrington",
+    "countryCode": "ie",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Graeme McDowell",
+    "countryCode": "gb-nir",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+    {
+    "name": "Stewart Cink",
+    "countryCode": "us",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Phil Mickelson",
+    "countryCode": "us",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Ernie Els",
+    "countryCode": "za",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Henrik Stenson",
+    "countryCode": "se",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+    {
+    "name": "Darren Clarke",
+    "countryCode": "gb-nir",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+    {
+    "name": "John Daly",
+    "countryCode": "us",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Todd Hamilton",
+    "countryCode": "us",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+    {
+    "name": "Justin Leonard",
+    "countryCode": "us",
+    "majorWinner": true,
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },
+  {
+    "name": "Ben James",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Preston Stout",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Miles Russell",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Nick Hardy",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Carl Yuan",
+    "countryCode": "cn",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Marcelo Rozo",
+    "countryCode": "co",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Ryder Cowan",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Jackson Van Paris",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Giuseppe Puebla",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Spencer Tibbits",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Vaughn Harber",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Jackson Ormond",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Brandon Wu",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Jake Peacock",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },  
+  {
+    "name": "Robbie Higgins",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Kaito Onishi",
+    "countryCode": "jp",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Hamilton Coleman",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Mateo Pulcini",
+    "countryCode": "ar",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Brandon Holtz",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Jackson Herrington",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Ethan Fang",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Greyson Leach",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Jack Schoenberger",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "J.B. Holmes",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  },    
+  {
+    "name": "Chase Kyes",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Eric Lee",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Marek Fleming",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Jake Sollon",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Manav Shah",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Arni Sveinsson",
+    "countryCode": "is",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "T.K. Kim",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Matthew Robles",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Bryan Lee",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+  {
+    "name": "Mason Howell",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },    
+  {
+    "name": "Logan Reilly",
+    "countryCode": "us",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+
+  },
+    {
+    "name": "Jack Buchanan",
+    "countryCode": "za",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+    {
+    "name": "Fifa Laopakdee",
+    "countryCode": "th",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false
+  },
+    {
+    "name": "Jiho Yang",
+    "countryCode": "kr",
+    "masters": false,
+    "pgaChampionship": false,
+    "usOpen": false,
+    "theOpen": false 
+  }    
+]

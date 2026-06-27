@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react"
 import ColourPicker from "../ColourPicker/ColourPicker";
 import "./Stage3_Scores.css"
-import playerCountries from '../../data/playerCountries.json'
+import playerData from '../../data/playerData.json'
 
 // Define the LiveScores function signature
 // It receives: drawResults data for colour-coding rows, selectedTournamentData for having the configuration needed for polling window logic, 
